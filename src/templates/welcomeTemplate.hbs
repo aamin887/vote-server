@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Service</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin:
+      0; padding: 0; } .container { width: 100%; max-width: 600px; margin: 0
+      auto; padding: 20px; background-color: #ffffff; box-shadow: 0 0 10px
+      rgba(0, 0, 0, 0.1); } .header { text-align: center; padding: 10px 0; }
+      .header h1 { margin: 0; color: #333333; } .content { margin: 20px 0; }
+      .content p { color: #555555; } .button { display: inline-block; padding:
+      10px 20px; color: #ffffff; background-color: #007bff; text-decoration:
+      none; border-radius: 5px; } .footer { text-align: center; margin-top:
+      20px; padding: 10px 0; border-top: 1px solid #dddddd; color: #aaaaaa; }
+      .logo { max-width: 100px; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="{{logoUrl}}" alt="Company Logo" class="logo" />
+        <h1>Welcome to Our Service, {{name}}!</h1>
+      </div>
+      <div class="content">
+        <p>Hi {{name}},</p>
+        <p>Thank you for registering an account with us. We're excited to have
+          you on board!</p>
+        <p>Your username: <strong>{{username}}</strong></p>
+        <p>To get started, please confirm your email address by clicking the
+          button below:</p>
+        <p><a href="{{confirmationLink}}" class="button">Confirm Email Address</a></p>
+        <p>If you have any questions, feel free to
+          <a href="mailto:support@example.com">contact our support team</a>.</p>
+        <p>Welcome again, and we hope you enjoy our service!</p>
+      </div>
+      <div class="footer">
+        <p>Thank you, <br />Your Company Name</p>
+        <p><img src="{{footerImageUrl}}" alt="Footer Image" class="logo" /></p>
+      </div>
+    </div>
+  </body>
+</html>
