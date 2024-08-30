@@ -6,6 +6,7 @@ const allowedOrigin = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://127.0.0.1:5500",
+  "https://vote-client.onrender.com",
 ];
 
 module.exports = allowedOrigin;
