@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Candidates = require("../model/candidates.model");
+const Position = require("../model/position.model");
 
 /**
  * @Desc    Add a candidate
@@ -7,31 +8,41 @@ const Candidates = require("../model/candidates.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
-  const { firstName, lastName, position } = req.body;
+  const { fullName, manifesto, position } = req.body;
 
-  if (!firstName || !lastName || !position) {
-    res.status(400);
-    throw new Error("fill all required fields");
-  }
+  console.log(req.body);
 
-  const findCandidate = await Candidates.findOne({ firstName });
+  // if (!fullName || !position) {
+  //   res.status(400);
+  //   throw new Error("fill all required fields");
+  // }
 
-  if (findCandidate) {
-    res.status(400);
-    throw new Error("already created candidates");
-  }
+  // const findCandidate = await Candidates.find({ fullName });
+  const findCandidate = await Candidates.insertMany(req.body);
 
-  const newCandidate = await Candidates.create({
-    firstName,
-    lastName,
-    position,
-  });
+  // if (findCandidate) {
+  //   res.status(429);
+  //   throw new Error("already created candidates");
+  // }
 
-  if (!newCandidate) {
+  // const newCandidate = await Candidates.create({
+  //   fullName,
+  //   position,
+  //   manifesto,
+  // });
+
+  if (!findCandidate) {
     res.status(400);
     throw new Error("could not candidates");
   } else {
-    res.status(201).json(newCandidate);
+    await Position.updateOne(
+      { _id: position },
+      {
+        $push: { candidates: newCandidate._id },
+      }
+    );
+
+    res.status(201).json(findCandidate);
   }
 });
 

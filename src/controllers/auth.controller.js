@@ -86,6 +86,7 @@ const login = asyncHandler(async function (req, res) {
     secure: true, //process.env.NODE_ENV === "development", // Use secure cookies in production
     sameSite: "strict", // Prevent CSRF attacks
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    path: "/",
   });
 
   res.json({
@@ -175,7 +176,7 @@ const reset = asyncHandler(async (req, res) => {
   if (user) {
     const resetToken = await resetTokens.passwordResetToken(user._id);
 
-    const link = `http://localhost:5173/password-change/?token=${resetToken}&id=${user._id}`;
+    const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${user._id}`;
 
     const payload = {
       userEmail: email,
@@ -277,7 +278,16 @@ const acceptTerms = asyncHandler(async function (req, res) {
 
   const checkUser = await Users.findById(id);
 
-  console.log("ZZZ>>>>", checkUser);
+  if (!checkUser) {
+    res.sendStatus(400);
+  }
+
+  if (req.body.verified === true) {
+    await Users.findByIdAndUpdate(id, {
+      verified: true,
+      acceptTerms: true,
+    });
+  }
 
   res.json(checkUser);
 });

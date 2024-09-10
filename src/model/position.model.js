@@ -5,6 +5,10 @@ const positionSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  positionDescription: {
+    type: String,
+    required: true,
+  },
   electionId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Election",

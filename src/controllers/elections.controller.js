@@ -3,23 +3,29 @@ const Elections = require("../model/election.model");
 
 /**
  * @Desc    Create an election
- * @Route   POST /v1/election
+ * @Route   POST /v1/elections
  * @Access  PRIVATE
  */
 const createElection = asyncHandler(async function (req, res) {
-  const { electionName, description, startDate, organisation } = req.body;
+  const { electionName, description, startDate, endDate, organisation } =
+    req.body;
 
-  console.log(req.body);
-
-  if (!electionName || !description || !startDate || !organisation) {
-    res.status(400);
+  if (
+    !electionName ||
+    !description ||
+    !startDate ||
+    !endDate ||
+    !organisation
+  ) {
+    res.status(422);
     throw new Error("fill all required fields");
   }
 
-  const checkElection = await Elections.findOne({ electionName });
+  // check if organiser have create election with same name before
+  const checkElection = await Elections.findOne({ electionName, organisation });
 
   if (checkElection) {
-    res.status(400);
+    res.status(409);
     throw new Error(`You can not create another election with ${electionName}`);
   }
 
@@ -31,7 +37,6 @@ const createElection = asyncHandler(async function (req, res) {
       startDate,
       endDate: startDate,
     });
-
     res.status(201).json(newElection);
   } catch (error) {
     res.status(400);
@@ -40,7 +45,7 @@ const createElection = asyncHandler(async function (req, res) {
 });
 
 /**
- * @Desc    Get all elections
+ * @Desc    Get all elections by the organisation
  * @Route   POST /v1/election
  * @Access  PRIVATE
  */
@@ -53,17 +58,18 @@ const getAllElections = asyncHandler(async function (req, res) {
     });
   } catch (error) {
     res.status(400);
-    throw new Error("Can not get all elections");
+    throw new Error("network error");
   }
 });
 
 /**
- * @Desc    Get an election
+ * @Desc    Get an election by ID
  * @Route   POST /v1/elections/:id
  * @Access  PRIVATE
  */
 const getElection = asyncHandler(async function (req, res) {
   const { id } = req.params;
+  const { org } = req.query;
 
   try {
     const oneElection = await Elections.findById(id);
@@ -72,6 +78,12 @@ const getElection = asyncHandler(async function (req, res) {
       res.status(404);
       throw new Error("could not find election");
     }
+
+    if (oneElection.organisation.toString() !== org) {
+      res.status(401);
+      throw new Error("not allowed to access");
+    }
+
     res.status(200).json({
       election: oneElection,
     });
@@ -141,14 +153,11 @@ const removeElection = asyncHandler(async function (req, res) {
   const { id } = req.params;
   try {
     const findElection = await Elections.findById(id);
-
     if (!findElection) {
       res.status(404);
       throw new Error("could not find election");
     }
-
     await Elections.findByIdAndDelete(id);
-
     res.sendStatus(204);
   } catch (error) {
     res.status(400);
@@ -159,8 +168,8 @@ const removeElection = asyncHandler(async function (req, res) {
 module.exports = {
   createElection,
   getAllElections,
+  removeElection,
   getElection,
   getElections,
   updateElection,
-  removeElection,
 };

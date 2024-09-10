@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
 
 const candidateSchema = new mongoose.Schema({
-  name: {
+  fullName: {
     type: String,
     required: true,
   },
   manifesto: {
     type: String,
-    required: true,
     default: "",
   },
   position: {

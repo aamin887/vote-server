@@ -13,4 +13,6 @@ router
   .put(positionController.updatePositions)
   .delete(positionController.deletePositions);
 
+router.route("/elections/:id").delete(positionController.deleteManyPositions);
+
 module.exports = router;

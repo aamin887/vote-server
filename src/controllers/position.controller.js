@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Positions = require("../model/position.model");
+const Elections = require("../model/election.model");
 
 /**
  * @Desc    Add positions
@@ -7,14 +8,14 @@ const Positions = require("../model/position.model");
  * @Access  Private
  */
 const addPositions = asyncHandler(async function (req, res) {
-  const { title, description } = req.body;
+  const { position, description, electionId } = req.body;
 
-  if (!title || !description) {
+  if (!position || !description) {
     res.status(400);
     throw new Error("fill all required fields");
   }
 
-  const checkTitle = await Positions.findOne({ title });
+  const checkTitle = await Positions.findOne({ position });
 
   if (checkTitle) {
     res.status(400);
@@ -22,13 +23,21 @@ const addPositions = asyncHandler(async function (req, res) {
   }
 
   const newPosition = await Positions.create({
-    title,
-    description,
+    positionName: position,
+    positionDescription: description,
+    electionId: electionId,
   });
 
   if (newPosition) {
+    const election = await Elections.updateOne(
+      { _id: electionId },
+      {
+        $push: { positions: newPosition._id },
+      }
+    );
+    console.log(election);
     res.status(201).json({
-      category: newPosition,
+      position: newPosition,
     });
   } else {
     res.status(400);
@@ -37,13 +46,15 @@ const addPositions = asyncHandler(async function (req, res) {
 });
 
 /**
- * @Desc    GET positions
+ * @Desc    GET all positions
  * @Route   Get /api/v1/positions
  * @Access  Private
  */
 const getAllPositions = asyncHandler(async function (req, res) {
   try {
-    const allPositions = await Positions.find();
+    const allPositions = await Positions.find({
+      electionId: req.body.electionId,
+    });
 
     res.status(200).json({
       categories: allPositions,
@@ -63,10 +74,10 @@ const getPositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
 
   try {
-    const position = await Positions.findById(id);
+    const position = await Positions.find({ electionId: id });
 
     if (!position) {
-      res.status(400);
+      res.status(404);
       throw new Error("candidate not found");
     }
 
@@ -107,6 +118,20 @@ const updatePositions = asyncHandler(async function (req, res) {
  * @Route   DELETE /api/v1/positions/:id
  * @Access  Private
  */
+const deleteManyPositions = asyncHandler(async function (req, res) {
+  const { id } = req.params;
+
+  console.log(id);
+
+  try {
+    await Positions.deleteMany({ electionId: id });
+    res.sendStatus(204);
+  } catch (error) {
+    res.status(400);
+    throw new Error("can not delete categories");
+  }
+});
+
 const deletePositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
 
@@ -132,4 +157,5 @@ module.exports = {
   getPositions,
   updatePositions,
   deletePositions,
+  deleteManyPositions,
 };
