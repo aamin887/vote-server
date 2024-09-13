@@ -13,6 +13,8 @@ router
   .put(positionController.updatePositions)
   .delete(positionController.deletePositions);
 
+router.route("/one/:id").get(positionController.getPosition);
+
 router.route("/elections/:id").delete(positionController.deleteManyPositions);
 
 module.exports = router;

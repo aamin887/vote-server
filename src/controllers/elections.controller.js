@@ -123,8 +123,8 @@ const getElections = asyncHandler(async function (req, res) {
  */
 const updateElection = asyncHandler(async function (req, res) {
   const { id } = req.params;
-
   const body = req?.body;
+  const { org } = req.query;
 
   const election = await Elections.findById(id);
 
@@ -134,10 +134,13 @@ const updateElection = asyncHandler(async function (req, res) {
   }
 
   try {
+    if (election.organisation.toString() !== org) {
+      res.status(401);
+      throw new Error("not allowed");
+    }
     await Elections.findByIdAndUpdate(id, body);
-    const updatedElection = await Elections.findById(id);
 
-    res.status(200).json(updatedElection);
+    res.sendStatus(204);
   } catch (error) {
     res.status(400);
     throw new Error("can not update election");
@@ -169,7 +172,7 @@ module.exports = {
   createElection,
   getAllElections,
   removeElection,
+  updateElection,
   getElection,
   getElections,
-  updateElection,
 };

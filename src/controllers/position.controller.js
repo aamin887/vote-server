@@ -66,15 +66,42 @@ const getAllPositions = asyncHandler(async function (req, res) {
 });
 
 /**
- * @Desc    Get a positions
+ * @Desc    Get a positions by election id
  * @Route   GET /api/v1/positions/:id
  * @Access  Private
  */
 const getPositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
 
+  console.log(id);
+
   try {
     const position = await Positions.find({ electionId: id });
+
+    if (!position) {
+      res.status(404);
+      throw new Error("candidate not found");
+    }
+
+    res.status(200).json(position);
+  } catch (error) {
+    res.status(400);
+    throw new Error("can not get candidate");
+  }
+});
+
+/**
+ * @Desc    Get a positions by election id
+ * @Route   GET /api/v1/positions/:id
+ * @Access  Private
+ */
+const getPosition = asyncHandler(async function (req, res) {
+  const { id } = req.params;
+
+  console.log(id);
+
+  try {
+    const position = await Positions.findById(id);
 
     if (!position) {
       res.status(404);
@@ -99,14 +126,14 @@ const updatePositions = asyncHandler(async function (req, res) {
   const position = await Positions.findById(id);
 
   if (!position) {
-    res.status(400);
+    res.status(401);
     throw new Error("candidate not found");
   }
 
   try {
     await Positions.findByIdAndUpdate(id, req.body);
     const updatedCategories = await Positions.findById(id);
-    res.status(200).json(updatedCategories);
+    res.sendStatus(204);
   } catch (error) {
     res.status(400);
     throw new Error("can not get candidate");
@@ -138,7 +165,7 @@ const deletePositions = asyncHandler(async function (req, res) {
   const category = await Positions.findById(id);
 
   if (!category) {
-    res.status(400);
+    res.status(401);
     throw new Error("categories not found");
   }
 
@@ -155,6 +182,7 @@ module.exports = {
   addPositions,
   getAllPositions,
   getPositions,
+  getPosition,
   updatePositions,
   deletePositions,
   deleteManyPositions,

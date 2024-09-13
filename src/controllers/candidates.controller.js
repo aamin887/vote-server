@@ -38,7 +38,7 @@ const addCandidate = asyncHandler(async function (req, res) {
     await Position.updateOne(
       { _id: position },
       {
-        $push: { candidates: newCandidate._id },
+        $push: { candidates: findCandidate.map((dt) => dt._id) },
       }
     );
 
@@ -52,12 +52,11 @@ const addCandidate = asyncHandler(async function (req, res) {
  * @Access  Public
  */
 const getAllCandidates = asyncHandler(async function (req, res) {
+  const { id } = req.params;
   try {
-    const allCandidates = await Candidates.find();
+    const candidates = await Candidates.find({ position: id });
 
-    res.status(200).json({
-      candidates: allCandidates,
-    });
+    res.status(200).json(candidates);
   } catch (error) {
     res.status(400);
     throw new Error("can not get all candidates");
@@ -135,6 +134,22 @@ const removeCandidate = asyncHandler(async function (req, res) {
     throw new Error("can not delete candidate");
   }
 });
+/**
+ * @Desc    Refresh token
+ * @Route   POST /api/auth/refresh
+ * @Access  Public
+ */
+const removeCandidatesByPosition = asyncHandler(async function (req, res) {
+  const { id } = req.params;
+
+  try {
+    await Candidates.deleteMany({ position: id });
+    res.sendStatus(204);
+  } catch (error) {
+    res.status(400);
+    throw new Error("can not delete candidate");
+  }
+});
 
 module.exports = {
   addCandidate,
@@ -142,4 +157,5 @@ module.exports = {
   getCandidate,
   updateCandidate,
   removeCandidate,
+  removeCandidatesByPosition,
 };
