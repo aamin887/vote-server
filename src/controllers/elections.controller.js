@@ -35,7 +35,7 @@ const createElection = asyncHandler(async function (req, res) {
       description,
       organisation,
       startDate,
-      endDate: startDate,
+      endDate,
     });
     res.status(201).json(newElection);
   } catch (error) {

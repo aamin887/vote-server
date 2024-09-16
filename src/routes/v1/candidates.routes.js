@@ -7,9 +7,10 @@ router.route("/").post(candidatesController.addCandidate);
 router
   .route("/:id")
   .get(candidatesController.getAllCandidates)
-  .get(candidatesController.getCandidate)
   .put(candidatesController.updateCandidate)
   .delete(candidatesController.removeCandidate);
+
+router.route("/one/:id").get(candidatesController.getCandidate);
 router
   .route("/positions/:id")
   .delete(candidatesController.removeCandidatesByPosition);

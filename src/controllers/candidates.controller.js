@@ -8,41 +8,24 @@ const Position = require("../model/position.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
-  const { fullName, manifesto, position } = req.body;
-
-  console.log(req.body);
-
-  // if (!fullName || !position) {
-  //   res.status(400);
-  //   throw new Error("fill all required fields");
-  // }
-
-  // const findCandidate = await Candidates.find({ fullName });
   const findCandidate = await Candidates.insertMany(req.body);
 
-  // if (findCandidate) {
-  //   res.status(429);
-  //   throw new Error("already created candidates");
-  // }
+  findCandidate.forEach(async (candidate, idx) => {
+    await Position.updateOne(
+      { _id: candidate.position },
+      {
+        $push: { candidates: candidate._id },
+      }
+    );
+  });
 
-  // const newCandidate = await Candidates.create({
-  //   fullName,
-  //   position,
-  //   manifesto,
-  // });
+  console.log(findCandidate, "....");
 
   if (!findCandidate) {
     res.status(400);
     throw new Error("could not candidates");
   } else {
-    await Position.updateOne(
-      { _id: position },
-      {
-        $push: { candidates: findCandidate.map((dt) => dt._id) },
-      }
-    );
-
-    res.status(201).json(findCandidate);
+    res.sendStatus(201);
   }
 });
 
@@ -79,7 +62,7 @@ const getCandidate = asyncHandler(async function (req, res) {
       throw new Error("candidate not found");
     }
 
-    res.status(200).json(candidate);
+    res.status(200).json({ candidate });
   } catch (error) {
     res.status(400);
     throw new Error("can not get candidate");
