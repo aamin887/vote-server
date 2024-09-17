@@ -84,9 +84,10 @@ const login = asyncHandler(async function (req, res) {
   res.cookie("refresh_token", refreshToken, {
     httpOnly: true,
     secure: true, //process.env.NODE_ENV === "development", // Use secure cookies in production
-    sameSite: "strict", // Prevent CSRF attacks
+    sameSite: "none", // Prevent CSRF attacks
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     path: "/",
+    domain: "https://vote-client.onrender.com",
   });
 
   res.json({

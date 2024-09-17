@@ -8,8 +8,27 @@ const Position = require("../model/position.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
-  console.log(req.body);
-  const findCandidate = await Candidates.insertMany(req.body);
+  const formData = req.body;
+
+  // console.log(formData);
+
+  // formData.forEach(async function (data, idx) {
+  //   const checkCandidate = await Candidates.findOne({
+  //     fullName: data.fullName,
+  //     organisation: data.organisation,
+  //   });
+
+  //   console.log(checkCandidate, ">>>");
+
+  //   if (checkCandidate) {
+  //     res.status(403);
+  //     throw new Error("user already exist");
+  //   }
+
+  //   await Candidates.create(data);
+  // });
+
+  const findCandidate = await Candidates.insertMany(formData);
 
   findCandidate.forEach(async (candidate, idx) => {
     await Position.updateOne(

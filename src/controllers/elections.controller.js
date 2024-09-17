@@ -30,35 +30,35 @@ const createElection = asyncHandler(async function (req, res) {
   }
 
   try {
-    const newElection = await Elections.create({
+    await Elections.create({
       electionName,
       description,
       organisation,
       startDate,
       endDate,
     });
-    res.status(201).json(newElection);
+    res.sendStatus(201);
   } catch (error) {
-    res.status(400);
-    throw new Error("can not create an election");
+    res.sendStatus(400);
   }
 });
 
 /**
- * @Desc    Get all elections by the organisation
+ * @Desc    Get all elections
  * @Route   POST /v1/election
  * @Access  PRIVATE
  */
 const getAllElections = asyncHandler(async function (req, res) {
-  const { org } = req.query;
+  const { org } = req?.query;
+
   try {
+    // if an organisation is specified, return for that organisation
     const allElections = await Elections.find({ organisation: org });
     res.status(200).json({
       elections: allElections,
     });
   } catch (error) {
-    res.status(400);
-    throw new Error("network error");
+    res.sendStatus(400);
   }
 });
 
@@ -72,20 +72,17 @@ const getElection = asyncHandler(async function (req, res) {
   const { org } = req.query;
 
   try {
-    const oneElection = await Elections.findById(id);
+    const oneElection = await Elections.find({ _id: id, organisation: org });
+
+    console.log(oneElection);
 
     if (!oneElection) {
       res.status(404);
       throw new Error("could not find election");
     }
 
-    if (oneElection.organisation.toString() !== org) {
-      res.status(401);
-      throw new Error("not allowed to access");
-    }
-
     res.status(200).json({
-      election: oneElection,
+      election: oneElection[0],
     });
   } catch (error) {
     res.status(400);
@@ -93,28 +90,7 @@ const getElection = asyncHandler(async function (req, res) {
   }
 });
 /**
- * @Desc    Get an election
- * @Route   POST /v1/elections/:id
- * @Access  PRIVATE
- */
-const getElections = asyncHandler(async function (req, res) {
-  const { id } = req.params;
 
-  try {
-    const oneElection = await Elections.findById(id);
-
-    if (!oneElection) {
-      res.status(404);
-      throw new Error("could not find election");
-    }
-    res.status(200).json({
-      election: oneElection,
-    });
-  } catch (error) {
-    res.status(400);
-    throw new Error("Can not get election");
-  }
-});
 
 /**
  * @Desc    Update an election
@@ -123,8 +99,8 @@ const getElections = asyncHandler(async function (req, res) {
  */
 const updateElection = asyncHandler(async function (req, res) {
   const { id } = req.params;
-  const body = req?.body;
   const { org } = req.query;
+  const body = req?.body;
 
   const election = await Elections.findById(id);
 
@@ -154,12 +130,14 @@ const updateElection = asyncHandler(async function (req, res) {
  */
 const removeElection = asyncHandler(async function (req, res) {
   const { id } = req.params;
+
   try {
     const findElection = await Elections.findById(id);
     if (!findElection) {
       res.status(404);
       throw new Error("could not find election");
     }
+
     await Elections.findByIdAndDelete(id);
     res.sendStatus(204);
   } catch (error) {
@@ -174,5 +152,4 @@ module.exports = {
   removeElection,
   updateElection,
   getElection,
-  getElections,
 };

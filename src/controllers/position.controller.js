@@ -17,7 +17,12 @@ const addPositions = asyncHandler(async function (req, res) {
     throw new Error("fill all required fields");
   }
 
-  const checkTitle = await Positions.findOne({ position });
+  const checkTitle = await Positions.findOne({
+    position: position,
+    electionId: electionId,
+  });
+
+  console.log(req.body);
 
   if (checkTitle) {
     res.status(400);
