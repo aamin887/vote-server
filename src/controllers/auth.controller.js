@@ -87,7 +87,7 @@ const login = asyncHandler(async function (req, res) {
     sameSite: "none", // Prevent CSRF attacks
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     path: "/",
-    domain: "https://vote-client.onrender.com",
+    domain: "vote-server-ahg0.onrender.com/",
   });
 
   res.json({
