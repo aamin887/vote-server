@@ -4,6 +4,7 @@ const candidatesController = require("../../controllers/candidates.controller");
 
 router.route("/").post(candidatesController.addCandidate);
 
+router.route("/organisation/:id").get(candidatesController.allCandidates);
 router
   .route("/:id")
   .get(candidatesController.getAllCandidates)

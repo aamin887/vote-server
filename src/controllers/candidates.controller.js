@@ -8,6 +8,7 @@ const Position = require("../model/position.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
+  console.log(req.body);
   const findCandidate = await Candidates.insertMany(req.body);
 
   findCandidate.forEach(async (candidate, idx) => {
@@ -18,8 +19,6 @@ const addCandidate = asyncHandler(async function (req, res) {
       }
     );
   });
-
-  console.log(findCandidate, "....");
 
   if (!findCandidate) {
     res.status(400);
@@ -38,6 +37,18 @@ const getAllCandidates = asyncHandler(async function (req, res) {
   const { id } = req.params;
   try {
     const candidates = await Candidates.find({ position: id });
+
+    res.status(200).json(candidates);
+  } catch (error) {
+    res.status(400);
+    throw new Error("can not get all candidates");
+  }
+});
+
+const allCandidates = asyncHandler(async function (req, res) {
+  const { id } = req.params;
+  try {
+    const candidates = await Candidates.find({ organisation: id });
 
     res.status(200).json(candidates);
   } catch (error) {
@@ -137,6 +148,7 @@ const removeCandidatesByPosition = asyncHandler(async function (req, res) {
 module.exports = {
   addCandidate,
   getAllCandidates,
+  allCandidates,
   getCandidate,
   updateCandidate,
   removeCandidate,

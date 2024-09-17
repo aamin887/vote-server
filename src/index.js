@@ -13,7 +13,7 @@ const errorRoute = require("./routes/error.routes");
 const corsOptions = require("./config/cors.config");
 const errorHandler = require("./middleware/errorHandler.middleware");
 
-const v1Index = require("./routes/v1/index.routes");
+const v1Index = require("./routes/index.routes");
 
 const PORT = process.env.PORT;
 

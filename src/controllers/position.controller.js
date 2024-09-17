@@ -1,5 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Positions = require("../model/position.model");
+const Candidates = require("../model/candidates.model");
+
 const Elections = require("../model/election.model");
 
 /**
@@ -125,8 +127,6 @@ const updatePositions = asyncHandler(async function (req, res) {
 
   const position = await Positions.findById(id);
 
-  console.log(position);
-
   if (!position) {
     res.status(401);
     throw new Error("candidate not found");
@@ -135,6 +135,7 @@ const updatePositions = asyncHandler(async function (req, res) {
   try {
     await Positions.findByIdAndUpdate(id, req.body);
     // const updatedCategories = await Positions.findById(id);
+    await C;
     res.sendStatus(204);
   } catch (error) {
     res.status(400);
@@ -173,6 +174,7 @@ const deletePositions = asyncHandler(async function (req, res) {
 
   try {
     await Positions.findByIdAndDelete(id, req.body);
+    await Candidates.deleteMany({ position: id });
     res.sendStatus(204);
   } catch (error) {
     res.status(400);

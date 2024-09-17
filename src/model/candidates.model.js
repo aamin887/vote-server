@@ -9,6 +9,11 @@ const candidateSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  organisation: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Organisation",
+    required: true,
+  },
   position: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Position",

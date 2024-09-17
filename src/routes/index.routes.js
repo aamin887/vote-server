@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-
-const electionRoute = require("./elections.routes");
-const positionRoute = require("./positions.routes");
-const candidatesRoute = require("./candidates.routes");
-const votersRoute = require("./voters.routes");
+// version one
+const electionRoute = require("./v1/elections.routes");
+const positionRoute = require("./v1/positions.routes");
+const candidatesRoute = require("./v1/candidates.routes");
+const votersRoute = require("./v1/voters.routes");
 
 router.use("/elections", electionRoute);
 router.use("/positions", positionRoute);
