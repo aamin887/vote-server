@@ -22,8 +22,8 @@ const app = express();
 // middlewares
 app.use(credentials);
 app.use(cors(corsOptions));
-app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(bodyParser.json());
 app.use(
   express.urlencoded({
     extended: true,

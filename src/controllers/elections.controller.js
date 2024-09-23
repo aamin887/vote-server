@@ -1,5 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Elections = require("../model/election.model");
+const Candidates = require("../model/candidates.model");
+const Positions = require("../model/position.model");
 
 /**
  * @Desc    Create an election
@@ -17,7 +19,7 @@ const createElection = asyncHandler(async function (req, res) {
     !endDate ||
     !organisation
   ) {
-    res.status(422);
+    res.status(400);
     throw new Error("fill all required fields");
   }
 
@@ -73,8 +75,6 @@ const getElection = asyncHandler(async function (req, res) {
 
   try {
     const oneElection = await Elections.find({ _id: id, organisation: org });
-
-    console.log(oneElection);
 
     if (!oneElection) {
       res.status(404);
@@ -137,6 +137,12 @@ const removeElection = asyncHandler(async function (req, res) {
       res.status(404);
       throw new Error("could not find election");
     }
+    await Positions.deleteMany({ electionId: id });
+    const positions = findElection.positions;
+    
+    positions.forEach(async (position) => {
+      await Candidates.deleteMany({ position });
+    });
 
     await Elections.findByIdAndDelete(id);
     res.sendStatus(204);

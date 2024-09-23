@@ -1,5 +1,8 @@
 const asyncHandler = require("express-async-handler");
 const Candidates = require("../model/candidates.model");
+const gcsUploader = require("../utils/gcsUpload");
+const fs = require("fs").promises;
+const path = require("path");
 const Position = require("../model/position.model");
 
 /**
@@ -8,42 +11,46 @@ const Position = require("../model/position.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
-  const formData = req.body;
+  const { fullName, position, manifesto, organisation } = req.body;
+  const imgfile = req?.file;
 
-  // console.log(formData);
+  try {
+    const findCandidate = await Candidates.findOne({ position, fullName });
 
-  // formData.forEach(async function (data, idx) {
-  //   const checkCandidate = await Candidates.findOne({
-  //     fullName: data.fullName,
-  //     organisation: data.organisation,
-  //   });
+    if (findCandidate) {
+      res.sendStatus(403);
+      return;
+    }
 
-  //   console.log(checkCandidate, ">>>");
+    let candidateInfo = {
+      fullName,
+      position,
+      manifesto,
+      organisation,
+    };
 
-  //   if (checkCandidate) {
-  //     res.status(403);
-  //     throw new Error("user already exist");
-  //   }
+    if (imgfile) {
+      const profilePhoto = await gcsUploader(
+        imgfile.buffer,
+        imgfile.originalname
+      );
+      candidateInfo = { ...candidateInfo, profilePhoto };
+    }
 
-  //   await Candidates.create(data);
-  // });
+    const newCandidate = await Candidates.create(candidateInfo);
 
-  const findCandidate = await Candidates.insertMany(formData);
+    if (newCandidate) {
+      await Position.updateOne(
+        { _id: newCandidate.position },
+        {
+          $push: { candidates: newCandidate._id },
+        }
+      );
+    }
 
-  findCandidate.forEach(async (candidate, idx) => {
-    await Position.updateOne(
-      { _id: candidate.position },
-      {
-        $push: { candidates: candidate._id },
-      }
-    );
-  });
-
-  if (!findCandidate) {
-    res.status(400);
-    throw new Error("could not candidates");
-  } else {
     res.sendStatus(201);
+  } catch (error) {
+    res.sendStatus(400);
   }
 });
 
@@ -54,6 +61,7 @@ const addCandidate = asyncHandler(async function (req, res) {
  */
 const getAllCandidates = asyncHandler(async function (req, res) {
   const { id } = req.params;
+
   try {
     const candidates = await Candidates.find({ position: id });
 
@@ -110,7 +118,7 @@ const updateCandidate = asyncHandler(async function (req, res) {
   const candidate = await Candidates.findById(id);
 
   if (!candidate) {
-    res.status(400);
+    res.status(404);
     throw new Error("candidate not found");
   }
 
@@ -132,15 +140,26 @@ const updateCandidate = asyncHandler(async function (req, res) {
 const removeCandidate = asyncHandler(async function (req, res) {
   const { id } = req.params;
 
-  const candidate = await Candidates.findById(id);
-
-  if (!candidate) {
-    res.status(400);
-    throw new Error("candidate not found");
-  }
-
   try {
-    await Candidates.findByIdAndDelete(id, req.body);
+    const candidate = await Candidates.findById(id);
+
+    if (!candidate) {
+      res.status(404);
+      throw new Error("candidate not found");
+    }
+
+    const positionId = candidate?.position;
+    const candidatePosition = await Position.findById(positionId);
+    const positionCandidates = candidatePosition.candidates;
+    const filteredCandidate = positionCandidates.filter(
+      (candidate) => candidate.toString() !== id
+    );
+
+    await Position.findByIdAndUpdate(positionId, {
+      candidates: filteredCandidate,
+    });
+
+    await Candidates.findByIdAndDelete(id);
     res.sendStatus(204);
   } catch (error) {
     res.status(400);

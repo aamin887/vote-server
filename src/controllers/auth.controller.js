@@ -37,13 +37,24 @@ const register = asyncHandler(async function (req, res) {
   if (passwordsMatched) {
     const passwordSalt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, passwordSalt);
-
     await Users.create({
       email,
       uniqueNumber,
       password: hashedPassword,
     });
 
+    const payload = {
+      userEmail: email,
+      subject: "Welcome",
+      templateUrl: path.join(
+        __dirname,
+        "..",
+        "templates",
+        "welcomeTemplate.hbs"
+      ),
+      userName: "Amin",
+    };
+    resetMailer(payload);
     res.sendStatus(204);
   }
 });
@@ -56,47 +67,45 @@ const register = asyncHandler(async function (req, res) {
 const login = asyncHandler(async function (req, res) {
   const { email, password } = req.body;
 
-  if (!email || !password) {
-    res.status(400);
-    throw new Error("fill all field");
+  try {
+    if (!email || !password) {
+      res.sendStatus(400);
+    }
+
+    const existUser = await Users.findOne({ email });
+
+    if (!existUser) {
+      res.sendStatus(404);
+    }
+
+    const hashedPassword = existUser.password;
+
+    const decryptPassword = await bcrypt.compare(password, hashedPassword);
+
+    if (!decryptPassword) {
+      res.sendStatus(400);
+    }
+
+    const refreshToken = token.createRefreshToken({ id: existUser._id, email });
+    const accessToken = token.createAccessToken({ id: existUser._id, email });
+
+    res.cookie("refresh_token", refreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+      path: "/",
+    });
+
+    res.status(200).json({
+      msg: "access granted",
+      id: existUser._id,
+      email: existUser.email,
+      accessToken: accessToken,
+    });
+  } catch (error) {
+    res.sendStatus(400);
   }
-
-  const existUser = await Users.findOne({ email });
-
-  if (!existUser) {
-    res.status(401);
-    throw new Error("incorrect email or password");
-  }
-
-  const hashedPassword = existUser.password;
-
-  const decryptPassword = await bcrypt.compare(password, hashedPassword);
-
-  if (!decryptPassword) {
-    res.status(401);
-    throw new Error("incorrect email or password");
-  }
-
-  const refreshToken = token.createRefreshToken({ id: existUser._id, email });
-
-  const accessToken = token.createAccessToken({ id: existUser._id, email });
-
-  res.cookie("refresh_token", refreshToken, {
-    httpOnly: true,
-    secure: true, //process.env.NODE_ENV === "development", // Use secure cookies in production
-    sameSite: "none", // Prevent CSRF attacks
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-    path: "/",
-    domain: "vote-server-ahg0.onrender.com/",
-  });
-
-  res.json({
-    status: 200,
-    msg: "access granted",
-    id: existUser._id,
-    email: existUser.email,
-    accessToken: accessToken,
-  });
 });
 
 /**
@@ -165,8 +174,6 @@ const refresh = asyncHandler(async function (req, res) {
 const reset = asyncHandler(async (req, res) => {
   const { email } = req.body;
 
-  console.log(email);
-
   if (!email) {
     res.status(400);
     throw new Error("fill in field");
@@ -219,12 +226,9 @@ const newPassword = asyncHandler(async function (req, res) {
   }
 
   let isValid;
-
   if (token && id) {
     isValid = await resetTokens.verifyPasswordToken({ token, id });
   }
-
-  console.log(isValid);
 
   if (isValid === "token expired") {
     res.status(403);
@@ -237,9 +241,7 @@ const newPassword = asyncHandler(async function (req, res) {
   }
 
   const salt = await bcrypt.genSalt(10);
-
   const hashedPassword = await bcrypt.hash(newPassword, salt);
-
   const updatedUser = await Users.findByIdAndUpdate(id, {
     password: hashedPassword,
   });
@@ -255,10 +257,8 @@ const newPassword = asyncHandler(async function (req, res) {
 const checkToken = asyncHandler(async function (req, res) {
   const { token } = req.body;
 
-  console.log(token);
   try {
     const existToken = await Token.findOne({ token });
-
     if (existToken.activated === true) {
       res.sendStatus(423);
     }
@@ -266,7 +266,6 @@ const checkToken = asyncHandler(async function (req, res) {
     if (existToken) {
       return res.sendStatus(200);
     }
-
     res.sendStatus(404);
   } catch (error) {
     res.status(400);
@@ -276,20 +275,16 @@ const checkToken = asyncHandler(async function (req, res) {
 
 const acceptTerms = asyncHandler(async function (req, res) {
   const { id } = req.params;
-
   const checkUser = await Users.findById(id);
-
   if (!checkUser) {
     res.sendStatus(400);
   }
-
   if (req.body.verified === true) {
     await Users.findByIdAndUpdate(id, {
       verified: true,
       acceptTerms: true,
     });
   }
-
   res.json(checkUser);
 });
 

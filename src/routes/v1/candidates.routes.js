@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const uploads = require("../../config/upload.config");
 const candidatesController = require("../../controllers/candidates.controller");
 
-router.route("/").post(candidatesController.addCandidate);
+router
+  .route("/")
+  .post(uploads.single("image"), candidatesController.addCandidate)
+  .get(candidatesController.allCandidates);
 
 router.route("/organisation/:id").get(candidatesController.allCandidates);
 router

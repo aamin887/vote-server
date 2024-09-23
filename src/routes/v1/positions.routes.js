@@ -5,16 +5,12 @@ const positionController = require("../../controllers/position.controller");
 router
   .route("/")
   .post(positionController.addPositions)
-  .get(positionController.getAllPositions);
+  .get(positionController.getPositions);
 
 router
   .route("/:id")
-  .get(positionController.getPositions)
   .put(positionController.updatePositions)
-  .delete(positionController.deletePositions);
-
-router.route("/one/:id").get(positionController.getPosition);
-
-router.route("/elections/:id").delete(positionController.deleteManyPositions);
+  .delete(positionController.deletePositions)
+  .get(positionController.getPosition);
 
 module.exports = router;

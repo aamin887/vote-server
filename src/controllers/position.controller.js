@@ -1,7 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Positions = require("../model/position.model");
 const Candidates = require("../model/candidates.model");
-
 const Elections = require("../model/election.model");
 
 /**
@@ -10,65 +9,45 @@ const Elections = require("../model/election.model");
  * @Access  Private
  */
 const addPositions = asyncHandler(async function (req, res) {
-  const { position, description, electionId } = req.body;
-
-  if (!position || !description) {
-    res.status(400);
-    throw new Error("fill all required fields");
-  }
-
-  const checkTitle = await Positions.findOne({
-    position: position,
-    electionId: electionId,
-  });
-
-  console.log(req.body);
-
-  if (checkTitle) {
-    res.status(400);
-    throw new Error("title already created");
-  }
-
-  const newPosition = await Positions.create({
-    positionName: position,
-    positionDescription: description,
-    electionId: electionId,
-  });
-
-  if (newPosition) {
-    const election = await Elections.updateOne(
-      { _id: electionId },
-      {
-        $push: { positions: newPosition._id },
-      }
-    );
-    console.log(election);
-    res.status(201).json({
-      position: newPosition,
-    });
-  } else {
-    res.status(400);
-    throw new Error("could not create a new category");
-  }
-});
-
-/**
- * @Desc    GET all positions
- * @Route   Get /api/v1/positions
- * @Access  Private
- */
-const getAllPositions = asyncHandler(async function (req, res) {
   try {
-    const allPositions = await Positions.find({
-      electionId: req.body.electionId,
+    const { position, description, electionId } = req.body;
+
+    if (!position || !description || !electionId) {
+      res.status(400);
+      throw new Error("fill all required fields");
+    }
+
+    const checkTitle = await Positions.findOne({
+      positionName: position,
+      electionId,
     });
 
-    res.status(200).json({
-      categories: allPositions,
+    if (checkTitle) {
+      return res.sendStatus(403);
+    }
+
+    const newPosition = await Positions.create({
+      positionName: position,
+      positionDescription: description,
+      electionId: electionId,
     });
+
+    if (newPosition) {
+      await Elections.updateOne(
+        { _id: electionId },
+        {
+          $push: { positions: newPosition._id },
+        }
+      );
+
+      res.status(201).json({
+        position: newPosition,
+      });
+    } else {
+      return res.sendStatus(400);
+    }
   } catch (error) {
-    res.status(400);
-    throw new Error("can not get all candidates");
+    return res.sendStatus(400);
   }
 });
 
@@ -78,19 +57,16 @@ const getAllPositions = asyncHandler(async function (req, res) {
  * @Access  Private
  */
 const getPositions = asyncHandler(async function (req, res) {
-  const { id } = req.params;
-
-  console.log(id);
-
+  const { election } = req.query;
   try {
-    const position = await Positions.find({ electionId: id });
+    const positions = await Positions.find({ electionId: election });
 
-    if (!position) {
+    if (!positions) {
       res.status(404);
       throw new Error("candidate not found");
     }
 
-    res.status(200).json(position);
+    res.status(200).json(positions);
   } catch (error) {
     res.status(400);
     throw new Error("can not get candidate");
@@ -104,8 +80,6 @@ const getPositions = asyncHandler(async function (req, res) {
  */
 const getPosition = asyncHandler(async function (req, res) {
   const { id } = req.params;
-
-  console.log(id);
 
   try {
     const position = await Positions.findById(id);
@@ -139,8 +113,6 @@ const updatePositions = asyncHandler(async function (req, res) {
 
   try {
     await Positions.findByIdAndUpdate(id, req.body);
-    // const updatedCategories = await Positions.findById(id);
-    await C;
     res.sendStatus(204);
   } catch (error) {
     res.status(400);
@@ -153,32 +125,25 @@ const updatePositions = asyncHandler(async function (req, res) {
  * @Route   DELETE /api/v1/positions/:id
  * @Access  Private
  */
-const deleteManyPositions = asyncHandler(async function (req, res) {
-  const { id } = req.params;
-
-  console.log(id);
-
-  try {
-    await Positions.deleteMany({ electionId: id });
-    res.sendStatus(204);
-  } catch (error) {
-    res.status(400);
-    throw new Error("can not delete categories");
-  }
-});
 
 const deletePositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
 
-  const category = await Positions.findById(id);
-
-  if (!category) {
-    res.status(401);
-    throw new Error("categories not found");
-  }
-
   try {
-    await Positions.findByIdAndDelete(id, req.body);
+    const findPosition = await Positions.findById(id);
+
+    const electionId = findPosition.electionId;
+    const findElection = await Elections.findById(electionId);
+    const electionPosition = findElection.positions;
+
+    const filteredPositions = electionPosition.filter(
+      (positon) => positon.toString() !== id
+    );
+
+    await Elections.findByIdAndUpdate(electionId, {
+      positions: filteredPositions,
+    });
+    await Positions.findByIdAndDelete(id);
     await Candidates.deleteMany({ position: id });
     res.sendStatus(204);
   } catch (error) {
@@ -189,10 +154,8 @@ const deletePositions = asyncHandler(async function (req, res) {
 
 module.exports = {
   addPositions,
-  getAllPositions,
   getPositions,
   getPosition,
   updatePositions,
   deletePositions,
-  deleteManyPositions,
 };
