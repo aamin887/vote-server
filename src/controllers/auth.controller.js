@@ -122,8 +122,10 @@ const logout = asyncHandler(function (req, res) {
 
   res.clearCookie("refresh_token", {
     httpOnly: true,
-    sameSite: "strict",
     secure: true,
+    sameSite: "none",
+    path: "/",
+    priority: "high",
   });
 
   return res.status(200).json({
