@@ -20,6 +20,10 @@ const electionSchema = new mongoose.Schema({
       ref: "Position",
     },
   ],
+  poster: {
+    type: String,
+    default: "",
+  },
   startDate: {
     type: Date,
     required: true,

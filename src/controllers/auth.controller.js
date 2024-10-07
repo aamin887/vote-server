@@ -53,6 +53,8 @@ const register = asyncHandler(async function (req, res) {
         "welcomeTemplate.hbs"
       ),
       userName: "Amin",
+
+      logoUrl: "https://storage.googleapis.com/aminmakes/logo.png",
     };
     resetMailer(payload);
     res.sendStatus(204);
@@ -199,9 +201,16 @@ const reset = asyncHandler(async (req, res) => {
         "templates",
         "passwordResetTemplate.hbs"
       ),
+      footerImageUrl: path.join(
+        __dirname,
+        "..",
+        "public",
+        "images",
+        "password.png"
+      ),
       resetLink: link,
       userName: "Amin",
-      logoUrl: "",
+      logoUrl: "https://storage.googleapis.com/aminmakes/logo.png",
     };
 
     resetMailer(payload);

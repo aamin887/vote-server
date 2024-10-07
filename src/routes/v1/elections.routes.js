@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const electionsController = require("../../controllers/elections.controller");
+const uploads = require("../../config/upload.config");
 
 router
   .route("/")
@@ -10,7 +11,7 @@ router
 router
   .route("/:id")
   .get(electionsController.getElection)
-  .put(electionsController.updateElection)
+  .put(uploads.single("image"), electionsController.updateElection)
   .delete(electionsController.removeElection);
 
 module.exports = router;

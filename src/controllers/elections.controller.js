@@ -2,6 +2,8 @@ const asyncHandler = require("express-async-handler");
 const Elections = require("../model/election.model");
 const Candidates = require("../model/candidates.model");
 const Positions = require("../model/position.model");
+const createElectionPoster = require("../utils/createElectionPoster");
+const gcsUploader = require("../utils/gcsUpload");
 
 /**
  * @Desc    Create an election
@@ -32,15 +34,25 @@ const createElection = asyncHandler(async function (req, res) {
   }
 
   try {
+    const poster = await createElectionPoster(
+      electionName,
+      organisation,
+      description
+    );
+
     await Elections.create({
       electionName,
       description,
       organisation,
       startDate,
+      poster,
       endDate,
     });
+
     res.sendStatus(201);
   } catch (error) {
+    console.log(error);
+    console.log("i");
     res.sendStatus(400);
   }
 });
@@ -102,6 +114,16 @@ const updateElection = asyncHandler(async function (req, res) {
   const { org } = req.query;
   const body = req?.body;
 
+  const imgfile = req?.file;
+
+  let profilePhoto;
+
+  if (imgfile) {
+    profilePhoto = await gcsUploader(imgfile.buffer, imgfile.originalname);
+  }
+
+  const updatedElection = { ...req.body, poster: profilePhoto };
+
   const election = await Elections.findById(id);
 
   if (!election) {
@@ -114,7 +136,7 @@ const updateElection = asyncHandler(async function (req, res) {
       res.status(401);
       throw new Error("not allowed");
     }
-    await Elections.findByIdAndUpdate(id, body);
+    await Elections.findByIdAndUpdate(id, updatedElection);
 
     res.sendStatus(204);
   } catch (error) {
@@ -139,7 +161,7 @@ const removeElection = asyncHandler(async function (req, res) {
     }
     await Positions.deleteMany({ electionId: id });
     const positions = findElection.positions;
-    
+
     positions.forEach(async (position) => {
       await Candidates.deleteMany({ position });
     });

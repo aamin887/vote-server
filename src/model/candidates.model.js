@@ -9,6 +9,11 @@ const candidateSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  electionId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Election",
+    required: true,
+  },
   profilePhoto: {
     type: String,
     required: true,

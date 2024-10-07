@@ -12,7 +12,7 @@ router.route("/organisation/:id").get(candidatesController.allCandidates);
 router
   .route("/:id")
   .get(candidatesController.getAllCandidates)
-  .put(candidatesController.updateCandidate)
+  .put(uploads.single("image"), candidatesController.updateCandidate)
   .delete(candidatesController.removeCandidate);
 
 router.route("/one/:id").get(candidatesController.getCandidate);

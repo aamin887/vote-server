@@ -11,11 +11,13 @@ const Position = require("../model/position.model");
  * @Access  Private
  */
 const addCandidate = asyncHandler(async function (req, res) {
-  const { fullName, position, manifesto, organisation } = req.body;
+  const { fullName, position, manifesto, organisation, electionId } = req.body;
   const imgfile = req?.file;
 
   try {
     const findCandidate = await Candidates.findOne({ position, fullName });
+
+    console.log(findCandidate);
 
     if (findCandidate) {
       res.sendStatus(403);
@@ -27,7 +29,10 @@ const addCandidate = asyncHandler(async function (req, res) {
       position,
       manifesto,
       organisation,
+      electionId,
     };
+
+    console.log(imgfile);
 
     if (imgfile) {
       const profilePhoto = await gcsUploader(
@@ -38,6 +43,7 @@ const addCandidate = asyncHandler(async function (req, res) {
     }
 
     const newCandidate = await Candidates.create(candidateInfo);
+    console.log(newCandidate, ":asas");
 
     if (newCandidate) {
       await Position.updateOne(
@@ -50,6 +56,7 @@ const addCandidate = asyncHandler(async function (req, res) {
 
     res.sendStatus(201);
   } catch (error) {
+    console.log(error);
     res.sendStatus(400);
   }
 });
@@ -114,6 +121,16 @@ const getCandidate = asyncHandler(async function (req, res) {
  */
 const updateCandidate = asyncHandler(async function (req, res) {
   const { id } = req.params;
+  const imgfile = req?.file;
+
+  let profilePhoto;
+
+  if (imgfile) {
+    profilePhoto = await gcsUploader(imgfile.buffer, imgfile.originalname);
+  }
+
+  const updatedCandidateInfo = { ...req.body, profilePhoto };
+  console.log(updatedCandidateInfo);
 
   const candidate = await Candidates.findById(id);
 
@@ -123,11 +140,13 @@ const updateCandidate = asyncHandler(async function (req, res) {
   }
 
   try {
-    await Candidates.findByIdAndUpdate(id, req.body);
+    await Candidates.findByIdAndUpdate(id, updatedCandidateInfo);
     const updatedCandidate = await Candidates.findById(id);
     res.status(200).json(updatedCandidate);
   } catch (error) {
     res.status(400);
+
+    console.log(error);
     throw new Error("can not get candidate");
   }
 });
