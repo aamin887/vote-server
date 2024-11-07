@@ -5,8 +5,6 @@ const token = require("../utils/token.utils");
 const auth = asyncHandler(async (req, res, next) => {
   let accessToken;
 
-  // console.log(req.headers.authorization);
-
   if (
     req.headers["authorization"] &&
     req.headers["authorization"].startsWith("Bearer")

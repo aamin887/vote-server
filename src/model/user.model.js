@@ -1,26 +1,27 @@
-const { model, Schema } = require("mongoose");
+const mongoose = require("mongoose");
 
-const userSchema = new Schema(
+const userSchema = new mongoose.Schema(
   {
+    fullName: {
+      type: String,
+      required: true,
+      minLength: 4,
+    },
     email: {
       type: String,
       required: true,
       unique: true,
-    },
-    uniqueNumber: {
-      type: String,
-      required: true,
     },
     password: {
       type: String,
       required: true,
       minLength: 6,
     },
-    acceptTerms: {
+    terms: {
       type: Boolean,
       default: false,
     },
-    verified: {
+    verification: {
       type: Boolean,
       default: false,
     },
@@ -30,4 +31,4 @@ const userSchema = new Schema(
   }
 );
 
-module.exports = model("Users", userSchema);
+module.exports = mongoose.model("Users", userSchema);

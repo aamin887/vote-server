@@ -1,11 +1,10 @@
+// config for google cloud storage
 const { Storage } = require("@google-cloud/storage");
-const path = require("path");
 
-const projectId = process.env.GCS_PROJECT_ID;
 const bucketName = process.env.GCS_BUCKET_NAME;
 
 const gcsStorage = new Storage({
-  projectId,
+  projectId: process.env.GCS_PROJECT_ID,
   credentials: {
     type: process.env.GCLOUD_TYPE,
     project_id: process.env.GCLOUD_PROJECT_ID,

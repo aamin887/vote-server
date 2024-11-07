@@ -1,13 +1,20 @@
-const { model, Schema } = require("mongoose");
+const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 
-const userSchema = new Schema(
+const adminSchema = new mongoose.Schema(
   {
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     email: {
       type: String,
       required: true,
       unique: true,
+      lowercase: true,
     },
-    uniqueNumber: {
+    accessCode: {
       type: String,
       required: true,
     },
@@ -15,12 +22,13 @@ const userSchema = new Schema(
       type: String,
       required: true,
       minLength: 6,
+      select: false,
     },
-    acceptTerms: {
+    terms: {
       type: Boolean,
       default: false,
     },
-    verified: {
+    verification: {
       type: Boolean,
       default: false,
     },
@@ -30,4 +38,4 @@ const userSchema = new Schema(
   }
 );
 
-module.exports = model("Users", userSchema);
+module.exports = mongoose.model("Admins", userSchema);

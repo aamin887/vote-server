@@ -21,3 +21,8 @@ body {
   font-size: 2rem;
   padding: 4em;
 }
+
+p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}

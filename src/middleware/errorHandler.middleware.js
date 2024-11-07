@@ -1,27 +1,22 @@
 const AppError = require("../utils/AppError.utils");
+const { CustomError } = require("../lib/CustomError.lib");
 
 const errorHandler = (err, req, res, next) => {
   const statusCode = res.statusCode ? res.statusCode : 500;
 
-  if (err.name === "instanceError") {
-    res.status(statusCode).json({
+  if (err instanceof CustomError) {
+    res.status(err.statusCode).json({
       name: err.name,
-      status: statusCode,
-      msg: err.message,
-      stack: process.env.NODE_ENV === "development" ? res.stack : null,
+      message: err.message,
+      stack: process.env.NODE_ENV === "development" ? err.stack : null,
+      ...(err.errors && { errors: err.errors }),
+    });
+  } else {
+    res.status(500).json({
+      status: "error",
+      message: "An unexpected error occurred.",
     });
   }
-
-  // add custom error messages and codes
-  if (err instanceof AppError) {
-    res.status(400).send("Hii, again");
-  }
-
-  res.status(statusCode).json({
-    status: statusCode,
-    msg: err?.message,
-    stack: process.env.NODE_ENV === "development" ? err.stack : null,
-  });
 };
 
 module.exports = errorHandler;
