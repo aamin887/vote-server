@@ -35,12 +35,36 @@ class ForbiddenError extends CustomError {
   }
 }
 
+class ConflictError extends CustomError {
+  constructor(customMessage) {
+    super("CONFLICT", customMessage);
+  }
+}
+
+class LargePayloadError extends CustomError {
+  constructor(customMessage) {
+    super("PAYLOAD_TOO_LARGE", customMessage);
+  }
+}
+
+class InvalidRangeError extends CustomError {
+  constructor(customMessage) {
+    super("INVALID_RANGE", customMessage);
+  }
+}
+class TooManyRequestError extends CustomError {
+  constructor(customMessage) {
+    super("TOO_MANY_REQUEST", customMessage);
+  }
+}
+
 class ValidationError extends CustomError {
   constructor(errors = []) {
     super("VALIDATION_ERROR", "Validation Error");
     this.errors = errors; // for detailed field-level errors
   }
 }
+
 module.exports = {
   CustomError,
   NotFoundError,
@@ -48,4 +72,8 @@ module.exports = {
   ValidationError,
   ForbiddenError,
   UnauthorizedError,
+  ConflictError,
+  TooManyRequestError,
+  InvalidRangeError,
+  LargePayloadError,
 };

@@ -4,13 +4,13 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const bodyParser = require("body-parser");
-const dbConnection = require("./config/db.config");
-const authRoute = require("./routes/auth.routes");
-const root = require("./routes/root.routes");
+const dbConnection = require("./database/connection.db");
+const authRoute = require("./routes/auth/auth.routes");
+const root = require("./routes/entry/root.routes");
 const credentials = require("./middleware/credentials.middleware");
-const logger = require("./utils/logger.utils");
+const logger = require("./middleware/logger.middleware");
 
-const errorRoute = require("./routes/error.routes");
+const errorRoute = require("./routes/error/error.routes");
 const corsOptions = require("./config/cors.config");
 const errorHandler = require("./middleware/errorHandler.middleware");
 
@@ -37,6 +37,8 @@ app.use("/", express.static(path.join(__dirname, "public")));
 
 // authentication route
 app.use("/auth", authRoute);
+// admin authentication
+app.use("/auth/admins", require("./routes/auth/admin.routes"));
 // version one of the api
 app.use("/api/v1", v1Index);
 // root entry

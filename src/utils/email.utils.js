@@ -6,11 +6,8 @@ const juice = require("juice");
 const sendEmail = (payload) => {
   const { templateUrl, logoUrl, userName, userEmail, subject, resetLink } =
     payload;
-
   const templateSource = fs.readFileSync(templateUrl, "utf-8");
-
   const template = handlebars.compile(templateSource);
-
   const replacements = {
     userName,
     resetLink,

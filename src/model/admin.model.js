@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
 
 const adminSchema = new mongoose.Schema(
   {
@@ -13,10 +12,6 @@ const adminSchema = new mongoose.Schema(
       required: true,
       unique: true,
       lowercase: true,
-    },
-    accessCode: {
-      type: String,
-      required: true,
     },
     password: {
       type: String,
@@ -38,4 +33,4 @@ const adminSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Admins", userSchema);
+module.exports = mongoose.model("Admins", adminSchema);

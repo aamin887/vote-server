@@ -15,9 +15,25 @@
     "code": 404,
     "message": "Resource Not Found"
   },
+  "CONFLICT": {
+    "code": 409,
+    "message": "Request conflict"
+  },
+  "PAYLOAD_TOO_LARGE": {
+    "code": 413,
+    "message": "Large payload"
+  },
+  "INVALID_RANGE": {
+    "code": 419,
+    "message": "Range is not valid"
+  },
   "VALIDATION_ERROR": {
     "code": 422,
     "message": "Validation Error"
+  },
+  "TOO_MANY_REQUEST": {
+    "code": 429,
+    "message": "Request exceeds limit"
   },
   "INTERNAL_SERVER_ERROR": {
     "code": 500,

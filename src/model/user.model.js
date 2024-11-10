@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+// mongoose.models = {};
 
 const userSchema = new mongoose.Schema(
   {
@@ -7,15 +8,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       minLength: 4,
     },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     password: {
       type: String,
       required: true,
       minLength: 6,
+      select: false,
     },
     terms: {
       type: Boolean,
