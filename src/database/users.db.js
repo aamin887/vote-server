@@ -1,21 +1,11 @@
-const User = require("../model/admin.model");
-const { NotFoundError } = require("../helpers/CustomError.lib");
-
-// Retrieve a single user by email
-const getUser = async (email) => {
-  try {
-    const user = await User.findOne({ email });
-    return user;
-  } catch (error) {
-    throw error;
-  }
-};
+// services/userService.js
+const User = require("../models/User");
 
 // Retrieve a single user by ID
 const getUserById = async (userId) => {
   try {
     const user = await User.findById(userId);
-    if (!user) throw new NotFoundError("User not found");
+    if (!user) throw new Error("User not found");
     return user;
   } catch (error) {
     throw error;
@@ -68,7 +58,6 @@ const deleteUserById = async (userId) => {
 };
 
 module.exports = {
-  getUser,
   getUserById,
   getAllUsers,
   createUser,

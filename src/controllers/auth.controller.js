@@ -6,6 +6,10 @@ const bcrypt = require("bcrypt");
 const path = require("path");
 const Token = require("../model/token.model");
 const resetTokens = require("../utils/passwordResetToken");
+const { ForbiddenError } = require("../helpers/CustomError.lib");
+const { verifyToken } = require("../utils/auth.utils");
+
+// remove register, login, refresh later
 
 /**
  * @Desc    Register user
@@ -119,7 +123,6 @@ const login = asyncHandler(async function (req, res) {
  */
 const logout = asyncHandler(function (req, res) {
   const cookies = req?.cookies;
-
   if (!cookies) return res.sendStatus(204);
 
   res.clearCookie("refresh_token", {
@@ -141,16 +144,21 @@ const logout = asyncHandler(function (req, res) {
  * @Access  Public
  */
 const refresh = asyncHandler(async function (req, res) {
-  const cookies = req.cookies;
+  const cookies = req?.cookies;
 
-  if (!cookies) return res.status(403).json({ msg: "forbidden" });
+  if (!cookies) return new ForbiddenError("not allowed");
+  // if (!cookies) return res.status(403).json({ msg: "forbidden" });
 
   const refreshToken = req?.cookies?.refresh_token;
 
   if (refreshToken) {
-    const decodedCookie = token.verifyRefreshToken(refreshToken);
+    const decodedCookie = verifyToken({
+      token: refreshToken,
+      secret: process.env.REFRESH_TOKEN_SECRET,
+    });
 
     const checkUser = await Users.findOne({ email: decodedCookie.email });
+    console.log(checkToken);
 
     if (!checkUser) return res.status(401).json({ msg: "Unauthorised" });
 
@@ -189,7 +197,6 @@ const reset = asyncHandler(async (req, res) => {
 
   if (user) {
     const resetToken = await resetTokens.passwordResetToken(user._id);
-
     const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${user._id}`;
 
     const payload = {
@@ -267,7 +274,7 @@ const newPassword = asyncHandler(async function (req, res) {
   }
 });
 
-const checkToken = asyncHandler(async function (req, res) {
+const resetToken = asyncHandler(async function (req, res) {
   const { token } = req.body;
 
   try {
@@ -286,21 +293,6 @@ const checkToken = asyncHandler(async function (req, res) {
   }
 });
 
-const acceptTerms = asyncHandler(async function (req, res) {
-  const { id } = req.params;
-  const checkUser = await Users.findById(id);
-  if (!checkUser) {
-    res.sendStatus(400);
-  }
-  if (req.body.verified === true) {
-    await Users.findByIdAndUpdate(id, {
-      verified: true,
-      acceptTerms: true,
-    });
-  }
-  res.json(checkUser);
-});
-
 module.exports = {
   register,
   login,
@@ -308,6 +300,5 @@ module.exports = {
   refresh,
   reset,
   newPassword,
-  checkToken,
-  acceptTerms,
+  resetToken,
 };

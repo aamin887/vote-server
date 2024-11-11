@@ -9,7 +9,6 @@ const {
 // create token for password reset
 const passwordResetToken = async function (id, email) {
   let token = await Token.findOne({ userId: id });
-
   // delete already existed token
   if (token) {
     await Token.deleteOne({ userId: id });
@@ -42,7 +41,7 @@ const verifyPasswordToken = async function ({ token, id }) {
       );
 
       if (decodedToken.id === id) {
-        console.log("hihihi>>>>>>>>?????");
+        // console.log("hihihi>>>>>>>>?????");
         await Token.findOneAndUpdate({ token: token }, { activated: true });
         return true;
       }

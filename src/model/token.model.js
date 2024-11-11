@@ -1,14 +1,13 @@
 const { Schema, model } = require("mongoose");
 
 const tokenSchema = new Schema({
-  userId: {
-    type: Schema.Types.ObjectId,
-    require: true,
-    ref: "Users",
+  user: {
+    type: String,
+    required: true,
   },
   token: {
     type: String,
-    require: true,
+    required: true,
   },
   activated: {
     type: Boolean,
@@ -16,4 +15,4 @@ const tokenSchema = new Schema({
   },
 });
 
-module.exports = new model("Token", tokenSchema);
+module.exports = new model("Tokens", tokenSchema);

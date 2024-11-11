@@ -1,15 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const userController = require("../../controllers/auth/user.controller");
 
-// todos
-// create authentication routes for users
-//  - login
-//  - registration (usernames, access codes, password, confirm password)
-//  - accepts terms => on first login to access voting dash
+router.post("/register", userController.register);
+router.post("/login", userController.login);
+router.get("/refresh", userController.refresh);
 
-// router.post("/login", authController.login);
-// router.post("/register", authController.register);
-// router.get("/logout", authController.logout);
-// router.post("/password-reset", authController.reset);
+module.exports = router;
 
 module.exports = router;

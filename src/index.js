@@ -21,7 +21,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 // middlewares
-app.use(logger);
+app.use(logger("test.txt"));
 app.use(credentials);
 app.use(cors(corsOptions));
 app.use(cookieParser());
@@ -39,6 +39,7 @@ app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/auth", authRoute);
 // admin authentication
 app.use("/auth/admins", require("./routes/auth/admin.routes"));
+app.use("/auth/users", require("./routes/auth/users.routes"));
 // version one of the api
 app.use("/api/v1", v1Index);
 // root entry

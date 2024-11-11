@@ -1,5 +1,5 @@
 const asyncHandler = require("express-async-handler");
-const { ValidationError } = require("../helpers/CustomError.lib");
+const { BadRequestError } = require("../helpers/CustomError.lib");
 
 /**
  * @Desc    Getting API status
@@ -15,8 +15,7 @@ const getStatus = asyncHandler(async function (req, res) {
       message: "GET: api is active",
     });
   } catch (error) {
-    console.log(error);
-    throw error;
+    throw new BadRequestError("API seems down");
   }
 });
 
@@ -36,7 +35,7 @@ const createStatus = asyncHandler(async function (req, res) {
     res.status(201).json(response);
   } catch (error) {
     console.log(error);
-    throw error;
+    throw new BadRequestError("API seems down");
   }
 });
 
