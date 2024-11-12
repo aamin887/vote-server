@@ -15,7 +15,7 @@ const getUser = async (email) => {
 const getUserById = async (userId) => {
   try {
     const user = await User.findById(userId);
-    if (!user) throw new NotFoundError("User not found");
+    if (!user) throw new NotFoundError();
     return user;
   } catch (error) {
     throw error;
@@ -49,7 +49,7 @@ const updateUserById = async (userId, updateData) => {
     const updatedUser = await User.findByIdAndUpdate(userId, updateData, {
       new: true,
     });
-    if (!updatedUser) throw new Error("User not found");
+    if (!updatedUser) throw new NotFoundError();
     return updatedUser;
   } catch (error) {
     throw error;
@@ -60,7 +60,7 @@ const updateUserById = async (userId, updateData) => {
 const deleteUserById = async (userId) => {
   try {
     const deletedUser = await User.findByIdAndDelete(userId);
-    if (!deletedUser) throw new Error("User not found");
+    if (!deletedUser) throw new NotFoundError();
     return deletedUser;
   } catch (error) {
     throw error;

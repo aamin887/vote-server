@@ -1,6 +1,10 @@
 const asyncHandler = require("express-async-handler");
 const path = require("path");
-const { getAdmin, createAdmin } = require("../../services/admin.service");
+const {
+  getAdmin,
+  createAdmin,
+  updateAdminById,
+} = require("../../services/admin.service");
 const { createResetToken } = require("../../services/token.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
@@ -96,7 +100,7 @@ const login = asyncHandler(async function (req, res) {
   const refreshToken = createToken({
     payload: { id: checkAdmin._id, email },
     secret: process.env.REFRESH_TOKEN_SECRET,
-    lifetime: "1d",
+    lifetime: "15s",
   });
 
   const accessToken = createToken({
@@ -143,8 +147,8 @@ const refresh = asyncHandler(async function (req, res) {
     });
 
     const email = decodedCookie.email;
-    const checkUser = await getAdmin(email);
-    if (!checkUser) throw new UnauthorizedError();
+    const checkAdmin = await getAdmin(email);
+    if (!checkAdmin) throw new UnauthorizedError();
 
     const newAccessToken = createToken({
       payload: {
@@ -229,9 +233,13 @@ const resetPassword = asyncHandler(async function (req, res) {
     throw new BadRequestError("fill in all fields");
   }
 
-  decodeResetTokens({ token, id });
+  await decodeResetTokens({ resetToken: token, id });
 
-  res.send("aa");
+  if (matchString(password, confirmPassword)) {
+    const newPassword = await encryptPassword(password);
+    await updateAdminById(id, { password: newPassword });
+    res.sendStatus(204);
+  }
 });
 
 module.exports = {

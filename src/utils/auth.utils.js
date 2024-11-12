@@ -1,6 +1,7 @@
 const { randomBytes } = require("crypto");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+const Token = require("../model/token.model");
 const {
   getResetToken,
   updateResetToken,
@@ -17,7 +18,6 @@ const encryptPassword = async function (password) {
 
 // decrypt password
 const decryptPassword = async function (password, hashedPassword) {
-  console.log(password, hashedPassword);
   const decrypt = await bcrypt.compare(password, hashedPassword);
   return decrypt;
 };
@@ -40,11 +40,7 @@ const createToken = function ({ payload, secret, lifetime = null }) {
 
 // verify/decode token
 const verifyToken = function ({ token, secret }) {
-  try {
-    return jwt.verify(token, secret);
-  } catch (error) {
-    throw error;
-  }
+  return jwt.verify(token, secret);
 };
 
 // create unique IDs
@@ -66,19 +62,27 @@ const generateUUID = function () {
 };
 
 // verify password reset tokens
-const decodeResetTokens = async function ({ token, id }) {
-  const findToken = await getResetToken({ token: token });
-  if (findToken.activated === true) {
-    await deleteResetToken({ user: id });
-    throw new ForbiddenError();
-  }
+// verify token for password reset
+const decodeResetTokens = async function ({ resetToken, id }) {
+  try {
+    const { _id, token, activated } = await getResetToken({
+      token: resetToken,
+    });
+    if (activated) {
+      await deleteResetToken({ id: _id });
+      throw new ForbiddenError();
+    }
 
-  const decodedToken = verifyToken({
-    token: token,
-    secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
-  });
-  if (decodedToken.id === id) {
-    await updateResetToken({ token, updateData: { activated: true } });
+    const decoded = verifyToken({
+      token,
+      secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
+    });
+    if (decoded.id === id) {
+      await updateResetToken({ tokenId: _id, updateData: { activated: true } });
+    }
+  } catch (error) {
+    await deleteResetToken({ id: id });
+    throw new ForbiddenError();
   }
 };
 

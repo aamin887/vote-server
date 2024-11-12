@@ -1,11 +1,16 @@
 const asyncHandler = require("express-async-handler");
 const path = require("path");
-const { getUser, createUser } = require("../../services/user.service");
+const {
+  getUser,
+  createUser,
+  updateUserById,
+} = require("../../services/user.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
   matchString,
   encryptPassword,
   decryptPassword,
+  decodeResetTokens,
   verifyToken,
 } = require("../../utils/auth.utils");
 const {
@@ -15,6 +20,7 @@ const {
   UnauthorizedError,
 } = require("../../helpers/CustomError.lib");
 const { createToken } = require("../../utils/token.utils");
+const { createResetToken } = require("../../model/token.model");
 
 /**
  * @Desc    Register User
@@ -163,8 +169,82 @@ const refresh = asyncHandler(async function (req, res) {
   }
 });
 
+/**
+ * @Desc    Request password reset
+ * @Route   POST /api/auth/admin/reset
+ * @Access  Public
+ */
+const passwordRequest = asyncHandler(async (req, res) => {
+  const { email } = req.body;
+  if (!email) {
+    throw new NotFoundError();
+  }
+
+  const user = await getUser(email);
+  if (user) {
+    const resetToken = createToken({
+      payload: { id: admin._id },
+      secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
+      lifetime: "10m",
+    });
+
+    // const resetToken = await resetTokens.passwordResetToken(user._id);
+    // const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${admin._id}`;
+
+    const link = `http://localhost:5001/auth/users/reset-password?token=${resetToken}&id=${admin._id}`;
+
+    await createResetToken({ id: admin._id, token: resetToken });
+
+    await mailerInstance.sendHtmlMail({
+      from: "alhassanamin96@gmail.com",
+      to: "forkahamin@yahoo.co.uk",
+      subject: "Password Change Request",
+      template: path.join(
+        __dirname,
+        "..",
+        "..",
+        "templates",
+        "passwordResetTemplate.hbs"
+      ),
+      replacements: {
+        name: `${admin.name}`,
+        username: `${admin.name + "887"}`,
+        resetLink: link,
+      },
+    });
+
+    res.sendStatus(204);
+  } else {
+    throw new BadRequestError();
+  }
+});
+
+/**
+ * @Desc    New password
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const resetPassword = asyncHandler(async function (req, res) {
+  const { token, id } = req.query;
+  const { password, confirmPassword } = req.body;
+
+  if (!password || !confirmPassword) {
+    throw new BadRequestError("fill in all fields");
+  }
+
+  await decodeResetTokens({ resetToken: token, id });
+
+  if (matchString(password, confirmPassword)) {
+    const newPassword = await encryptPassword(password);
+    await updateUserById(id, { password: newPassword });
+    res.sendStatus(204);
+  }
+});
+
 module.exports = {
   register,
   login,
   refresh,
+  passwordRequest,
+  resetPassword,
 };

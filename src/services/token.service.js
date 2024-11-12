@@ -1,12 +1,12 @@
 const Token = require("../model/token.model");
-const { createToken } = require("../utils/auth.utils");
+const { NotFoundError } = require("../helpers/CustomError.lib");
 
 const getResetToken = async function ({ token }) {
   try {
-    const storedToken = await Token.findOne({ token });
+    const storedToken = await Token.findOne({ token }).lean();
     return storedToken;
   } catch (error) {
-    throw error;
+    throw new NotFoundError();
   }
 };
 
@@ -22,23 +22,23 @@ const createResetToken = async function ({ id, token }) {
     await newToken.save();
     return newToken;
   } catch (error) {
-    throw error;
+    throw new NotFoundError();
   }
 };
-const updateResetToken = async function ({ token, updateData }) {
+const updateResetToken = async function ({ tokenId, updateData }) {
   try {
-    const updatedToken = await Token.findByIdAndUpdate(token, updateData, {
+    const updatedToken = await Token.findByIdAndUpdate(tokenId, updateData, {
       new: true,
     });
     if (!updatedToken) throw new Error(" not found");
   } catch (error) {
-    throw error;
+    throw new NotFoundError();
   }
 };
-const deleteResetToken = async function () {
+const deleteResetToken = async function ({ id }) {
   try {
-    const deletedToken = await Token.findByIdAndDelete(userId);
-    if (!deletedToken) throw new Error("User not found");
+    const deletedToken = await Token.findByIdAndDelete(id.id);
+    if (!deletedToken) throw new NotFoundError();
   } catch (error) {
     throw error;
   }

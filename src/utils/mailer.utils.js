@@ -29,8 +29,6 @@ class Mailer {
 
   // methods for sending HTML here
   async sendHtmlMail({ ...options }) {
-    console.log(options);
-
     const templateSource = fs.readFileSync(options.template, "utf-8");
     const template = handlebars.compile(templateSource);
 
@@ -45,8 +43,6 @@ class Mailer {
       ...options,
       html: htmlToSend,
     };
-
-    console.log(mailOptions);
 
     try {
       const info = await this.transporter.sendMail(mailOptions);
