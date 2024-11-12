@@ -21,6 +21,7 @@ const {
 } = require("../../helpers/CustomError.lib");
 const { createToken } = require("../../utils/token.utils");
 const { createResetToken } = require("../../model/token.model");
+const User = require("../../model/user.model");
 
 /**
  * @Desc    Register User
@@ -28,13 +29,13 @@ const { createResetToken } = require("../../model/token.model");
  * @Access  Public
  */
 const register = asyncHandler(async function (req, res) {
-  const { name, email, password, confirmPassword } = req.body;
-  if (!name || !email || !password || !confirmPassword) {
+  const { fullName, email, password, confirmPassword } = req.body;
+  if (!fullName || !email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
 
-  const checkAdmin = await getUser(email);
-  if (checkAdmin) {
+  const checkUser = await User.findOne({ email });
+  if (checkUser) {
     throw new ConflictError("User already exist");
   }
 
@@ -46,7 +47,7 @@ const register = asyncHandler(async function (req, res) {
   const hashedPassword = await encryptPassword(password);
 
   await createUser({
-    name,
+    fullName,
     email,
     password: hashedPassword,
   });
@@ -63,8 +64,8 @@ const register = asyncHandler(async function (req, res) {
       "welcomeTemplate.hbs"
     ),
     replacements: {
-      name: `${name}`,
-      username: `${name + "887"}`,
+      name: `${fullName}`,
+      username: `${fullName + "887"}`,
       confirmationLink: "https://vote-client.onrender.com/login",
     },
   });
@@ -84,6 +85,8 @@ const login = asyncHandler(async function (req, res) {
   }
 
   const checkUser = await getUser(email);
+
+  console.log(checkUser);
   if (!checkUser) {
     throw new BadRequestError();
   }
@@ -183,7 +186,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
   const user = await getUser(email);
   if (user) {
     const resetToken = createToken({
-      payload: { id: admin._id },
+      payload: { id: user._id },
       secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
       lifetime: "10m",
     });
@@ -191,9 +194,9 @@ const passwordRequest = asyncHandler(async (req, res) => {
     // const resetToken = await resetTokens.passwordResetToken(user._id);
     // const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${admin._id}`;
 
-    const link = `http://localhost:5001/auth/users/reset-password?token=${resetToken}&id=${admin._id}`;
+    const link = `http://localhost:5001/auth/users/reset-password?token=${resetToken}&id=${user._id}`;
 
-    await createResetToken({ id: admin._id, token: resetToken });
+    await createResetToken({ id: user._id, token: resetToken });
 
     await mailerInstance.sendHtmlMail({
       from: "alhassanamin96@gmail.com",
@@ -207,8 +210,8 @@ const passwordRequest = asyncHandler(async (req, res) => {
         "passwordResetTemplate.hbs"
       ),
       replacements: {
-        name: `${admin.name}`,
-        username: `${admin.name + "887"}`,
+        name: `${user.name}`,
+        username: `${user.name + "887"}`,
         resetLink: link,
       },
     });

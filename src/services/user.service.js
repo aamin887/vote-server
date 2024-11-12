@@ -1,10 +1,11 @@
-const User = require("../model/admin.model");
+const User = require("../model/user.model");
 const { NotFoundError } = require("../helpers/CustomError.lib");
 
 // Retrieve a single user by email
 const getUser = async (email) => {
   try {
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email }).select("password");
+    if (!user) throw new NotFoundError();
     return user;
   } catch (error) {
     throw error;
