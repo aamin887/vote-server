@@ -1,0 +1,11 @@
+DATE			TIME			LOG ID																METHOD	ORIGIN	URL
+20241119	18:37:39	ec783369-7998-4c0e-a538-e6ebe7e637ee	POST	undefined	/api/v1/elections : BadRequestError => fill all fields
+
+20241119	18:53:15	af226912-73bd-433a-a879-9db8612ac596	POST	undefined	/api/v1/elections : BadRequestError => fill all fields
+
+20241119	18:59:46	67163045-7f98-40c8-be7b-a788025fd3e0	POST	undefined	/api/v1/elections : BadRequestError => fill all fields
+
+20241119	19:03:37	1b873cbe-98a0-4270-8b68-0759c6c20ed1	POST	undefined	/api/v1/elections : BadRequestError => fill all fields
+
+20241119	19:14:03	692ef799-5b8a-4e4d-aab0-6533e7f467b8	POST	undefined	/api/v1/elections : BadRequestError => fill all fields
+

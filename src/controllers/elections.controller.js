@@ -25,7 +25,7 @@ const createElection = asyncHandler(async function (req, res) {
     throw new Error("fill all required fields");
   }
 
-  // check if organiser have create election with same name before
+  // check if organiser have created election with same name before
   const checkElection = await Elections.findOne({ electionName, organisation });
 
   if (checkElection) {

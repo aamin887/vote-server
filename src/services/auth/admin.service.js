@@ -1,17 +1,16 @@
-// services/userService.js
-const Admin = require("../model/admin.model");
-const { NotFoundError } = require("../helpers/CustomError.lib");
+const Admin = require("../../model/admin.model");
+const { NotFoundError } = require("../..//helpers/CustomError.lib");
 
 // Retrieve a single user by ID
 const getAdmin = async (email) => {
   try {
     const admin = await Admin.findOne({ email });
-    // if (!admin) throw new NotFoundError("User not found");
     return admin;
   } catch (error) {
     throw error;
   }
 };
+
 // Retrieve a single user by ID
 const getAdminById = async (adminId) => {
   try {

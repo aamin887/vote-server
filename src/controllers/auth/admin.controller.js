@@ -4,8 +4,8 @@ const {
   getAdmin,
   createAdmin,
   updateAdminById,
-} = require("../../services/admin.service");
-const { createResetToken } = require("../../services/token.service");
+} = require("../../services/auth/admin.service");
+const { createResetToken } = require("../../services/auth/token.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
   matchString,
@@ -78,6 +78,7 @@ const register = asyncHandler(async function (req, res) {
  * @Route   POST /api/auth/admin/login
  * @Access  Public
  */
+// store refresh token on DB
 const login = asyncHandler(async function (req, res) {
   const { email, password } = req.body;
   if (!email || !password) {
@@ -132,6 +133,7 @@ const login = asyncHandler(async function (req, res) {
  * @Route   POST /api/auth/admins/refresh
  * @Access  Public
  */
+// => verify refresh on DB
 const refresh = asyncHandler(async function (req, res) {
   const cookies = req?.cookies;
 

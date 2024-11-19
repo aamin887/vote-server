@@ -1,5 +1,5 @@
-const User = require("../model/user.model");
-const { NotFoundError } = require("../helpers/CustomError.lib");
+const User = require("../../model/user.model");
+const { NotFoundError } = require("../../helpers/CustomError.lib");
 
 // Retrieve a single user by email
 const getUser = async (email) => {

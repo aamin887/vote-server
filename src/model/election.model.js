@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const electionSchema = new mongoose.Schema({
-  electionName: {
+  name: {
     type: String,
     required: true,
   },
@@ -9,9 +9,9 @@ const electionSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  organisation: {
+  creator: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Organisation",
+    ref: "Admin",
     required: true,
   },
   positions: [
@@ -32,9 +32,11 @@ const electionSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
-  isActive: {
-    type: Boolean,
-    default: false,
+  status: {
+    type: String,
+    default: "pending",
+    enum: ["pending", "completed", "cancelled", "active"],
+    required: true,
   },
 });
 

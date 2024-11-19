@@ -6,8 +6,8 @@ const {
   getResetToken,
   updateResetToken,
   deleteResetToken,
-} = require("../services/token.service");
-const { ForbiddenError } = require("../helpers/CustomError.lib");
+} = require("../services/auth/token.service");
+const { ForbiddenError, NotFoundError } = require("../helpers/CustomError.lib");
 
 // encrypt password
 const encryptPassword = async function (password) {
@@ -68,6 +68,7 @@ const decodeResetTokens = async function ({ resetToken, id }) {
     const { _id, token, activated } = await getResetToken({
       token: resetToken,
     });
+
     if (activated) {
       await deleteResetToken({ id: _id });
       throw new ForbiddenError();
@@ -82,7 +83,6 @@ const decodeResetTokens = async function ({ resetToken, id }) {
     }
   } catch (error) {
     await deleteResetToken({ id: id });
-    throw new ForbiddenError();
   }
 };
 

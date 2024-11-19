@@ -4,7 +4,7 @@ const {
   getUser,
   createUser,
   updateUserById,
-} = require("../../services/user.service");
+} = require("../../services/auth/user.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
   matchString,
@@ -20,7 +20,7 @@ const {
   UnauthorizedError,
 } = require("../../helpers/CustomError.lib");
 const { createToken } = require("../../utils/token.utils");
-const { createResetToken } = require("../../model/token.model");
+const { createResetToken } = require("../../services/auth/token.service");
 const User = require("../../model/user.model");
 
 /**
@@ -180,7 +180,7 @@ const refresh = asyncHandler(async function (req, res) {
 const passwordRequest = asyncHandler(async (req, res) => {
   const { email } = req.body;
   if (!email) {
-    throw new NotFoundError();
+    throw new BadRequestError("enter your email");
   }
 
   const user = await getUser(email);
@@ -218,7 +218,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
 
     res.sendStatus(204);
   } else {
-    throw new BadRequestError();
+    throw new NotFoundError();
   }
 });
 

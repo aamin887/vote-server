@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 const bodyParser = require("body-parser");
 const dbConnection = require("./database/connection.db");
-const authRoute = require("./routes/auth/auth.routes");
+
 const root = require("./routes/entry/root.routes");
 const credentials = require("./middleware/credentials.middleware");
 const logger = require("./middleware/logger.middleware");
@@ -15,9 +15,7 @@ const corsOptions = require("./config/cors.config");
 const errorHandler = require("./middleware/errorHandler.middleware");
 
 const v1Index = require("./routes/index.routes");
-
 const PORT = process.env.PORT;
-
 const app = express();
 
 // middlewares
@@ -35,18 +33,19 @@ app.use(
 // accessing statics files
 app.use("/", express.static(path.join(__dirname, "public")));
 
-// authentication route
-app.use("/auth", authRoute);
+// root entry
+app.use("/", root);
+
 // admin authentication
 app.use("/auth/admins", require("./routes/auth/admin.routes"));
 app.use("/auth/users", require("./routes/auth/users.routes"));
+
 // version one of the api
 app.use("/api/v1", v1Index);
-// root entry
-app.use("/", root);
+
 // 404 routes
 app.use("*", errorRoute);
-// error routes
+// error handler
 app.use(errorHandler);
 
 app.listen(PORT, function () {

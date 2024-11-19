@@ -1,5 +1,8 @@
-const Token = require("../model/token.model");
-const { NotFoundError } = require("../helpers/CustomError.lib");
+const Token = require("../../model/token.model");
+const {
+  NotFoundError,
+  UnauthorizedError,
+} = require("../../helpers/CustomError.lib");
 
 const getResetToken = async function ({ token }) {
   try {
@@ -38,7 +41,7 @@ const updateResetToken = async function ({ tokenId, updateData }) {
 const deleteResetToken = async function ({ id }) {
   try {
     const deletedToken = await Token.findByIdAndDelete(id.id);
-    if (!deletedToken) throw new NotFoundError();
+    if (!deletedToken) throw new UnauthorizedError();
   } catch (error) {
     throw error;
   }

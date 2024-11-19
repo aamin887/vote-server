@@ -41,7 +41,6 @@ const verifyPasswordToken = async function ({ token, id }) {
       );
 
       if (decodedToken.id === id) {
-        // console.log("hihihi>>>>>>>>?????");
         await Token.findOneAndUpdate({ token: token }, { activated: true });
         return true;
       }
@@ -49,10 +48,8 @@ const verifyPasswordToken = async function ({ token, id }) {
       return false;
     }
   } catch (error) {
-    // throw new Error(error);
     await Token.deleteOne({ userId: id });
     return "token expired";
-    // throw new Error("token expired");
   }
 };
 
