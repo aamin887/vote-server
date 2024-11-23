@@ -1,31 +1,49 @@
 const Election = require("../../model/election.model");
+const {
+  UnauthorizedError,
+  NotFoundError,
+  InternalServerError,
+} = require("../../helpers/CustomError.lib");
 
+// get an election using id
 const getElectionById = async function (id) {
   try {
     const election = await Election.findById(id);
+    if (!election) {
+      throw new NotFoundError();
+    }
     return election;
   } catch (error) {
     throw new Error(error);
   }
 };
 
-const getByElectionByCreator = async function () {
+// get an election using user id
+const getByElectionsByCreator = async function ({ creator }) {
   try {
-    const election = await Election.findOne({ name, creator });
-    return election;
-  } catch (error) {
-    throw new Error(error);
-  }
-};
-const getByElectionByName = async function () {
-  try {
-    const election = await Election.findOne({ name, creator });
+    const election = await Election.find({ creator });
     return election;
   } catch (error) {
     throw new Error(error);
   }
 };
 
+// get an election using name
+const getByElectionByCreatorAndId = async function ({ id, creator }) {
+  try {
+    const election = await Election.findOne({ _id: id, creator });
+
+    if (!election) {
+      throw new NotFoundError();
+    }
+
+    return election;
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+// get an election using name and user id
 const getElectionByNameAndCreator = async function ({ name, creator }) {
   try {
     const election = await Election.findOne({ name, creator });
@@ -35,38 +53,57 @@ const getElectionByNameAndCreator = async function ({ name, creator }) {
   }
 };
 
-const createNewElection = async function () {
+// create a new election
+const createNewElection = async function ({ formData }) {
   try {
-    const election = await Election.findById(id);
+    const election = Election(formData);
+    await election.save();
     return election;
   } catch (error) {
     throw new Error(error);
   }
 };
 
-const updateAnElection = async function () {
+// update an election using name and user id
+const updateAnElection = async function ({ id, creator, formData }) {
+  console.log(id);
+
   try {
-    const election = await Election.findById(id);
-    return election;
+    const findElection = await getByElectionByCreatorAndId({ id, creator });
+    if (findElection.creator.toString() !== creator) {
+      throw new UnauthorizedError();
+    }
+
+    return await Election.findByIdAndUpdate(id, formData, { new: true });
   } catch (error) {
     throw new Error(error);
   }
 };
-const deleteAnElection = async function () {
+
+// delete an election using id and user id
+const deleteAnElection = async function ({ id, creator }) {
   try {
-    const election = await Election.findById(id);
-    return election;
+    const findElection = await getElectionById(id);
+
+    if (!findElection) {
+      throw new NotFoundError();
+    }
+
+    if (findElection.creator.toString() !== creator) {
+      throw new UnauthorizedError();
+    }
+    return await Election.findByIdAndDelete(id);
   } catch (error) {
-    throw new Error(error);
+    throw new InternalServerError();
   }
 };
 
 module.exports = {
   getElectionById,
   getElectionByNameAndCreator,
-  getByElectionByCreator,
-  getByElectionByName,
+  getByElectionsByCreator,
   createNewElection,
   updateAnElection,
   deleteAnElection,
+  getByElectionByCreatorAndId,
 };

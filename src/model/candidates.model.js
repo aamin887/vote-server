@@ -9,19 +9,16 @@ const candidateSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  electionId: {
+  election: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Election",
     required: true,
   },
-  profilePhoto: {
+  photoUrl: {
     type: String,
-    required: true,
   },
-  organisation: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Organisation",
-    required: true,
+  photoId: {
+    type: String,
   },
   position: {
     type: mongoose.Schema.Types.ObjectId,

@@ -26,11 +26,15 @@ const getStatus = asyncHandler(async function (req, res) {
  */
 const createStatus = asyncHandler(async function (req, res) {
   const currentDate = new Date();
+  const { message } = req.body;
 
   try {
+    if (!message) {
+      throw new BadRequestError("enter a message!!");
+    }
     const response = {
       date: currentDate.toLocaleDateString().toString(),
-      message: "POST: api is active",
+      message: `You ask the API to say: ${message}`,
     };
     res.status(201).json(response);
   } catch (error) {

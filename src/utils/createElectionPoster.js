@@ -1,52 +1,88 @@
 const sharp = require("sharp");
-const gcsUploader = require("./gcsUpload");
+// const gcsUploader = require("./gcsUpload");
+const fs = require("fs");
 
-// Create a customizable election poster
-async function createElectionPoster(electionName, organisation, description) {
+const svgText = `<svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 800 600"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="800" height="600" fill="#3498db" />
+    <g>
+      <rect x="0" y="0" width="800" height="50" fill="#2ecc71" />
+      <rect x="0" y="550" width="800" height="50" fill="#2ecc71" />
+    </g>
+    <text
+      x="400"
+      y="150"
+      font-family="Arial, sans-serif"
+      font-size="60"
+      font-weight="bold"
+      text-anchor="middle"
+      fill="#ffffff"
+    >
+      VOTE FOR
+    </text>
+    <text
+      x="400"
+      y="250"
+      font-family="Arial, sans-serif"
+      font-size="80"
+      font-weight="bold"
+      text-anchor="middle"
+      fill="#ffffff"
+    >
+      JANE DOE
+    </text>
+    <text
+      x="400"
+      y="320"
+      font-family="Arial, sans-serif"
+      font-size="30"
+      font-style="italic"
+      text-anchor="middle"
+      fill="#2ecc71"
+    >
+      "A Brighter Future for All"
+    </text>
+    <path
+      d="M400 360 L413 400 L455 400 L421 425 L434 465 L400 440 L366 465 L379 425 L345 400 L387 400 Z"
+      fill="#2ecc71"
+    />
+    <text
+      x="400"
+      y="520"
+      font-family="Arial, sans-serif"
+      font-size="40"
+      font-weight="bold"
+      text-anchor="middle"
+      fill="#ffffff"
+    >
+      NOVEMBER 5, 2024
+    </text>
+  </svg>`;
+
+async function createElectionPoster() {
   try {
-    // Define the dimensions and create a blank canvas
-    const width = 900;
-    const height = 1000;
-
-    // Background color (blueish gradient)
-    const background = sharp({
-      create: {
-        width: width,
-        height: height,
-        channels: 4,
-        background: { r: 50, g: 100, b: 200, alpha: 1 }, // Blue background
-      },
-    });
-
-    // Overlay text using SVG
-    const svgText = `
-      <svg width="${width}" height="${height}">
-        <style>
-          .title { font-size: 70px; fill: #fff; font-weight: bold; font-family: Arial, sans-serif; }
-          .candidate { font-size: 50px; fill: #ffcc00; font-weight: bold; font-family: Arial, sans-serif; }
-          .details { font-size: 40px; fill: #fff; font-family: Arial, sans-serif; }
-        </style>
-        <text x="50%" y="20%" text-anchor="middle" class="title">${electionName}</text>
-        <text x="50%" y="50%" text-anchor="middle" class="candidate">${organisation}</text>
-        <text x="50%" y="70%" text-anchor="middle" class="details">${description}</text>
-      </svg>
-    `;
-
-    // Convert the SVG into a buffer
-    const textImage = Buffer.from(svgText);
-
-    // Combine background and text using sharp
-    const outputBuffer = await background
-      .composite([{ input: textImage, top: 0, left: 0 }]) // Overlay text
-      .png() // Output as PNG
+    // Convert SVG to PNG using Sharp
+    const buffer = await sharp(Buffer.from(svgText))
+      .resize(800, 600) // Ensure the correct dimensions
+      .png()
       .toBuffer();
 
-    const poster = await gcsUploader(outputBuffer, electionName + ".png");
+    // Define the output file name
+    const fileName = "election_poster.png";
 
-    return poster;
+    // Save locally (optional)
+    fs.writeFileSync(fileName, buffer);
+
+    console.log(
+      `Election poster uploaded successfully to ${bucketName}/${fileName}`
+    );
   } catch (error) {
-    throw new Error("Error creating election poster:", error);
+    console.error("Error creating or uploading election poster:", error);
   }
 }
 
-module.exports = createElectionPoster;
+createElectionPoster();

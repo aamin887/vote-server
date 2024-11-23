@@ -108,7 +108,7 @@ const login = asyncHandler(async function (req, res) {
   const accessToken = createToken({
     payload: { id: checkUser._id, email },
     secret: process.env.ACCESS_TOKEN_SECRET,
-    lifetime: "15m",
+    lifetime: "1d",
   });
 
   res.cookie("refresh_token", refreshToken, {

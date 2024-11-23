@@ -1,9 +1,11 @@
 const asyncHandler = require("express-async-handler");
-const User = require("../model/users.model");
+const User = require("../model/user.model");
 const token = require("../utils/token.utils");
 
 const auth = asyncHandler(async (req, res, next) => {
   let accessToken;
+
+  console.log(req.headers.authorization);
 
   if (
     req.headers["authorization"] &&

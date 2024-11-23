@@ -16,4 +16,20 @@ const gcsUploader = (fileBuffer, fileName) => {
   });
 };
 
-module.exports = gcsUploader;
+const gcsDelete = async (fileBuffer, fileName) => {
+  try {
+    // Get a reference to the file in the bucket
+    const file = gcsBucket.file(fileName);
+
+    // Delete the file
+    await file.delete();
+    console.log(`File ${fileName} deleted from bucket ${bucketName}.`);
+  } catch (error) {
+    console.error(
+      `Failed to delete file ${fileName} from bucket ${bucketName}:`,
+      error
+    );
+  }
+};
+
+module.exports = { gcsDelete, gcsUploader };

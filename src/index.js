@@ -14,7 +14,7 @@ const errorRoute = require("./routes/error/error.routes");
 const corsOptions = require("./config/cors.config");
 const errorHandler = require("./middleware/errorHandler.middleware");
 
-const v1Index = require("./routes/index.routes");
+const v1Index = require("./routes/v1/index.routes");
 const PORT = process.env.PORT;
 const app = express();
 
@@ -37,7 +37,6 @@ app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", root);
 
 // admin authentication
-app.use("/auth/admins", require("./routes/auth/admin.routes"));
 app.use("/auth/users", require("./routes/auth/users.routes"));
 
 // version one of the api

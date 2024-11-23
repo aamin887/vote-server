@@ -64,6 +64,11 @@ class ValidationError extends CustomError {
     this.errors = errors; // for detailed field-level errors
   }
 }
+class InternalServerError extends CustomError {
+  constructor(customMessage) {
+    super("INTERNAL_SERVER_ERROR", customMessage);
+  }
+}
 
 module.exports = {
   CustomError,
@@ -76,4 +81,5 @@ module.exports = {
   TooManyRequestError,
   InvalidRangeError,
   LargePayloadError,
+  InternalServerError,
 };

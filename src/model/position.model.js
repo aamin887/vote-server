@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const positionSchema = new mongoose.Schema({
-  positionName: {
+  position: {
     type: String,
     required: true,
   },
-  positionDescription: {
+  description: {
     type: String,
     required: true,
   },
-  electionId: {
+  election: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Election",
     required: true,
@@ -18,12 +18,6 @@ const positionSchema = new mongoose.Schema({
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Candidate",
-    },
-  ],
-  votes: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Vote",
     },
   ],
 });

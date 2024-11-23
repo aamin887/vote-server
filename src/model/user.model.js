@@ -2,20 +2,24 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
-    fullName: {
+    firstName: {
       type: String,
-      required: true,
-      minLength: 4,
+      trim: true,
+    },
+    lastName: {
+      type: String,
+      trim: true,
     },
     email: {
       type: String,
       required: true,
+      unique: true,
+      lowercase: true,
     },
     password: {
       type: String,
       required: true,
-      // minLength: 6,
-      select: false,
+      minLength: 6,
     },
     terms: {
       type: Boolean,
@@ -25,10 +29,15 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    role: {
+      type: String,
+      default: "ADMIN",
+      enum: ["ADMIN", "VOTER"],
+    },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("Users", userSchema);
+module.exports = mongoose.model("User", userSchema);

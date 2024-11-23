@@ -4,6 +4,7 @@ const electionSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
+    lowercase: true,
   },
   description: {
     type: String,
@@ -11,7 +12,7 @@ const electionSchema = new mongoose.Schema({
   },
   creator: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Admin",
+    ref: "User",
     required: true,
   },
   positions: [
@@ -20,7 +21,11 @@ const electionSchema = new mongoose.Schema({
       ref: "Position",
     },
   ],
-  poster: {
+  posterId: {
+    type: String,
+    default: "",
+  },
+  posterUrl: {
     type: String,
     default: "",
   },
