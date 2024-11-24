@@ -14,6 +14,7 @@ const {
   InternalServerError,
   NotFoundError,
 } = require("../../helpers/CustomError.lib");
+const { gcsDelete } = require("../../utils/gcsUpload");
 
 /**
  * @Desc    Add a candidate to a position
@@ -32,11 +33,11 @@ const createCandidate = asyncHandler(async function (req, res) {
     formData = { ...formData, imgfile };
   }
 
-  const newCandidate = await addCandidate({
+  await addCandidate({
     formData,
   });
 
-  res.send(204).json(newCandidate);
+  res.sendStatus(204);
 });
 
 /**
@@ -70,7 +71,7 @@ const getCandidateForElection = async function (req, res) {
 
     const candidates = await getCandidatesByElection(election);
 
-    res.send(200).json(candidates);
+    res.status(200).json(candidates);
   } catch (error) {
     throw new InternalServerError();
   }
@@ -100,6 +101,8 @@ const updateCandidate = asyncHandler(async function (req, res) {
  */
 const deleteCandidate = asyncHandler(async function (req, res) {
   const { candidateId } = req.params;
+
+  // await gcsDelete("first 1.png"); => deleting candidate image with candidate info
   res.send(
     `delete candidate and remove image from the cloud => ${candidateId}`
   );

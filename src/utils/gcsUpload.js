@@ -3,6 +3,9 @@ const gcsBucket = require("../config/gcs.config");
 const gcsUploader = (fileBuffer, fileName) => {
   const file = gcsBucket.file(fileName);
 
+  console.log("file Id => ", file.id);
+  console.log("file Id => ", file.name);
+
   const blobStream = file.createWriteStream();
 
   return new Promise((resolve, reject) => {
@@ -16,19 +19,16 @@ const gcsUploader = (fileBuffer, fileName) => {
   });
 };
 
-const gcsDelete = async (fileBuffer, fileName) => {
+const gcsDelete = async (fileName) => {
   try {
     // Get a reference to the file in the bucket
     const file = gcsBucket.file(fileName);
 
     // Delete the file
     await file.delete();
-    console.log(`File ${fileName} deleted from bucket ${bucketName}.`);
+    console.log(`File ${fileName} deleted from bucket.`);
   } catch (error) {
-    console.error(
-      `Failed to delete file ${fileName} from bucket ${bucketName}:`,
-      error
-    );
+    console.error(`Failed to delete file ${fileName} from bucket :`, error);
   }
 };
 

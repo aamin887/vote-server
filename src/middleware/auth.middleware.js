@@ -5,8 +5,6 @@ const token = require("../utils/token.utils");
 const auth = asyncHandler(async (req, res, next) => {
   let accessToken;
 
-  console.log(req.headers.authorization);
-
   if (
     req.headers["authorization"] &&
     req.headers["authorization"].startsWith("Bearer")
@@ -15,18 +13,15 @@ const auth = asyncHandler(async (req, res, next) => {
 
     try {
       const decoded = token.verifyAccessToken(accessToken);
-      console.log(decoded);
       req.user = await User.findById(decoded.id).select("-password");
       next();
     } catch (error) {
-      res.status(403);
-      throw new Error("Not allowed, forbidden");
+      res.sendStatus(403);
     }
   }
 
   if (!accessToken) {
-    res.status(401);
-    throw new Error("Not authorized, no token");
+    res.sendStatus(401);
   }
 });
 

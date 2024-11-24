@@ -287,3 +287,17 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241123	17:02:26	faff9c80-9a3a-4d0a-bff8-9f88f7ed84c5	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
 
+20241123	17:58:15	74fb9371-e1b1-47db-8de3-a2aead1459d5	DELETE	undefined	/api/v1/elections/673dcad526d0d3da37f1ee9a : InternalServerError => An unexpected error occurred.
+
+20241123	17:58:20	72cd98d1-b673-40f4-a051-da31c3c3cf2c	DELETE	undefined	/api/v1/elections/673dcad526d0d3da37f1ee9a : InternalServerError => An unexpected error occurred.
+
+20241124	08:56:07	444d7195-f535-4113-aabe-68779ab5c786	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20241124	18:24:30	d6112adb-5002-45fd-b817-32159067e1ac	GET	undefined	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241124	18:24:41	8a1bafc0-60fd-4640-bb19-30f31c16e856	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20241124	18:24:53	caad32e4-828b-4010-af49-0e9fedf89e57	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20241124	18:28:12	2144ebad-700d-42e0-933b-e6eaa72e8ed9	DELETE	undefined	/api/v1/elections/673dcad526d0d3da37f1ee9a : InternalServerError => An unexpected error occurred.
+
