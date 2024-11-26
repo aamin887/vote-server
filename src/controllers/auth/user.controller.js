@@ -4,6 +4,7 @@ const {
   getUser,
   createUser,
   updateUserById,
+  getUserByEmail,
 } = require("../../services/auth/user.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
@@ -17,11 +18,12 @@ const {
   NotFoundError,
   ConflictError,
   BadRequestError,
+  ForbiddenError,
   UnauthorizedError,
+  ValidationError,
 } = require("../../helpers/CustomError.lib");
 const { createToken } = require("../../utils/token.utils");
 const { createResetToken } = require("../../services/auth/token.service");
-const User = require("../../model/user.model");
 
 /**
  * @Desc    Register User
@@ -34,7 +36,7 @@ const register = asyncHandler(async function (req, res) {
     throw new BadRequestError("fill all fields");
   }
 
-  const checkUser = await User.findOne({ email });
+  const checkUser = await getUserByEmail(email);
   if (checkUser) {
     throw new ConflictError("User already exist");
   }
@@ -70,7 +72,7 @@ const register = asyncHandler(async function (req, res) {
     },
   });
 
-  res.sendStatus(204);
+  res.sendStatus(201);
 });
 
 /**
@@ -84,11 +86,9 @@ const login = asyncHandler(async function (req, res) {
     throw new BadRequestError("fill all fields");
   }
 
-  const checkUser = await getUser(email);
-
-  console.log(checkUser);
+  const checkUser = await getUserByEmail(email);
   if (!checkUser) {
-    throw new BadRequestError();
+    throw new ValidationError("invalid your email or password");
   }
 
   const decrypt = await decryptPassword(password, checkUser.password);
@@ -96,7 +96,7 @@ const login = asyncHandler(async function (req, res) {
   console.log(decrypt);
 
   if (!decrypt) {
-    throw new UnauthorizedError("incorrect email or password");
+    throw new UnauthorizedError("invalid email or password");
   }
 
   const refreshToken = createToken({
@@ -104,7 +104,6 @@ const login = asyncHandler(async function (req, res) {
     secret: process.env.REFRESH_TOKEN_SECRET,
     lifetime: "1d",
   });
-
   const accessToken = createToken({
     payload: { id: checkUser._id, email },
     secret: process.env.ACCESS_TOKEN_SECRET,
@@ -118,7 +117,7 @@ const login = asyncHandler(async function (req, res) {
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     path: "/",
     priority: "high",
-    // domain: ".vote-client.onrender.com",
+    domain: ".vote-client.onrender.com",
   });
 
   res.status(200).json({
@@ -138,8 +137,6 @@ const refresh = asyncHandler(async function (req, res) {
   const cookies = req?.cookies;
 
   if (!cookies) return new ForbiddenError("not allowed");
-  // if (!cookies) return res.status(403).json({ msg: "forbidden" });
-
   const refreshToken = req?.cookies?.refresh_token;
 
   if (refreshToken) {
@@ -149,7 +146,7 @@ const refresh = asyncHandler(async function (req, res) {
     });
 
     const email = decodedCookie.email;
-    const checkUser = await getUser(email);
+    const checkUser = await getUserByEmail(email);
     if (!checkUser) throw new UnauthorizedError();
 
     const newAccessToken = createToken({
@@ -183,7 +180,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
     throw new BadRequestError("enter your email");
   }
 
-  const user = await getUser(email);
+  const user = await getUserByEmail(email);
   if (user) {
     const resetToken = createToken({
       payload: { id: user._id },
@@ -216,7 +213,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
       },
     });
 
-    res.sendStatus(204);
+    res.status(200).json({ resetToken, id: user._id });
   } else {
     throw new NotFoundError();
   }
@@ -240,6 +237,7 @@ const resetPassword = asyncHandler(async function (req, res) {
   if (matchString(password, confirmPassword)) {
     const newPassword = await encryptPassword(password);
     await updateUserById(id, { password: newPassword });
+    // send email to tell user about new password
     res.sendStatus(204);
   }
 });

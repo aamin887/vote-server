@@ -1,15 +1,18 @@
 const Candidate = require("../../model/candidates.model");
-const { updatePosition } = require("./position.service");
+const { getPositionById } = require("./position.service");
 const Position = require("../../model/position.model");
+const { getElectionById } = require("./elections.service");
 const { gcsUploader, gcsDelete } = require("../../utils/gcsUpload");
 
 const {
   NotFoundError,
   ConflictError,
   UnauthorizedError,
+  BadRequestError,
   InternalServerError,
 } = require("../../helpers/CustomError.lib");
 
+// get candidates by elections
 const getCandidatesByElection = async function (election) {
   try {
     const candidates = await Candidate.find({ election });
@@ -23,8 +26,11 @@ const getCandidatesByElection = async function (election) {
 const getCandidateByNameAndPosition = async function ({ fullName, position }) {
   try {
     const candidate = await Candidate.findOne({ fullName, position });
+
     return candidate;
   } catch (error) {
+    console.log(error);
+
     throw new UnauthorizedError();
   }
 };
@@ -46,6 +52,10 @@ const getCandidateById = async function (id) {
 // add a new candidate
 const addCandidate = async function ({ formData }) {
   const { fullName, position, election, manifesto, imgfile } = formData;
+  const findElection = await getCandidateById(election);
+  const findPosition = await getPositionById(position);
+  if (!findElection) throw new BadRequestError();
+  if (!findPosition) throw new BadRequestError();
   const candidate = await getCandidateByNameAndPosition({
     fullName,
     position,
@@ -67,6 +77,8 @@ const addCandidate = async function ({ formData }) {
       imgfile.originalname
     );
 
+    console.log(profilePhoto, "Pjj");
+
     // update
     await Position.updateOne(
       { _id: position },
@@ -83,7 +95,7 @@ const addCandidate = async function ({ formData }) {
       },
     });
   } else {
-    throw new BadRequestError();
+    throw new InternalServerError();
   }
 };
 

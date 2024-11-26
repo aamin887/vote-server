@@ -1,4 +1,5 @@
 const asyncHandler = require("express-async-handler");
+// services
 const {
   getElectionByNameAndCreator,
   createNewElection,
@@ -7,6 +8,7 @@ const {
   deleteAnElection,
   getByElectionByCreatorAndId,
 } = require("../../services/api/elections.service");
+// error classes
 const {
   BadRequestError,
   ConflictError,
@@ -26,27 +28,25 @@ const createElection = asyncHandler(async function (req, res) {
     throw new BadRequestError("fill all fields");
   }
 
-  try {
-    const checkForElection = await getElectionByNameAndCreator({
-      name,
-      creator,
-    });
-    if (checkForElection) {
-      throw new ConflictError("Cannot create election with this name");
-    }
-
-    const formData = {
-      name,
-      description,
-      startDate,
-      endDate,
-      creator,
-    };
-    await createNewElection({ formData });
-    res.sendStatus(201);
-  } catch (error) {
-    throw new InternalServerError();
+  const checkForElection = await getElectionByNameAndCreator({
+    name,
+    creator,
+  });
+  if (checkForElection) {
+    throw new ConflictError("election already exist with this name");
   }
+
+  const formData = {
+    name,
+    description,
+    startDate,
+    endDate,
+    creator,
+  };
+  const newElection = await createNewElection({ formData });
+  if (newElection) return res.status(201).json(newElection);
+
+  throw new InternalServerError();
 });
 
 /**
@@ -58,12 +58,9 @@ const getElection = asyncHandler(async function (req, res) {
   const creator = req.user._id.toString();
   const id = req.params?.id;
 
-  try {
-    const elections = await getByElectionByCreatorAndId({ id, creator });
-    res.status(200).json(elections);
-  } catch (error) {
-    throw new InternalServerError();
-  }
+  const elections = await getByElectionByCreatorAndId({ id, creator });
+  if (elections) return res.status(200).json(elections);
+  throw new InternalServerError();
 });
 
 /**
@@ -72,12 +69,8 @@ const getElection = asyncHandler(async function (req, res) {
  * @Access  PRIVATE
  */
 const getAllElections = asyncHandler(async function (req, res) {
-  try {
-    const elections = res.paginatedResults;
-    res.status(200).json(elections);
-  } catch (error) {
-    throw new InternalServerError();
-  }
+  const elections = res.paginatedResults;
+  if (elections) return res.status(200).json(elections);
 });
 
 /**
@@ -90,12 +83,9 @@ const updateElections = asyncHandler(async function (req, res) {
   const formData = req.body;
   const id = req.params?.id;
 
-  try {
-    const updatedElection = await updateAnElection({ id, creator, formData });
-    res.status(200).json(updatedElection);
-  } catch (error) {
-    throw new InternalServerError();
-  }
+  const updatedElection = await updateAnElection({ id, creator, formData });
+  if (updatedElection) return res.status(200).json(updatedElection);
+  throw new InternalServerError();
 });
 
 /**
@@ -107,12 +97,8 @@ const deleteElections = asyncHandler(async function (req, res) {
   const creator = req.user._id.toString();
   const id = req.params?.id;
 
-  try {
-    await deleteAnElection({ id, creator });
-    return res.sendStatus(204);
-  } catch (error) {
-    throw new InternalServerError();
-  }
+  if (await deleteAnElection({ id, creator })) return res.sendStatus(204);
+  throw new InternalServerError();
 });
 
 module.exports = {

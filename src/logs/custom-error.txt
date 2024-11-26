@@ -301,3 +301,197 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241124	18:28:12	2144ebad-700d-42e0-933b-e6eaa72e8ed9	DELETE	undefined	/api/v1/elections/673dcad526d0d3da37f1ee9a : InternalServerError => An unexpected error occurred.
 
+20241125	00:37:41	2b9d29ff-40fc-4387-b31c-f14e2d76b7b1	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:38:00	f83ccb72-2fcf-4630-af56-a1203b8b053d	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:38:34	a93c4f13-aa7b-48c8-8640-b29d23ff055d	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:39:20	1c85c311-db53-449a-805c-88a65d466b0c	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:39:26	a3d3566b-6399-4568-a3e9-470a695cf73d	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:39:28	431e82ad-c949-48d2-84e2-c970f0553150	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:40:17	d32ebde0-6e9e-4f49-bfa1-58029675f2ef	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:40:20	1fad7930-3216-4ff1-906a-7717af956634	POST	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	00:43:36	12c3c365-af78-42e2-8db7-654f01039af8	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	01:08:32	89225067-c7e3-4f19-a859-7c885b6867fa	GET	undefined	/api/v1/positions : InternalServerError => An unexpected error occurred.
+
+20241125	01:26:26	8b1047b5-e942-4908-9b65-ce93fb38749b	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : UnauthorizedError => Unauthorized Access
+
+20241125	01:28:47	fd345c5d-7d78-4856-a166-a04241cb3f5f	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : UnauthorizedError => Unauthorized Access
+
+20241125	01:28:49	390cafac-70a5-470e-8eae-bea04ebcd813	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : UnauthorizedError => Unauthorized Access
+
+20241125	01:30:28	e0d97d27-f08f-4ec5-9f39-1eba9421a3d7	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : InternalServerError => An unexpected error occurred.
+
+20241125	01:30:46	0850d902-b861-4fb2-a1ad-7b3b4b3f226d	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	01:30:58	ea335766-1d19-4de4-a06e-44f2455b315d	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : InternalServerError => An unexpected error occurred.
+
+20241125	01:52:52	9126f93d-6472-417d-a1a2-b8fc8db8d5c9	PUT	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : InternalServerError => An unexpected error occurred.
+
+20241125	11:02:50	5fe48e75-238b-48ab-a11d-39cae73056ac	GET	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : NotFoundError => Resource Not Found
+
+20241125	11:03:29	4add44f6-7d9b-44b3-9305-f6e1da07f969	DELETE	undefined	/api/v1/positions/6743c82c48d6bf31d54f9c82 : NotFoundError => Resource Not Found
+
+20241125	11:07:08	6a1fe2af-5760-4344-b342-6c5273882e8f	DELETE	undefined	/api/v1/positions/674459119b537221b7c613dc : NotFoundError => Resource Not Found
+
+20241125	11:09:28	9ee1e770-f6d7-4fb9-a1b6-6cc347663f23	DELETE	undefined	/api/v1/positions/674459119b537221b7c613dc : NotFoundError => Resource Not Found
+
+20241125	11:09:40	e0275e28-72a7-4d41-b2b6-73e9b19877c9	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	11:16:14	e2cdccee-dd3f-4074-9e7e-1f6a03d0c0e1	DELETE	undefined	/api/v1/positions/67445aeb9767564e73e0afa7 : NotFoundError => Resource Not Found
+
+20241125	11:16:26	c6993e5e-9a31-4737-8b50-96e65323ef91	DELETE	undefined	/api/v1/positions/67445aeb9767564e73e0afa7 : NotFoundError => Resource Not Found
+
+20241125	11:17:20	bf75e51d-3723-471f-97df-7c632f559b72	DELETE	undefined	/api/v1/positions/67445c915f506f239ae4932c : NotFoundError => Resource Not Found
+
+20241125	11:33:53	fd7e9f14-ee4d-4d67-b3e2-9ece7882eea7	DELETE	undefined	/api/v1/positions/67445cc9c62bd6a44cb056cb : NotFoundError => Resource Not Found
+
+20241125	12:11:47	74d10e40-a336-4e75-a4b7-86c0d11703ac	DELETE	undefined	/api/v1/positions/674462802b369a739d50b42f : NotFoundError => Resource Not Found
+
+20241125	12:13:23	42eeb500-8411-4899-a350-085fb8c9cb61	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:13:45	aa419790-1ffc-4a01-8f9a-d346f53a2880	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:15:07	26c3326b-4d7c-4d6d-b740-8da729f225e1	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:17:03	442e0dbf-0cf8-4b0f-b877-df67164b6007	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:17:23	3841512b-7508-453f-b3d9-3b6b0bccc412	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:18:03	b494091e-3232-458c-8d29-2cbcac527c52	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:19:15	e657d800-34cf-4256-ad13-e4967a4f2c17	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241125	12:20:36	a1c7d4c1-fbff-4cf5-aec3-7231389d62c5	PUT	undefined	/api/v1/positions/67446b6f5b6579f1414737f8 : InternalServerError => An unexpected error occurred.
+
+20241125	12:24:17	f422d18b-0b98-4e4f-aeac-867d0229a87f	POST	undefined	/api/v1/elections : InternalServerError => An unexpected error occurred.
+
+20241125	12:26:21	ef0ef3e3-c9cb-4ca2-a0fe-c79839386e2c	DELETE	undefined	/api/v1/positions/67446b6f5b6579f1414737f8 : NotFoundError => Resource Not Found
+
+20241125	12:42:59	2b31f5ca-c40d-4353-a50d-a4aa23d0585b	DELETE	undefined	/api/v1/positions/67446cf134dcd5507a8eb7a6 : NotFoundError => Resource Not Found
+
+20241125	13:03:37	28f6eec5-80e5-4599-9b5e-457ac8cfbcad	POST	undefined	/auth/users/change-password : BadRequestError => fill in all fields
+
+20241125	13:12:54	73d1438c-cddd-49e6-9a7e-a86c2d8bb039	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : BadRequestError => fill in all fields
+
+20241125	17:39:26	8171eba7-f2d2-4618-9027-4af47c404566	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : UnauthorizedError => Unauthorized Access
+
+20241125	17:39:27	723530a2-6c99-4de4-9312-664e3e33af78	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : UnauthorizedError => Unauthorized Access
+
+20241125	17:39:28	a59fc3b3-c2de-4722-ad72-84055a6c6859	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : UnauthorizedError => Unauthorized Access
+
+20241125	17:40:14	f430d70f-bb69-4dc0-b9d5-cf0cfa02040b	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : UnauthorizedError => Unauthorized Access
+
+20241125	17:40:24	ff12b852-e0ca-4f1e-bde9-9f4667e68321	POST	undefined	/auth/users/change-password?token={{resetToken}}&id={{resetId}} : UnauthorizedError => Unauthorized Access
+
+20241125	17:40:53	808904c1-d3cd-4cb1-b3ee-1d050293224c	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241125	21:55:54	68a52120-e9ac-43d9-b733-9a2f3529e8ce	POST	undefined	/api/v1/elections : InternalServerError => An unexpected error occurred.
+
+20241125	21:56:34	0b697b15-0cc6-4528-966b-540d07813787	POST	undefined	/api/v1/elections : InternalServerError => An unexpected error occurred.
+
+20241125	21:57:05	31da12ba-d4ee-43e3-ad46-f643da7001b5	DELETE	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	21:57:50	a7f2f6bc-5cf2-458a-a86e-b23b15318ff3	DELETE	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	21:58:00	98c07f3e-d9fe-41a6-acf2-ff51f80296b3	GET	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	21:58:10	0fb51579-4195-4f44-82a6-43020e6d9011	PUT	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	21:58:13	bcffbfbd-8f79-4b9f-bafd-183e6b16496c	POST	undefined	/api/v1/elections : InternalServerError => An unexpected error occurred.
+
+20241125	21:58:35	63a2bfbd-3d56-4b6e-bbf6-c9b210667d7c	PUT	undefined	/api/v1/elections/6744f2fdcf5f10c90620b91f : InternalServerError => An unexpected error occurred.
+
+20241125	23:03:35	b20b7ce6-7c00-4604-bfe1-d91bb7dfdaca	POST	undefined	/api/v1/elections : ConflictError => Cannot create election with this name
+
+20241125	23:16:44	09e0996a-475d-4fe6-8474-4b60b9f20816	PUT	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	23:17:24	38547c3f-7812-41d6-82af-03edcdb6b245	GET	undefined	/api/v1/elections/null : InternalServerError => An unexpected error occurred.
+
+20241125	23:21:05	44bd9908-7457-410f-8af3-efeb2067cb7c	GET	undefined	/api/v1/elections/6744f267fca50b2e7e1c35a7 : InternalServerError => An unexpected error occurred.
+
+20241126	00:32:39	4301e6ff-13cd-4639-9cbd-0c94b81b0ceb	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:32:50	ce77ebb8-9a9a-4dfe-b516-e1bfac444256	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:33:23	8af4689a-1921-4229-a294-e53888968808	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:33:31	5c2f8ec7-ec95-4ea3-8dd2-a905292655d7	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:33:51	db1424b8-4d4a-43ad-a0ca-09d4f4b19cb6	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:35:24	3f3ef97c-e06f-4a52-84c2-04afbfb19b19	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:35:40	eb757a54-2ae5-4cde-a652-195da3393cc7	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:36:21	99570f97-f9aa-4fec-87f6-08d5b2f1636b	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:36:45	a36241af-9d49-4930-bfe3-6f7d9455d281	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:37:06	25654d6b-1dff-400a-97b6-c627773817ec	POST	undefined	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241126	00:45:50	1957d0c4-c49a-4125-ada2-9429ffc6c8b2	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	00:45:56	cd88fc4c-8546-47c5-bc08-75f672afd1b2	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	00:45:57	ab86af7f-342e-416d-881e-31d124a8d2c7	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	00:46:41	d0bea219-d3be-46fb-bea0-5bcee596b617	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	00:56:22	ec49034c-441c-4e7a-9e9b-ea270a708c66	POST	undefined	/auth/users/login : NotFoundError => Resource Not Found
+
+20241126	00:56:36	19832f4e-2eed-4e1d-b065-caa0a1cff364	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:56:41	d8a563ac-ec1a-4ef2-918d-27086c5de8cf	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:56:46	531254db-e101-4e58-bbf3-d08ab146b155	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:56:47	35df3681-07b9-485f-bb46-00ca94617f4f	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:56:47	5117fc91-679f-43dc-addf-75489cba5fd7	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:57:02	12cc7369-3708-4435-b0fb-12955d249c4d	POST	undefined	/auth/users/register : NotFoundError => Resource Not Found
+
+20241126	00:58:26	ec44debf-82bd-4104-8cd7-e7e7425884e6	POST	undefined	/auth/users/login : ConflictError => Request conflict
+
+20241126	00:58:30	f434e839-3a64-47d5-8f85-4608bd94f1ef	POST	undefined	/auth/users/login : ConflictError => Request conflict
+
+20241126	00:58:49	a6b8a8bd-7edb-4e64-9579-193129b76ccf	POST	undefined	/auth/users/login : ConflictError => Request conflict
+
+20241126	00:59:56	ec8bf00b-847a-450e-85ba-bcd6ae16d13a	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241126	01:00:31	67cd23d5-a079-411e-bc14-89e5117d9df1	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:00:33	7820086b-e6c6-4eb8-a431-78e9146f3d05	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:00:49	11244710-c8de-4025-af8c-49d268c666f5	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:00:52	bd8ff0a3-2a48-4f44-b0dd-b1d3bd15f8ed	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:01:23	4b0a1925-de98-4a94-af9f-e14fc48e0170	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241126	01:01:50	b63979e7-f769-48fb-a7ae-f3d88eb0a84b	POST	undefined	/api/v1/positions : BadRequestError => Bad Request
+
+20241126	01:03:33	a1b90e8f-793d-4020-b141-f8f49229b2d6	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241126	01:03:43	4420bdae-e66b-4784-8ed5-2ed4005f6385	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241126	01:04:00	c6792b4a-25d4-41f3-9fca-75ed66746705	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:04:56	8e27d351-6384-4637-b1bf-7b0f5fcf19f2	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:05:24	886ba6e7-8fd5-4c74-a768-cb94ef74cecb	POST	undefined	/api/v1/candidates : NotFoundError => Resource Not Found
+
+20241126	01:05:37	c994fff5-2113-460e-a98b-55798fdb2a04	POST	undefined	/api/v1/candidates : BadRequestError => Bad Request
+
+20241126	01:06:43	c0019196-459b-4322-9db3-229f01aec10d	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20241126	01:12:17	462d8da0-ffa5-4bab-8c4d-8cfe0d235ab6	GET	undefined	/api/v1/positions/67451d9aa37bba35fcfae0bb : NotFoundError => Resource Not Found
+

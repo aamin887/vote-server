@@ -13,7 +13,10 @@ const gcsUploader = (fileBuffer, fileName) => {
       reject(err);
     });
     blobStream.on("finish", () => {
-      resolve(`https://storage.googleapis.com/aminmakes/${file.id}`);
+      resolve({
+        url: `https://storage.googleapis.com/aminmakes/${file.id}`,
+        name: file.name,
+      });
     });
     blobStream.end(fileBuffer);
   });

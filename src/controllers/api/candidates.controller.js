@@ -1,8 +1,4 @@
 const asyncHandler = require("express-async-handler");
-const Candidates = require("../../model/candidates.model");
-const fs = require("fs").promises;
-const path = require("path");
-const Position = require("../../model/position.model");
 const {
   addCandidate,
   getCandidatesByPositionAndElection,
@@ -27,17 +23,16 @@ const createCandidate = asyncHandler(async function (req, res) {
   if (!fullName || !election || !position || !manifesto) {
     throw new BadRequestError("fill all form fields");
   }
-  let formData = { ...req.body };
 
+  let formData = { ...req.body };
   if (imgfile) {
     formData = { ...formData, imgfile };
   }
-
-  await addCandidate({
+  const newCandidate = await addCandidate({
     formData,
   });
-
-  res.sendStatus(204);
+  if (newCandidate) return res.status(201).json(newCandidate);
+  throw new InternalServerError();
 });
 
 /**
