@@ -23,7 +23,7 @@ const getAllPositions = async function (election) {
 const getPositionById = async function (id) {
   const position = await Position.findById(id).exec();
   if (!position) {
-    throw new NotFoundError();
+    throw new NotFoundError("position not found");
   }
   return position;
 };
@@ -55,28 +55,38 @@ const getPositionsByElection = async function (election) {
   return positions;
 };
 
+// get positions for an elections
+const getPositionsByElectionAndId = async function ({ id, election }) {
+  const positions = await Position.findOne({ _id: id, election: election });
+  if (!positions) throw new NotFoundError();
+  return positions;
+};
+
 // update an election using name and user id
-const updatePositionById = async function ({ id, formData }) {
-  const findPosition = await getPositionById(id);
-  if (findPosition.election.toString() !== formData.election) {
+const updatePositionById = async function ({ id, election, formData }) {
+  const findPosition = await getPositionsByElectionAndId({
+    id,
+    election,
+  });
+  if (findPosition.election.toString() !== election) {
     throw new UnauthorizedError();
   }
   return await Position.findByIdAndUpdate(id, formData, { new: true });
 };
 
 // delete an election using id and user id
-const deleteAPosition = async function ({ id }) {
-  const findPosition = await getPositionById(id);
-  if (!findPosition) {
-    throw new NotFoundError();
-  }
-  const electionId = findPosition.election.toString();
-  const election = await getElectionById(electionId);
-  const filteredPositions = election.positions.filter(
+const deleteAPosition = async function ({ id, election }) {
+  const findPosition = await getPositionsByElectionAndId({
+    id,
+    election,
+  });
+
+  const findElection = await getElectionById(election);
+  const filteredPositions = findElection.positions.filter(
     (positon) => positon.toString() !== id
   );
   await updateAnElectionById({
-    id: electionId,
+    id: election,
     formData: {
       positions: filteredPositions,
     },

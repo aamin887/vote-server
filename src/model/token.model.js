@@ -15,4 +15,4 @@ const tokenSchema = new Schema({
   },
 });
 
-module.exports = new model("Tokens", tokenSchema);
+module.exports = new model("Token", tokenSchema);

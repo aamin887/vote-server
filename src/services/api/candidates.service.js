@@ -8,7 +8,6 @@ const {
   NotFoundError,
   ConflictError,
   UnauthorizedError,
-  BadRequestError,
   InternalServerError,
 } = require("../../helpers/CustomError.lib");
 
@@ -26,7 +25,6 @@ const getCandidatesByElection = async function (election) {
 const getCandidateByNameAndPosition = async function ({ fullName, position }) {
   try {
     const candidate = await Candidate.findOne({ fullName, position });
-
     return candidate;
   } catch (error) {
     console.log(error);
@@ -52,10 +50,8 @@ const getCandidateById = async function (id) {
 // add a new candidate
 const addCandidate = async function ({ formData }) {
   const { fullName, position, election, manifesto, imgfile } = formData;
-  const findElection = await getCandidateById(election);
-  const findPosition = await getPositionById(position);
-  if (!findElection) throw new BadRequestError();
-  if (!findPosition) throw new BadRequestError();
+  await getElectionById(election);
+  await getPositionById(position);
   const candidate = await getCandidateByNameAndPosition({
     fullName,
     position,
@@ -63,7 +59,6 @@ const addCandidate = async function ({ formData }) {
   if (candidate) {
     throw new ConflictError();
   }
-
   const newCandidate = await Candidate.create({
     fullName,
     manifesto,
@@ -74,11 +69,8 @@ const addCandidate = async function ({ formData }) {
     // should return photoURL and photoId
     const profilePhoto = await gcsUploader(
       imgfile.buffer,
-      imgfile.originalname
+      imgfile.originalname + `${fullName}`
     );
-
-    console.log(profilePhoto, "Pjj");
-
     // update
     await Position.updateOne(
       { _id: position },
@@ -90,8 +82,8 @@ const addCandidate = async function ({ formData }) {
     return await updateCandidateById({
       id: newCandidate._id,
       formData: {
-        photoUrl: profilePhoto,
-        photoId: "1344",
+        photoUrl: profilePhoto.url,
+        photoId: profilePhoto.name,
       },
     });
   } else {
@@ -110,7 +102,19 @@ const updateCandidateById = async function ({ id, formData }) {
 
 // delete a candidate by ID
 const deleteCandidateById = async function (id) {
-  return await Candidate.findByIdAndDelete(id);
+  const findCandidate = await Candidate.findById(id);
+  if (!findCandidate) throw new NotFoundError("candidate not found");
+  const { _id, photoId, photoUrl, position } = findCandidate;
+  if (photoId && photoUrl) gcsDelete(photoId);
+  if (await Candidate.findByIdAndDelete(id)) {
+    // update
+    await Position.updateOne(
+      { _id: position },
+      {
+        $pull: { candidates: _id },
+      }
+    );
+  }
 };
 
 module.exports = {

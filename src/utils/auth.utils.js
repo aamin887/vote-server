@@ -22,6 +22,7 @@ const decryptPassword = async function (password, hashedPassword) {
   return decrypt;
 };
 
+// check password matches
 const matchString = function (stringOne, stringTwo) {
   return stringOne.toString() === stringTwo.toString();
 };

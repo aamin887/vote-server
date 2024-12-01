@@ -63,7 +63,12 @@ const getPosition = asyncHandler(async function (req, res) {
  */
 const updatePositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
-  const updatedPosition = await updatePositionById({ id, formData: req.body });
+  const { election } = req.query;
+  const updatedPosition = await updatePositionById({
+    id,
+    election,
+    formData: req.body,
+  });
   if (updatedPosition) return res.status(201).json(updatedPosition);
   throw new InternalServerError();
 });
@@ -75,7 +80,8 @@ const updatePositions = asyncHandler(async function (req, res) {
  */
 const deletePositions = asyncHandler(async function (req, res) {
   const { id } = req.params;
-  if (await deleteAPosition({ id })) res.sendStatus(204);
+  const { election } = req.query;
+  if (await deleteAPosition({ id, election })) return res.sendStatus(204);
   throw new InternalServerError();
 });
 

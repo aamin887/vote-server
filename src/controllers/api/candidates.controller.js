@@ -4,13 +4,14 @@ const {
   getCandidatesByPositionAndElection,
   getCandidatesByElection,
   updateCandidateById,
+  deleteCandidateById,
 } = require("../../services/api/candidates.service");
 const {
   BadRequestError,
   InternalServerError,
   NotFoundError,
 } = require("../../helpers/CustomError.lib");
-const { gcsDelete } = require("../../utils/gcsUpload");
+const { gcsDelete, gcsUploader } = require("../../utils/gcsUpload");
 
 /**
  * @Desc    Add a candidate to a position
@@ -79,6 +80,7 @@ const getCandidateForElection = async function (req, res) {
  */
 const updateCandidate = asyncHandler(async function (req, res) {
   const { candidateId } = req.params;
+
   const formData = req.body;
 
   const updatedCandidate = await updateCandidateById({
@@ -96,11 +98,8 @@ const updateCandidate = asyncHandler(async function (req, res) {
  */
 const deleteCandidate = asyncHandler(async function (req, res) {
   const { candidateId } = req.params;
-
-  // await gcsDelete("first 1.png"); => deleting candidate image with candidate info
-  res.send(
-    `delete candidate and remove image from the cloud => ${candidateId}`
-  );
+  await deleteCandidateById(candidateId);
+  return res.sendStatus(204);
 });
 module.exports = {
   createCandidate,

@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const candidatesController = require("../../controllers/candidates.controller");
+const votersController = require("../../controllers/voters.controller");
 
 router
   .route("/")
-  .post(candidatesController.addCandidate)
-  .get(candidatesController.getAllCandidates);
+  .post(votersController.addVoter)
+  .get(votersController.getAllVoters);
 
 router
   .route("/:id")
-  .get(candidatesController.getCandidate)
-  .put(candidatesController.updateCandidate)
-  .delete(candidatesController.removeCandidate);
+  .get(votersController.getVoter)
+  .put(votersController.updateVoter)
+  .delete(votersController.removeVoter);
 
 module.exports = router;

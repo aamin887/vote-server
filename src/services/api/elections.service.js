@@ -3,19 +3,16 @@ const {
   UnauthorizedError,
   NotFoundError,
   InternalServerError,
+  ConflictError,
 } = require("../../helpers/CustomError.lib");
 
 // get an election using id
 const getElectionById = async function (id) {
-  try {
-    const election = await Election.findById(id);
-    if (!election) {
-      throw new NotFoundError();
-    }
-    return election;
-  } catch (error) {
-    throw new Error(error);
+  const election = await Election.findById(id);
+  if (!election) {
+    throw new NotFoundError("election not found");
   }
+  return election;
 };
 
 // get an election using user id
@@ -67,7 +64,11 @@ const createNewElection = async function ({ formData }) {
 // update an election using name and user id
 const updateAnElection = async function ({ id, creator, formData }) {
   try {
+    if (await getElectionByNameAndCreator({ name: formData.name, creator })) {
+      throw new ConflictError();
+    }
     const findElection = await getByElectionByCreatorAndId({ id, creator });
+
     if (findElection.creator.toString() !== creator) {
       throw new UnauthorizedError();
     }

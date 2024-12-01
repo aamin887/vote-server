@@ -2,7 +2,6 @@ const User = require("../../model/user.model");
 const {
   NotFoundError,
   BadRequestError,
-  ConflictError,
 } = require("../../helpers/CustomError.lib");
 
 // Retrieve a single user by email
@@ -13,7 +12,7 @@ const getUserByEmail = async (email) => {
 
 // Retrieve a single user by ID
 const getUserById = async (userId) => {
-  const user = await User.findById(userId);
+  const user = await User.findById(userId).select("-password");
   if (!user) throw new NotFoundError();
   return user;
 };

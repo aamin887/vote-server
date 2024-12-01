@@ -7,14 +7,18 @@ router
   .route("/")
   .post(uploads.single("image"), candidatesController.createCandidate);
 
-router.route("/:candidateId").put(candidatesController.updateCandidate);
+//get candidates for an election
+router.route("/:election").get(candidatesController.getCandidateForElection);
 
+//get candidates for a position in an election
 router
   .route("/:election/:position")
   .get(candidatesController.getCandidateForElectionPosition);
 
-router.route("/:election").get(candidatesController.getCandidateForElection);
+// update a candidate
+router.route("/:candidateId").put(candidatesController.updateCandidate);
 
+// delete a candidate
 router.route("/:candidateId").delete(candidatesController.deleteCandidate);
 
 module.exports = router;

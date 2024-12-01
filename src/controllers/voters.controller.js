@@ -1,5 +1,4 @@
 const asyncHandler = require("express-async-handler");
-const Voters = require("../model/voters.model");
 
 /**
  * @Desc    Refresh token

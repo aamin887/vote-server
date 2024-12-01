@@ -1,8 +1,8 @@
 const asyncHandler = require("express-async-handler");
 const path = require("path");
 const {
-  getUser,
   createUser,
+  getUserById,
   updateUserById,
   getUserByEmail,
 } = require("../../services/auth/user.service");
@@ -13,6 +13,7 @@ const {
   decryptPassword,
   decodeResetTokens,
   verifyToken,
+  createToken,
 } = require("../../utils/auth.utils");
 const {
   NotFoundError,
@@ -22,7 +23,6 @@ const {
   UnauthorizedError,
   ValidationError,
 } = require("../../helpers/CustomError.lib");
-const { createToken } = require("../../utils/token.utils");
 const { createResetToken } = require("../../services/auth/token.service");
 
 /**
@@ -31,7 +31,7 @@ const { createResetToken } = require("../../services/auth/token.service");
  * @Access  Public
  */
 const register = asyncHandler(async function (req, res) {
-  const { fullName, email, password, confirmPassword } = req.body;
+  const { fullName, email, password, confirmPassword, role } = req.body;
   if (!fullName || !email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
@@ -45,18 +45,27 @@ const register = asyncHandler(async function (req, res) {
   if (!passwordMatch) {
     throw new BadRequestError("Passwords do not match");
   }
-
   const hashedPassword = await encryptPassword(password);
 
-  await createUser({
+  const user = await createUser({
     fullName,
     email,
     password: hashedPassword,
+    role: req.body?.role,
   });
+
+  const token = createToken({
+    payload: { user: user._id },
+    secret: process.env.ACCESS_TOKEN_SECRET,
+    lifetime: "10y",
+  });
+
+  const link = `http://localhost:5001/auth/users/verify?token=${token}`;
+  // create a token to be verified by the user when the client
 
   await mailerInstance.sendHtmlMail({
     from: "alhassanamin96@gmail.com",
-    to: "forkahamin@yahoo.co.uk",
+    to: email,
     subject: "Welcome to votes",
     template: path.join(
       __dirname,
@@ -68,7 +77,7 @@ const register = asyncHandler(async function (req, res) {
     replacements: {
       name: `${fullName}`,
       username: `${fullName + "887"}`,
-      confirmationLink: "https://vote-client.onrender.com/login",
+      confirmationLink: link,
     },
   });
 
@@ -90,6 +99,10 @@ const login = asyncHandler(async function (req, res) {
   if (!checkUser) {
     throw new ValidationError("invalid your email or password");
   }
+
+  const findUser = await getUserById(checkUser._id);
+
+  console.log(findUser);
 
   const decrypt = await decryptPassword(password, checkUser.password);
 
@@ -227,13 +240,10 @@ const passwordRequest = asyncHandler(async (req, res) => {
 const resetPassword = asyncHandler(async function (req, res) {
   const { token, id } = req.query;
   const { password, confirmPassword } = req.body;
-
   if (!password || !confirmPassword) {
     throw new BadRequestError("fill in all fields");
   }
-
   await decodeResetTokens({ resetToken: token, id });
-
   if (matchString(password, confirmPassword)) {
     const newPassword = await encryptPassword(password);
     await updateUserById(id, { password: newPassword });
@@ -242,10 +252,86 @@ const resetPassword = asyncHandler(async function (req, res) {
   }
 });
 
+/**
+ * @Desc    Verify user
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const verify = asyncHandler(async function (req, res) {
+  const { token } = req.query;
+
+  const decodedToken = verifyToken({
+    token,
+    secret: process.env.ACCESS_TOKEN_SECRET,
+  });
+
+  const findUser = await getUserById(decodedToken.user);
+  if (findUser.verification) {
+    throw new ConflictError("user already validated");
+  }
+  const updatedUser = await updateUserById(decodedToken.user, {
+    verification: true,
+  });
+  res.status(200).json(updatedUser);
+});
+
+/**
+ * @Desc    Verify user
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const profile = asyncHandler(async function (req, res) {
+  const { userId } = req.params;
+  const findUser = await getUserById(userId);
+  res.status(200).json(findUser);
+});
+
+/**
+ * @Desc    Verify user
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const updateProfile = asyncHandler(async function (req, res) {
+  const { userId } = req.params;
+  const updateData = req.body;
+  await updateUserById(userId, updateData);
+  res.sendStatus(204);
+});
+
+/**
+ * @Desc    Verify voter
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const verifyVoter = asyncHandler(async function (req, res) {
+  const { userId } = req.params;
+  const { password, confirmPassword } = req.body;
+  if (!password || !confirmPassword) {
+    throw new BadRequestError("fill all fields");
+  }
+  if (matchString(password, confirmPassword)) {
+    throw new BadRequestError("password do not match");
+  }
+
+  const findUser = await getUserById(userId);
+  if (findUser.verification === true) {
+    throw new ConflictError();
+  }
+
+  const hashedPassword = await encryptPassword(password);
+  const updateData = { password: hashedPassword, verification: true };
+  const updatedUser = await updateUserById(userId, updateData);
+  res.status(200).json(updatedUser);
+});
+
 module.exports = {
   register,
   login,
   refresh,
   passwordRequest,
   resetPassword,
+  verify,
+  verifyVoter,
+  profile,
+  updateProfile,
 };

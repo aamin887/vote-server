@@ -1,10 +1,8 @@
 const gcsBucket = require("../config/gcs.config");
+require("dotenv").config();
 
 const gcsUploader = (fileBuffer, fileName) => {
   const file = gcsBucket.file(fileName);
-
-  console.log("file Id => ", file.id);
-  console.log("file Id => ", file.name);
 
   const blobStream = file.createWriteStream();
 
