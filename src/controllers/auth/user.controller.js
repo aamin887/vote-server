@@ -5,6 +5,7 @@ const {
   getUserById,
   updateUserById,
   getUserByEmail,
+  getUserByEmailAndAdmin,
 } = require("../../services/auth/user.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
@@ -31,27 +32,34 @@ const { createResetToken } = require("../../services/auth/token.service");
  * @Access  Public
  */
 const register = asyncHandler(async function (req, res) {
-  const { fullName, email, password, confirmPassword, role } = req.body;
+  const { fullName, email, password, confirmPassword } = req.body;
+  const admin = req?.user?._id;
   if (!fullName || !email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
 
-  const checkUser = await getUserByEmail(email);
+  let checkUser = await getUserByEmail(email);
+
+  console.log(checkUser);
+
+  if (req.user) {
+    checkUser = await getUserByEmailAndAdmin({ email, creator: admin });
+  }
   if (checkUser) {
     throw new ConflictError("User already exist");
   }
 
   const passwordMatch = matchString(password, confirmPassword);
   if (!passwordMatch) {
-    throw new BadRequestError("Passwords do not match");
+    throw new ValidationError("Passwords do not match");
   }
   const hashedPassword = await encryptPassword(password);
-
   const user = await createUser({
     fullName,
     email,
     password: hashedPassword,
     role: req.body?.role,
+    creator: req?.user ? req?.user?._id : null,
   });
 
   const token = createToken({
@@ -60,7 +68,7 @@ const register = asyncHandler(async function (req, res) {
     lifetime: "10y",
   });
 
-  const link = `http://localhost:5001/auth/users/verify?token=${token}`;
+  const link = `http://localhost:5173/verification?token=${token}`;
   // create a token to be verified by the user when the client
 
   await mailerInstance.sendHtmlMail({
@@ -97,17 +105,11 @@ const login = asyncHandler(async function (req, res) {
 
   const checkUser = await getUserByEmail(email);
   if (!checkUser) {
-    throw new ValidationError("invalid your email or password");
+    throw new ValidationError("User does not exist ");
   }
 
-  const findUser = await getUserById(checkUser._id);
-
-  console.log(findUser);
-
+  await getUserById(checkUser._id);
   const decrypt = await decryptPassword(password, checkUser.password);
-
-  console.log(decrypt);
-
   if (!decrypt) {
     throw new UnauthorizedError("invalid email or password");
   }
@@ -120,7 +122,7 @@ const login = asyncHandler(async function (req, res) {
   const accessToken = createToken({
     payload: { id: checkUser._id, email },
     secret: process.env.ACCESS_TOKEN_SECRET,
-    lifetime: "1d",
+    lifetime: "15min",
   });
 
   res.cookie("refresh_token", refreshToken, {
@@ -130,7 +132,7 @@ const login = asyncHandler(async function (req, res) {
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     path: "/",
     priority: "high",
-    domain: ".vote-client.onrender.com",
+    // domain: ".vote-client.onrender.com",
   });
 
   res.status(200).json({
@@ -148,6 +150,8 @@ const login = asyncHandler(async function (req, res) {
  */
 const refresh = asyncHandler(async function (req, res) {
   const cookies = req?.cookies;
+
+  console.log(cookies, "refresh token");
 
   if (!cookies) return new ForbiddenError("not allowed");
   const refreshToken = req?.cookies?.refresh_token;
@@ -189,6 +193,7 @@ const refresh = asyncHandler(async function (req, res) {
  */
 const passwordRequest = asyncHandler(async (req, res) => {
   const { email } = req.body;
+
   if (!email) {
     throw new BadRequestError("enter your email");
   }
@@ -210,7 +215,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
 
     await mailerInstance.sendHtmlMail({
       from: "alhassanamin96@gmail.com",
-      to: "forkahamin@yahoo.co.uk",
+      to: email,
       subject: "Password Change Request",
       template: path.join(
         __dirname,
@@ -249,6 +254,8 @@ const resetPassword = asyncHandler(async function (req, res) {
     await updateUserById(id, { password: newPassword });
     // send email to tell user about new password
     res.sendStatus(204);
+  } else {
+    throw new ConflictError();
   }
 });
 
@@ -259,11 +266,14 @@ const resetPassword = asyncHandler(async function (req, res) {
  */
 const verify = asyncHandler(async function (req, res) {
   const { token } = req.query;
-
   const decodedToken = verifyToken({
     token,
     secret: process.env.ACCESS_TOKEN_SECRET,
   });
+
+  if (!decodedToken) {
+    throw new BadRequestError();
+  }
 
   const findUser = await getUserById(decodedToken.user);
   if (findUser.verification) {
@@ -305,23 +315,53 @@ const updateProfile = asyncHandler(async function (req, res) {
  */
 const verifyVoter = asyncHandler(async function (req, res) {
   const { userId } = req.params;
+  console.log("userId", userId);
   const { password, confirmPassword } = req.body;
+  console.log(password, confirmPassword);
+
   if (!password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
-  if (matchString(password, confirmPassword)) {
+  if (!matchString(password, confirmPassword)) {
     throw new BadRequestError("password do not match");
   }
 
   const findUser = await getUserById(userId);
   if (findUser.verification === true) {
-    throw new ConflictError();
+    throw new ForbiddenError();
+  }
+
+  if (findUser.role !== "VOTER") {
+    throw new UnauthorizedError("not allowed");
   }
 
   const hashedPassword = await encryptPassword(password);
   const updateData = { password: hashedPassword, verification: true };
   const updatedUser = await updateUserById(userId, updateData);
   res.status(200).json(updatedUser);
+});
+
+/**
+ * @Desc    Verify voter
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const logout = asyncHandler(function (req, res) {
+  const cookies = req?.cookies;
+
+  console.log(cookies);
+
+  if (!cookies) return res.sendStatus(204);
+
+  res.clearCookie("refresh_token", {
+    httpOnly: true,
+    sameSite: "strict",
+    secure: true,
+  });
+
+  return res.status(200).json({
+    message: "refresh cookie cleared",
+  });
 });
 
 module.exports = {
@@ -334,4 +374,5 @@ module.exports = {
   verifyVoter,
   profile,
   updateProfile,
+  logout,
 };

@@ -4,6 +4,7 @@ const {
   getCandidatesByPositionAndElection,
   getCandidatesByElection,
   updateCandidateById,
+  getCandidateById,
   deleteCandidateById,
 } = require("../../services/api/candidates.service");
 const {
@@ -34,6 +35,22 @@ const createCandidate = asyncHandler(async function (req, res) {
   });
   if (newCandidate) return res.status(201).json(newCandidate);
   throw new InternalServerError();
+});
+
+/**
+ * @Desc    Get candidates for a position in an election
+ * @Route   POST /v1/candidates/election/position
+ * @Access  Private
+ */
+const getCandidateId = asyncHandler(async function (req, res) {
+  try {
+    const { candidateId } = req.params;
+    const candidates = await getCandidateById(candidateId);
+
+    res.json(candidates);
+  } catch (error) {
+    throw new InternalServerError();
+  }
 });
 
 /**
@@ -80,8 +97,12 @@ const getCandidateForElection = async function (req, res) {
  */
 const updateCandidate = asyncHandler(async function (req, res) {
   const { candidateId } = req.params;
+  const imgfile = req?.file;
 
-  const formData = req.body;
+  let formData = { ...req.body };
+  if (imgfile) {
+    formData = { ...formData, imgfile };
+  }
 
   const updatedCandidate = await updateCandidateById({
     id: candidateId,
@@ -103,6 +124,7 @@ const deleteCandidate = asyncHandler(async function (req, res) {
 });
 module.exports = {
   createCandidate,
+  getCandidateId,
   getCandidateForElectionPosition,
   getCandidateForElection,
   updateCandidate,

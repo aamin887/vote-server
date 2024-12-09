@@ -10,7 +10,7 @@ const corsOptions = {
   },
   credentials: true,
   optionsSuccessStatus: 200,
-  preflightContinue: true,
+  // preflightContinue: true,
 };
 
 module.exports = corsOptions;

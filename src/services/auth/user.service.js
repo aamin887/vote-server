@@ -10,6 +10,12 @@ const getUserByEmail = async (email) => {
   return user;
 };
 
+// Retrieve a single user by email
+const getUserByEmailAndAdmin = async ({ email, creator }) => {
+  const user = await User.findOne({ email, creator }).select("password");
+  return user;
+};
+
 // Retrieve a single user by ID
 const getUserById = async (userId) => {
   const user = await User.findById(userId).select("-password");
@@ -55,5 +61,6 @@ module.exports = {
   getAllUsers,
   createUser,
   updateUserById,
+  getUserByEmailAndAdmin,
   deleteUserById,
 };

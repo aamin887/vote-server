@@ -8,15 +8,22 @@ router
   .post(uploads.single("image"), candidatesController.createCandidate);
 
 //get candidates for an election
-router.route("/:election").get(candidatesController.getCandidateForElection);
+router
+  .route("/elections/:election")
+  .get(candidatesController.getCandidateForElection);
 
 //get candidates for a position in an election
 router
   .route("/:election/:position")
   .get(candidatesController.getCandidateForElectionPosition);
 
+// get a candidate by Id
+router.route("/:candidateId").get(candidatesController.getCandidateId);
+
 // update a candidate
-router.route("/:candidateId").put(candidatesController.updateCandidate);
+router
+  .route("/:candidateId")
+  .put(uploads.single("image"), candidatesController.updateCandidate);
 
 // delete a candidate
 router.route("/:candidateId").delete(candidatesController.deleteCandidate);

@@ -20,6 +20,12 @@ const positionSchema = new mongoose.Schema({
       ref: "Candidate",
     },
   ],
+  voters: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Voter",
+    },
+  ],
 });
 
 module.exports = mongoose.model("Position", positionSchema);

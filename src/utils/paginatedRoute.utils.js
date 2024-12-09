@@ -4,6 +4,7 @@ const asyncHandler = require("express-async-handler");
 function paginatedRoute(model) {
   return asyncHandler(async function (req, res, next) {
     const creator = req.user._id;
+    console.log(creator);
     const page = parseInt(req.query.page);
     const limit = parseInt(req.query.limit);
 
@@ -26,18 +27,14 @@ function paginatedRoute(model) {
       };
     }
 
-    try {
-      results.results = await model
-        .find({ creator })
-        .limit(limit)
-        .skip(startIndex)
-        .exec();
+    results.results = await model
+      .find({ creator })
+      .limit(limit)
+      .skip(startIndex)
+      .exec();
 
-      res.paginatedResults = results;
-      next();
-    } catch (e) {
-      throw new InternalServerError();
-    }
+    res.paginatedResults = results;
+    next();
   });
 }
 

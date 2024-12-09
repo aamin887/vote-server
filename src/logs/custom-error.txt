@@ -673,3 +673,2239 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241201	00:40:09	1fe886f4-3051-4379-abe5-df595658a23b	POST	undefined	/auth/users/register-voter : ConflictError => User already exist
 
+20241201	18:11:31	e3a9434a-6a62-41db-89b7-24c0d5ae70fe	GET	undefined	/api/v1/candidates/674934dbfe6ba0e3879883ea : ForbiddenError => sss
+
+20241201	18:11:51	bfca6e79-f61e-449f-b2fe-905133e421bc	GET	undefined	/api/v1/positions/null : ForbiddenError => sss
+
+20241201	18:14:15	f5ab19c7-d35d-4cba-82db-09a0d30535c8	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241201	18:14:19	4af89d3d-2a4e-499a-acae-fa5debb25792	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241201	18:16:36	a21e2545-19f4-4a5b-8084-7099a60248c6	GET	undefined	/auth/users/profile/674ca784b2814defbea7a221 : ForbiddenError => sss
+
+20241201	18:17:32	6c3b4057-984b-4731-bdc1-2e0cb94d7a2d	GET	undefined	/auth/users/profile/674ca784b2814defbea7a221 : ValidationError => Validation Error
+
+20241201	18:17:55	4f20eda8-3ce5-4866-81d3-49ee6576934e	GET	undefined	/api/v1/elections : ValidationError => Validation Error
+
+20241202	11:07:31	95b90139-3512-4283-856a-2352258223ad	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : BadRequestError => password do not match
+
+20241202	11:10:38	737e2441-ee25-48d8-a6dc-7161749fe426	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : BadRequestError => password do not match
+
+20241202	11:11:11	b0b9203e-9d0f-4f33-a5ab-4bbb1527a66e	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : BadRequestError => password do not match
+
+20241202	11:13:56	c12cb3b7-2440-4557-bb5a-88e232ea2505	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : ConflictError => Request conflict
+
+20241202	11:15:27	823f66e4-6a9b-4904-8d29-7738f7827a25	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : ConflictError => Request conflict
+
+20241202	11:15:36	1d5ef066-e5b5-4963-970a-20b9440aab8d	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : ConflictError => Request conflict
+
+20241202	11:16:03	471d741c-49b3-4783-8882-04e947e09a0f	POST	undefined	/auth/users/verify-voter/674ca784b2814defbea7a221 : ForbiddenError => Forbidden
+
+20241202	12:03:45	75fbd3ba-7a20-4876-b16f-2431f282dfde	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:03:49	c75e1433-3533-4cf3-afeb-f2b6c6f71a04	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:04:08	3764ff79-22f7-4ed4-86a4-9787e3d3fc71	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:05:06	6b8beb8b-d671-496f-92af-6ba454e6809c	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:05:19	63e17045-1c4e-4147-93bd-280c7b21fb55	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:05:50	69f7b29e-fac4-40a3-ac3c-7c9b1ad1de6e	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:05:51	3d40a1bd-97e8-4a13-b148-ed875621669f	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:53	d00a9c2a-da1a-426e-a9b1-db83d0cb3c3a	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:54	844de44f-9d8f-4b37-a849-6071ea461ee5	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:55	32e3876f-703c-4df5-b990-24a825fc37e7	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:55	b4cf26de-c373-407c-944a-6b9fc2f7c4e9	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:56	ffa0fb86-4386-4511-aebd-b961c2c40bb0	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:59	a329b097-3778-4876-b5f3-d67c983207f8	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:59	6e962be4-e7f1-4bb9-8039-7580e008e341	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:06:59	0c496117-6d46-4a58-9988-73c30c907044	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:02	fa6ee023-24c7-4db6-8b2e-bb1633c4613c	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:34	764440bd-5632-417c-8395-aa9ae9335c07	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:51	6d9a51b3-d8ad-4c1f-8f32-7a632a615915	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:51	a111a74c-fc22-41b7-90a6-a2d54a3e4476	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:51	25f1775f-534d-4116-ac64-610ab0dd33b5	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:07:51	e6afdc13-d2ae-4428-b170-1ee577b11d41	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:08:59	d1f7cf71-275a-4b70-905b-55195a91abd0	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:08:59	2623679f-2d4e-473d-86bc-1ed9eccc1b6a	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:09:26	5e8b98f6-9f9e-4f76-a5ce-17302363427d	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:09:46	ba919814-4b93-42f4-9d39-9bea1e76bbfc	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:09:48	833cd8bc-6bbd-4947-a188-fa7a00a91377	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:09:49	00777c9e-0b84-4a18-88eb-c1eb8ccaca53	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	12:10:14	7bd7fdf1-8c22-40c5-b283-e7f382aa0621	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:10:17	86c3b3c9-6e35-47b2-82e8-bb4c19961a40	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:10:27	348e5fe2-bf9a-4bb6-a45a-26ee89ba6efe	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:12:51	9d30ab59-42a7-496b-9cf4-4a193e9945ac	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:14:29	08cea8f5-3cc5-47f0-9230-8eb3aeb2bc4e	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:15:33	bd445865-c2a8-44a2-9b98-1fc4e7823841	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:17:26	293390fe-3976-4a6f-8f24-6e5078f1b514	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:18:13	67fccfef-4d72-4c2f-b153-3b0bf5810f44	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:18:46	69f99817-9aed-4fe1-ae77-d19dc671eef8	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:19:06	eb2d5c3b-26dc-456f-bcf3-b9530c4e5899	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:19:37	8765697b-dac8-4f68-99a5-473ba7e37c72	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:20:12	bb0cf15d-250f-4aaf-b9bb-7488e6f3fce4	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:20:14	bb5f7697-c650-4f77-ac30-09a92869dadd	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:20:19	b3c79714-5d18-4aca-b531-1b632479180e	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241202	12:20:21	6622f31c-f43c-4299-956a-56e38bf6dcaf	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:20:22	b18e1755-5d53-4467-8ece-c867a705c5a8	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:20:22	daa8f2b0-bd67-4dd7-8071-c68f480ca210	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:20:35	aba69aa1-bc26-461a-a8ee-0f929bee3407	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:20:59	755e362c-ce50-48e7-b5c4-86e72e98d432	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:21:30	6aebc1a0-1b5e-4b98-99e2-1c15b8aeb815	POST	http://localhost:5173	/auth/users/register : BadRequestError => fill all fields
+
+20241202	12:22:43	2d9cb389-c4d2-4245-9ec0-1d31e5f08b6e	POST	http://localhost:5173	/auth/users/register : BadRequestError => Passwords do not match
+
+20241202	18:55:58	a9bc4a51-59c3-438a-b7ad-ed2040bff724	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	18:56:41	883f88e6-a636-4d20-aabe-296e5d842766	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	18:58:02	373c9481-efe4-43fc-a590-1d4c27f99b58	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	18:58:39	9e89af5e-90a1-47ad-9bcb-577eaac96737	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	18:59:50	74f0b5d8-4eb5-4c79-9273-b9d3ed257139	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:00:04	742fb732-0075-462d-8c01-a155a5e49651	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:00:05	f2a1a9d9-c1b4-4f55-8115-690faa471433	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:00:54	06afa951-e056-442c-ad70-df87ecf4d032	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:02:55	d736b65d-7064-4d59-a924-02eac3f5f08e	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:03:21	5946254a-0ee3-4182-9d93-a567fce2ca81	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:05:23	bab4fd6c-b4d8-48d7-84c1-e1d93f7a4c5c	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:05:43	d412d122-30e8-454d-b2a3-280f4a38f2a8	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	19:06:13	7dae45c0-03fb-46dc-b8ea-d4d13bff0332	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	22:23:12	af734ccc-2ea4-4ef3-9d8c-f54f25ee4b4c	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	22:32:29	0b7d4f99-e51a-468a-a092-14a4ffd24709	POST	http://localhost:5173	/auth/users/register : ValidationError => Validation Error
+
+20241202	22:33:14	73c84cc3-4455-4037-8ad5-a9c8e10b6b41	POST	http://localhost:5173	/auth/users/register : ValidationError => Validation Error
+
+20241202	23:05:29	79a4b324-c66a-4551-af9e-beed02a552b4	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:05:37	f64266bd-d7f3-451e-ac20-36c9dd2a0d3f	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:05:38	681e0a98-3a7c-4150-92cc-209e9d2786f2	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:06:08	18571b7a-14c3-4dc3-b304-d55802c35aa0	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:06:51	745a3953-54f4-48fd-b4a0-ef84813c7d44	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:07:07	929f869b-50b2-43c0-91a0-cb69b227e478	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241202	23:07:15	50f30efd-06bb-4d1b-be8d-8bf518c3551d	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241202	23:08:48	99b81e75-1b56-4172-8ede-740753ee899e	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:08:48	387b28a8-dc8b-4eca-8d86-57b42f78e135	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:09:37	07a63ba5-2951-4755-9b23-b017c2c1e61f	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:09:41	9d76f7ec-a211-4f44-9735-d89a8e6025a3	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:09:41	4536ff8a-311f-46e9-9e92-c18e9bc45b42	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:40	8dc0e96e-7902-4020-bfa7-ee0ddb669905	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:40	5f4af8a6-a759-4e1d-a181-d034bfc00e3d	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:41	dc98279c-f35e-43ad-8b1b-3b8d0e1998a1	GET	http://localhost:5173	/api/v1/candidates/organisation/674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:41	b228803d-08b6-4fd4-98f6-b7c332f3666e	GET	http://localhost:5173	/api/v1/candidates/organisation/674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:42	cb492d21-9e4d-4444-8ea1-b16b715aca63	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:42	4d2c7cc5-1259-43d6-a635-103e724e1cab	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e3df1a0a0910f56a3c9e0 : UnauthorizedError => Unauthorized Access
+
+20241202	23:10:53	a42ea653-73f1-40b8-9b76-7ffd79084ace	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:10:57	61f81d21-50b7-4244-b647-17542f73e0e5	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:11:00	2d5cee1f-1364-41bf-8c15-b66e54d3de01	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:11:11	7985d0d6-2497-410a-9586-9c69bf5c0ee4	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:14:52	6a758d62-041a-459d-aaf6-ecbae47ee458	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241202	23:15:23	971f90d1-0fdf-4c3e-b120-6594a963470f	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:25	ff0f576a-f3c7-45bd-9737-c8424aef2cf3	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:26	7e315209-9ba4-41f3-bc5b-3f058e31ebf4	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:26	20c28115-4407-4042-a559-c7a1850d5fdc	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:27	9db41df1-ef50-434b-93c0-95350eaf47e8	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:27	37394b91-2533-45d4-bf57-9a11b6bdada9	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:28	ca1dac89-3d63-4aae-b782-1adacb7adce9	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:15:28	dcfb3941-d630-4380-89dc-7012b9e32eda	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241202	23:21:47	6a6bde5b-96c4-48ed-9bd8-0105163a40bf	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e4092a0a0910f56a3c9f8 : UnauthorizedError => Unauthorized Access
+
+20241202	23:21:47	e090a9d6-5690-4744-bfe5-2e3e0ce42464	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e4092a0a0910f56a3c9f8 : UnauthorizedError => Unauthorized Access
+
+20241202	23:21:50	10369060-277f-4d49-ac78-794a3980c9f4	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241202	23:21:50	0674de3e-7848-40e4-8b58-cd955ba30666	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241202	23:24:40	465652b6-0514-4c2a-97c4-0cbae1379a26	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:24:40	8a973852-159b-46f7-828e-e3dc380e99b6	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:26:21	3603a14e-55dd-4820-b5ae-ef59a7cbcb15	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:26:21	52567509-dcc9-45f8-bd0d-2ebb16ef7173	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:26:30	220da4f9-aa3e-4241-a304-b91283e412be	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:26:30	ad780669-9da8-45a9-9603-406414aeb3b0	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:32:53	ddb6b797-b8e8-4692-b1b7-1f9e0ddddfa1	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:32:53	426a5cb1-f8a3-49bb-8dc7-3fb81876ca9f	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:37	9dc67841-3916-446f-9d5a-29e2b502fad3	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:37	1b39431e-48c5-4d54-9786-4ea627de4445	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:38	ed6d262a-5f8d-4896-aed8-13bcc1f94ab0	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:38	03a7075b-48b6-4c17-bc78-09f257767c71	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:39	ae1fc298-5805-462d-a630-127b71a0c574	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:39	782e0b74-b25c-4f7b-8864-323bf1d06113	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:40	0abeb06d-d011-4f57-b422-e6a51b76e332	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:39:40	cb8ead53-e348-469b-9e3c-7703cd0c4333	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:40:15	0f73a733-c6e3-4717-9f7d-1bdf71331921	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:40:15	3f0e3afc-f0b2-4512-bbc5-0c83608f5576	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:23	b575242a-c537-4210-9c4d-eb3fca1026e2	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:23	01d19079-55a0-4a2a-a669-e021e3c7d784	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:29	223153f8-e8ff-4d02-ae1f-ef851f130815	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:29	7f571fa7-3c11-4141-817d-d409a6da62c7	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:40	9def5236-4131-4270-9a1e-f14fb892b1d7	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:40	4fea1e91-e575-491b-a017-aa349698905d	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:46	ce3a378b-a7e9-4b13-b5f0-dc8d6443c6a6	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:46	04f240c1-d098-48f3-bd8f-7a168415f25e	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:55	a5707238-7773-42db-9211-29dd5f395f07	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:41:55	40e2acb2-e7f3-4eae-9175-cc77d3b4a28a	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:43:06	d477359f-5d20-477d-95a1-d1aad70cdbb1	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:43:06	1846e62f-d95f-4c56-b3a0-eade1a0774bc	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:47:40	173b5f84-601e-460a-abff-6fbb8c654b83	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:16	5b288e7f-c84f-416c-af56-8cd4015b9751	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:16	e60806c5-2dfe-423f-9e24-a4cc02205eb8	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:20	7ef9b7a5-dc18-4a57-8e0c-ff3c6dd662ba	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:20	17d1adf9-e7b9-449e-91bf-d53ea8d81a88	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:46	b494138f-b9a9-4a96-9bae-84b0d4d1ad9b	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:46	2e580d47-beeb-4176-be50-0e012e2bb1b8	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:51	83d1c30f-2681-404c-a82e-e5d85d5b9ba7	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:51	2310a25b-c905-42b7-ba19-f2df877a97d3	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:52	46db5313-67ec-4ff0-9d04-b874667aace9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:48:52	98c2a656-779f-4098-a6e1-3a5e8714c5b2	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:13	b2a63620-7000-428a-9f47-283d22881492	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:13	958ca5c9-abed-4dc1-8422-beb8e8f41ecc	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:14	a4de3104-7003-47b1-bd57-a28503c9338c	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:14	091a903c-f4ec-4bf8-9aef-9163cd39e51b	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:14	a4f8e9b6-9569-448c-9c8e-947debd4ad48	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:49:14	d8d32b48-d681-43d5-bad0-561e676ad9f3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:55:52	7ab05f7d-04b7-402c-b2d8-6498a91101e6	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:55:52	60bcc6e4-46c1-4617-bc0d-ee41bf60ff2d	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241202	23:56:38	ab44c79d-851d-4e4d-aafe-4da9ed78d3dc	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241202	23:56:46	bec087c2-22d7-465b-b99d-706209a74468	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241202	23:58:15	37693316-7c49-4e40-8618-cce73793ba87	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241202	23:58:17	96dd17d6-b6c9-45dd-9050-925e94005ebd	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241203	00:15:29	f035fff5-ac38-4907-858a-43afef04bae9	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241203	00:16:43	a8323886-abb3-4b6b-90dc-25fa8e016049	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e4dcbcc19c444f48b74d4 : UnauthorizedError => Unauthorized Access
+
+20241203	00:16:43	eede9439-a46e-463e-b93b-9fb3e5be8944	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e4dcbcc19c444f48b74d4 : UnauthorizedError => Unauthorized Access
+
+20241203	00:51:44	a562d141-2540-4102-9aee-f4768d70d97d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : BadRequestError => Bad Request
+
+20241203	00:51:54	47ddac8e-8f40-47ff-ac8c-b75dc3fd6409	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : BadRequestError => Bad Request
+
+20241203	00:51:54	3ec93886-aba2-4b04-b413-b74bbf33b1bc	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : BadRequestError => Bad Request
+
+20241203	00:52:44	57bb81fa-ff12-441d-b837-1417299917ff	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241203	00:52:44	f593d975-eb24-4b15-bfb3-98eba1457ac6	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e41b02c051eb979a6032e : UnauthorizedError => Unauthorized Access
+
+20241203	00:52:47	88ef33ed-94d3-4f29-9c93-e2d786ed5ee1	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241203	00:52:47	0f6957aa-cfaf-4bd0-8eef-f774506616ca	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241203	00:53:21	c3822269-6d55-453f-9514-162db1554fe5	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:53:21	7e96ee37-a885-47de-a299-5572ae900938	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:54:06	a9f5454b-87fb-4cdb-99e7-804bceca3d57	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:54:06	a25e6e64-0802-4010-9c74-d1aa4b02806a	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:54:18	69077f08-182a-4e7a-befd-4662c4a6baa1	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:54:18	44e683a4-d810-4df1-9058-5c291c18de5d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : BadRequestError => Bad Request
+
+20241203	00:55:33	15ad715e-a9c4-49af-a2ec-5b7520202c27	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	00:55:33	04be3a46-6461-4135-a683-0ed65025a366	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : NotFoundError => Resource Not Found
+
+20241203	00:57:47	811d96e4-509e-49fd-b36f-e261f3795781	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : NotFoundError => Resource Not Found
+
+20241203	00:57:47	bbae9253-8954-40d5-8710-17f9a53266c9	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	00:57:47	1cc314d0-e8e4-40c7-b3ac-769f0d5c4d87	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : NotFoundError => Resource Not Found
+
+20241203	00:57:47	8fd4bb99-580a-4ecf-b583-081fcdcc31bf	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	00:58:38	273c41c8-1499-4dc9-a589-b17d25e35a53	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : NotFoundError => Resource Not Found
+
+20241203	00:58:38	ca6ec358-4ad9-4f2c-9f78-f1e1af1c4be5	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTRkY2JjYzE5YzQ0NGY0OGI3NGQ0IiwiaWF0IjoxNzMzMTg0OTcxLCJleHAiOjIwNDg3NjA5NzF9.cfkGkPLz2bw_HihYSnAQ6677pCPNzjsvNqLlTfxlkfU : NotFoundError => Resource Not Found
+
+20241203	00:59:05	020b83cf-5b68-4838-9c3f-b8c16d1dcbfb	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	00:59:05	25b1a187-dc73-4b7c-93bb-25820c0806a3	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:16:23	61b26a3c-7b98-459a-857b-ab6b9a707038	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:16:23	dc057acf-0e7e-41e4-acc3-303e33812ed2	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:17:50	75506243-5cc8-4304-80a8-414bf49f5d4d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:17:50	205f5937-0721-4443-828c-ea5b67dd84e1	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:09	81ce0f81-9b22-4be5-ad34-d0cd73e298db	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:23	1aec2f30-6af1-4358-b84d-8ca3371fd66c	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:23	804527c3-4267-42c4-b9f4-d7ac19ed4461	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:25	ec719154-1547-496b-a7c3-bd1ccface5ec	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:31	a3b22576-23d6-47dc-8036-5c9ac271049b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:39	718b4130-aefc-4a0d-9621-8c95202e70ea	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:39	7788ad20-ac18-4a4f-868e-8a7a72a52455	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:42	519911ef-22ca-45f1-962b-ccdeba0d0384	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:42	94217abf-fadd-42ed-9197-0d07b76c2671	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:18:53	7b1b1186-8a76-4454-a6b9-33343576f498	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:03	66f3e8a6-6d58-411b-a0de-5b9069a431ec	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:10	710e0e4f-5773-4eba-954d-52a75ee91762	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:21	24bdd26c-2701-446e-9fe3-18ed232c348d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:21	328d27b7-5fc1-41b2-b6dc-ad34eb23015d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:30	51958d5a-85be-4ce0-9dc1-bcd366c5e9c5	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:40	8c5b52c3-63e3-43c6-9d92-5652d5ebce0b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:19:59	3adc1c4e-8dfe-46f3-9565-40027fec8f05	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:20:00	c05c83e7-6a56-4248-a49c-8cc39c943620	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:25	19035ba4-80cc-4203-961f-9a9275e7a739	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:27	c8223d21-78fa-4ada-8cd2-720f59b8fd88	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:32	83ba8f75-533e-4278-90e3-e9c75a37b8e2	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:39	1cefccf4-03f1-4d34-a7fa-a1d38d0bfaa6	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:53	dd3f0f1d-c9e2-4d5d-ace1-eb94cae1e065	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:58	76a43998-f54d-4266-9a35-e8d8e00c38a8	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:21:59	30ba97a4-4490-4bb7-afac-792cb3bb4b3d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:22:17	f0e217a4-eb58-486d-a342-ab56416d0863	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:22:30	afa339db-78f4-4f25-99c4-77c4290444e9	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:22:48	8872ade1-88d0-41a3-be38-03fd1a76c326	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:22:53	578b907a-8dce-4a91-9ab9-db14d3918401	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:23:02	71973a82-5e20-446b-9777-b790a0156983	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:23:04	98d83223-c307-4738-a50a-a7041adee7c7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:23:11	2d06c460-7b25-4fb5-ae3b-9fe57ba31bdf	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:23:17	bd3dc860-75d0-470b-bb0c-69f8bac7e7f6	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:23:22	8d278b86-2dcf-4c93-a71e-65eadb814d74	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:24:20	3362af01-3de9-49a7-84af-deaf5e4c85b8	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:24:28	0f5fbe5a-7c8b-4b43-9bfa-db36043eba68	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:02	d9262225-c2d5-492c-a21f-07ab3a753bc7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:04	0354589f-3d9f-4f3a-b910-5e1e59c748ca	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:12	535f3208-925f-4f15-b16a-00ffabb5e1da	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:14	4fd2346b-6c3b-4b0d-8e0a-03995934a525	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:17	6ecee902-3519-4417-a37c-842364a2e5a2	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:25	100d83d2-8adb-407a-beff-fa9978e194dc	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:30	bc58e90f-e1f0-426c-9f9b-a1317ddcf8b7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:34	7060621b-ff6b-478c-aa65-9d53701b7975	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:25:54	7cd0745f-09d1-45f1-8366-79542acadead	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:26:03	419cbb91-1813-4a63-a9ea-e54ef73e5cd7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:26:05	fe550de2-f9d3-4eac-90b8-6bd0632f95e2	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:27:00	f14d2776-5759-4030-a441-1374fd33aafe	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:29:20	c486d99f-111e-4267-9a6c-b9f667deefec	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:29:20	8b4a0ca0-7984-4b22-8341-e83efb7d5b51	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:43:54	c71d1801-b0a0-4797-9b3a-0e7550f5a367	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:43:57	adf9f2ea-369b-4419-b5bc-402a468bfeb8	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:43:59	e358aa75-da07-4322-b0c7-d0983c42c8dc	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:44:00	98fd97af-2b86-482c-aa59-d3d28fb10ed5	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:44:24	0a8f8fe6-e2d0-4a42-b237-8b5c1c0e3f3c	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:44:31	f04145b3-5ea2-4562-8477-4e9a6414c759	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:45:18	dadb9912-e317-4fd5-9679-d563da6b8e67	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:45:22	b05d116f-6e7a-46de-826e-54330c4a3995	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:10	6f0110af-e18a-4623-87af-307c47cd7e80	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:11	b2c1af30-73bf-4456-8bd1-6e9f0ace4e82	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:16	3262af6d-dd02-4f67-8dce-157ad53ca64e	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:17	81f10be7-e8e9-4380-a105-0ec370b11d53	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:29	d0906c8b-0df7-472b-9bfa-1e8ccf2584d7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:30	f677b5b5-e116-472f-80b4-ed9d1ff46e21	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:33	85981f70-50ef-4305-b41c-12d91cd454a4	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:48:35	28edf70d-17a4-4742-a012-64748c4e7a78	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:13	f2fd0531-fced-4690-8a00-0ddf2746dd7b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:14	f4c23912-9cae-4c62-a950-1612b3221e6e	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:21	d0354873-35f7-43e7-9064-110861a0b481	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:37	06efc00b-7f01-4a03-a791-8b1588328a7e	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:52	4e4ce5ea-546e-4ef3-af56-4b2edf4efa98	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:50:53	de423713-ef0c-4ba7-a408-2fb961aa1dab	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:53:21	c762e635-a3dc-4c33-be33-5c609367aa3b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:53:21	be446311-9e81-4dea-9695-59b794a3395c	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:57:39	0eceb176-ac8f-4af1-9aee-670f05af09b7	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:57:52	9a0c85b0-3f54-44ce-a5be-0885b24e1700	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:57:52	e63d0115-f765-4b0e-b795-aa65c1e6a418	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:57:58	1aa63f22-6741-47b9-b178-917c0b8e954e	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:58:15	94d7a878-3707-424d-a0c8-22e4af1fbe38	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:58:20	144fbaad-2f1a-4827-9553-b3d811b44f1d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:58:27	0d7c9853-4cc1-4bdb-8a46-8a63b09e452b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:58:30	b8dd7bbf-f726-4e13-a37a-abe9ebd86e0b	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:58:31	1263db6b-0449-4553-8688-6f979d71d169	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:17	88da7c1c-3688-45ea-b49e-01feee79848c	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:26	0fdd8159-bb02-4833-8c0c-b03827a36f1d	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:37	e8ec1a03-6504-4f6c-84f5-44ebea0b17c9	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:37	7b95bc5c-8624-452b-b241-6b144f84011a	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:41	81e84b19-cf37-49f3-8244-7b55f4218236	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:41	abf85ad2-8dfa-49e5-be45-d56d5ede4562	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	01:59:48	cbf5c73d-0f69-4432-9859-746a015d758e	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc0ZTU2NzYzZDg5NDc4MjA2MjQ0N2MzIiwiaWF0IjoxNzMzMTg3MTkwLCJleHAiOjIwNDg3NjMxOTB9.Ijf7qxAnMTr1nTR_U8dnlDXYKwX16nFpPOk5tJm2Fcs : ConflictError => user already validated
+
+20241203	23:39:18	47f61d1c-9309-4e2b-9e55-7546f6702ecb	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:39:18	08f90560-62c1-4c3b-b1ce-a07926b21f5f	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:39:34	a8e8e4d0-2546-4656-8d00-96eeacf4a3c2	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:39:34	a7134b09-ff6f-4e78-ab17-caf192fc08f4	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:41:07	c4547f53-f850-434c-b336-d21a4802881e	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:41:07	73d37c22-4475-4fea-9c2d-c5a5003e24d8	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:49:47	4665dc49-a597-4e2d-bde7-3dbd249b832a	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:49:47	7ab13426-7683-43f4-97f0-271312b8a358	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:50:37	c95410f8-3653-4add-be74-f6289a4314fc	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:50:37	12a1be5f-aa5f-42d1-a2f7-930f4c456c0d	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:50:37	2bbb29fd-4ebe-433c-9ea5-b47bbb4245b1	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:50:37	45099e9d-8a2b-45d6-8773-a7a017c042d1	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:53:26	3c424f10-9151-40c6-a33b-9196e6fe5fbc	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:53:26	3732c8c3-0c1e-41a9-8852-bac22834f513	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:55:37	1b385554-84ec-4ece-b3ac-4cf817856154	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:55:49	c6e7ab86-0025-4432-85ba-be7ac98a0423	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:55:55	c9b74e9c-512e-45c3-a4ad-f9917a7ac8f2	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:56:20	9e017aba-8673-4597-bc4c-31d33daa81c0	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:56:21	db205a32-b174-4397-b9d5-059b79ab92a6	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:56:25	6486fb11-82d3-44e7-b0fb-6def7cfd7f05	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241203	23:56:26	49f357b1-963c-41a5-8a5b-0d6a2ab16458	OPTIONS	http://localhost:5173	/api/v1/elections/?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	00:00:14	09f32779-cb94-45d9-b981-2738470d8ded	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:00:25	04e48759-a8b4-407d-9830-00a022056fd1	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:01:01	15fc22b9-36fe-4f17-9fc5-073837d212f8	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:01:33	8ce874b3-3880-44fb-a9d0-106847ac2045	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:01:34	5537338a-1f2e-4118-9fa4-f32a3cbd84b6	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:54:04	1548c17f-b088-4e9d-8763-7feeb1a2f590	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:56:22	e5afb448-977f-4a6b-abe5-52ef879d2bd2	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	00:59:50	6288a524-fbdd-4469-9500-3e8956d4b684	OPTIONS	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241204	01:05:14	eafa1612-45f7-44a9-bc96-d4c995e3241b	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	01:05:25	8953c1bd-a38c-4614-983e-18b01c86037e	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	01:05:37	327ba808-8db1-4e54-86ec-5c621cb3b75d	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	01:06:03	c0dd274e-4147-4185-8b68-ee893ba59ea5	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	01:06:17	581e52ab-ee77-49a5-b7dd-cba5cb0ef7c5	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	01:12:25	543f5519-af80-4675-87c9-073945e8f5e0	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:12:39	452e87f2-2780-48dc-bceb-9d41b4e172a3	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:12:43	b8b1e7af-a5e7-42e4-878c-5390c4837f60	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:13:54	f07ee6af-77cc-4f80-8c7c-381885be8e6c	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:14:12	b4f9cb49-a53e-4523-8d71-f042797f4c52	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:14:29	f84addfe-5d65-4b03-b0f2-690d5d612ce9	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:15:12	d7675a4d-958a-49ef-86e6-a553a091cb4a	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:15:32	d412217b-07a9-4ad7-94b3-13d008600a9c	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:15:42	b61fbcbc-d9ba-422c-a347-633b7a0121db	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:15:55	cba48ed8-0de0-494e-9d41-9dc1853a2ad6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:16:17	a9b55364-73a4-4705-9ace-9b4402595319	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:25:57	31632782-97c5-4114-85e0-65a611b14234	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:27:06	00008fe0-0cc5-4f80-875a-66dd5c0ef888	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:27:14	c7ade99f-a73e-4a5f-9fda-be4d1fa6f0b5	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:27:56	b87f4f5a-8f1c-4438-9bf7-f761dde18e02	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:28:31	13d7c5e9-a471-4fa6-8e24-e81127be9325	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:29:08	dba7a12f-488f-4e6a-82ff-3e6628d479c6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:29:18	046afb43-b3ef-469b-9385-e17fff62a882	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:29:38	3ec33678-0187-49d8-a3e1-0d7c2f3a724d	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:31:31	2bd4ec03-5557-44ea-a838-bcd4113d9c7e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:31:58	1317b05f-ea04-47e5-9ef6-777e2e77ef32	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:32:08	d80837c6-df79-4887-a156-518e90d0694e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:32:24	a05d32bb-4543-4c09-b9ff-2269dcf5363b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:34:12	41b88670-adb5-4ea6-a99b-32de8c1b7835	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:34:50	1fb590a8-dfe3-41ff-acbe-f59e48b68095	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:34:51	79540be5-1325-4bc0-9150-3132413ea4b2	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:35:28	8c029c11-71c6-4b08-a1a1-607c8b3634c9	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:35:47	cece33de-b067-4c08-ac48-95df10ee48a2	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:35:57	53cb5e52-6244-4371-b5a7-af445ed565c3	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:36:41	87c71763-126c-4eb2-bc83-e6b4101b6bda	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:41:06	cf16766b-93ac-4c29-b1c5-5bb39dbb183e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:41:07	e08664ea-d749-466b-b786-a874d042b4ed	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:41:07	32895019-ed18-46ea-8eb4-c035f36ac54b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:41:07	7f77cbb8-95a5-41e7-83c4-1cbda80cced4	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	01:51:16	40449400-7e0f-4370-bf39-895ec1db17ca	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241204	01:51:16	87122be7-1a18-4c01-bc75-547a911622f1	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241204	01:51:22	605f2a9d-4ae2-4db1-b23b-c5658706ed44	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241204	01:51:22	dec5cf50-192a-4e54-ad48-543cc04ffd6a	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241204	02:01:46	8a3b6e44-f15e-4b9b-b994-079777dc74f9	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:06:35	6b9e9cd9-a8fc-4f30-b47a-1c05a4a433b4	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:10:17	8af4c486-1e77-47d0-a1da-73b58b6219dc	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:10:17	c360acf2-5a6e-4a22-bddb-2242753c4f82	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:10:18	03bb138d-97cb-452b-bd9a-2eb59ba9ec1c	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:10:18	19998476-5934-4e06-bb46-c3256bcf15af	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:11	2671a8a1-da6f-436d-9179-a6b6edf3b05a	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:11	0c64a1eb-47b0-4c0f-beb5-0d579e0148fc	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:16	b94e823d-1337-4174-b417-e8368ddedeef	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:16	11202e2f-90c1-4c0e-93a3-d2fdd7521fcb	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:17	c89c2fe7-1a53-45f0-9421-7fad6f2dbdd9	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:17	84851413-9c0d-4f34-b028-7f9d212207e8	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:47	ca1b9817-86d3-44e3-aecb-93d3d7d482b4	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:12:47	a14b2e10-1c38-426a-97c2-dd7925c74dc5	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:17	d1842f67-c9e7-4df7-8b5d-3e788e19b55c	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:17	09944434-0348-4178-8992-fff99f542a55	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:20	a846799d-c0bf-4256-8320-3fbcaeea7ff3	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:20	f0d38d79-a81f-47cd-b3eb-8f4105cf28f1	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:30	96e016be-42a6-4ca2-a079-dfefb5e93830	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:30	d86c3141-4843-43f8-a1a0-223252d43482	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:55	fb141769-884b-4050-8d3a-ffe8b5228893	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:55	c646fd65-9f55-4660-b4fb-8fd197377dcd	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:58	24f7917c-6dee-4ab5-a56f-087eb185d728	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:58	dc509119-a92d-4001-aabe-41bf7cd09ad0	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:59	7d044f3a-75cc-435d-affa-eb881dd0e7e0	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:59	a72b5dab-fc7d-44cf-a0d9-dec7dc9e5c69	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:59	30fd204c-a1f4-4d3a-a04a-c1e88a67031f	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:13:59	87ef8ee5-59af-40c0-8ed4-1bd57f0b75e9	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:00	0980bf29-0f08-4282-94fd-d56764d13e4e	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:00	6b348bb5-19a2-4002-b473-6b28d1a63dc2	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:32	01fc31e3-7c78-4c59-b69e-6976f8f2a45f	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:34	4eb2b2ee-dea9-4ad8-9be8-e489d224b683	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:40	43599fb2-29e2-43b0-87c7-f6e489b743cc	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:14:45	f835c5d7-3bd3-439f-8db8-8e8060d63626	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:20	b16d245e-34cb-48b5-8e3c-1d8f6dd6334f	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:22	b3b3cb2f-3d62-4865-9b46-352c58ec3170	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:22	d9f92aae-a5da-4b21-866b-09b5c7cf3c7a	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:41	13ca5134-ba17-4ffc-89e6-6c89ce847bbd	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:42	2fe0a4cb-3955-465f-918b-853cbf47f5f7	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:43	0b74b844-8c53-4c10-b4eb-da3905f7199c	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:43	6f0c1cc5-7e66-4f1d-a222-1c27adc7f220	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:15:50	59ca1808-0ab4-4b45-90a3-a70a5f987ec1	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:26:57	3148605d-021c-4637-8ca6-a333f9a254ff	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:27:10	fc9e2aeb-447f-4714-b987-77a12a9c3e84	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:28:40	2a267050-5820-46fb-a5dc-2f9aadb6caf8	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:29:32	001ffdd6-eee0-4f12-a988-485ae83d583b	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:30:00	4153d326-82cc-4e5c-9cad-4debbb5a32f3	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:30:35	01a285ec-b474-4b0e-864c-a4fc668afb35	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	02:30:35	eacd8638-ab98-4307-9dd3-adbb2fdad306	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:06:32	479464d5-bd10-42cd-9639-f2226fee34f0	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:06:32	19c64d11-67fa-4226-b2af-ed3d1b25c649	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:13	8bca98e0-acda-4c9f-b1e0-dff4598ad521	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:13	d3beae2d-4f1f-4d81-9269-831d52b58b6a	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:14	a36e084e-4bed-4dc5-ac05-4fbb5b0bc737	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:24	77ae22b7-5d42-4c67-abc8-0fcc28dd62bc	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:24	e090f7d9-e5f8-41e2-ba2b-cf423e3986ec	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:33	49187810-5d96-40c1-b8cf-2204a24348de	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:07:33	43fab533-44bc-4a2a-90ee-5bfe862a44d1	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:32	e428d770-8cd2-4758-8fc9-5585acbd0c20	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:32	caed2561-8ad9-46e0-a57a-06302c584cec	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:35	63c2a28d-dde8-4c7d-a396-0e54cda42419	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:35	dbdaf2c5-1bbe-4ed5-ac67-a5c28e41e4b7	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:52	c765ef9a-a75e-4b10-8e95-1aeb2c451fbe	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:08:52	1fa43c9c-2aff-4979-b9fd-bde23441661e	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	a2181a9a-d525-49d4-b4a4-1be7dc2b0e5d	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	79cafbbe-8594-45b9-84de-2c01f4f9c7bd	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	c754e023-2857-419b-a5db-e98b764073b4	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	d45a4333-6eed-4a8d-9130-1682457c6c3f	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	ef97bbaf-1b50-44c5-975f-236d0b686e35	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:10	d4a7d8ca-97be-4c4e-85b0-68e4168cbe4e	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:18	bfcb1c97-7970-4016-83a4-601c66daaafa	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:09:18	a0548c43-b57f-4c51-8ae9-b68ac79dacde	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:10:05	0da9cd61-fca9-4b09-803e-c28c826cd325	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:08	1584c1a7-f304-4d88-b97c-11f851895f25	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:36	6fb0d7ab-3615-4e11-aebb-490926d4b017	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:36	0679c628-6f2f-410c-928b-5fe206a6ba3d	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:38	865000a7-246c-4e24-8c2f-d52bab910151	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:38	f646ea68-22c1-40b8-916e-b27bf13892e7	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:47	b0c45489-cec8-4b86-aab9-7ecf1db43e83	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:11:47	9ef15e09-925b-499c-b575-42b47475e6c2	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:12:18	d9cc5324-20d0-4d13-a77d-d72a0a33dc90	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:12:57	8eb5d76a-8fd3-4a11-9a77-1284ebd5e827	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:33	5fe7c6d2-370d-4661-958a-e1c0851cd766	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:39	08755017-efe7-46cb-948e-943a8db7f099	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:39	e3a4ef2e-56fc-414a-990e-d0d5a9eddd8c	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:40	7cf9975e-4436-48d3-9042-6b85036375d6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:40	1590932b-a6bd-4d57-9455-b74c1c382bb1	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:44	4dbc8f63-f340-4f96-958b-58a09ef37b66	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:44	1169080a-17c4-427f-9689-c8ccb04adea1	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:52	7eafa82f-10e2-40bc-95a3-43c425a7a0cd	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:54:52	f541fae5-f030-4452-a64b-f56d289a6df0	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	03:55:10	762bd895-51fe-43a7-8ac7-cf740051bf00	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:24	70c86019-5adc-4c15-8e70-a37187dff441	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:24	f5f7607f-8309-4c96-812c-7670cd603357	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:50	d2f887dc-6436-4dbc-a4fc-ece0edb094fe	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:50	01474682-e2fe-4c7c-8cc0-0f77857e3866	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:51	858cedb3-e057-43bf-a347-b0e9ca30a9db	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:51	76fa6ef7-f8b2-47d2-bcb9-e6f2a42d9c87	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:53	29a72aa4-d1a9-4d9d-aeb5-f91884b8a126	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:53	8e8a6ed5-9f58-41c7-9f44-18cda7435581	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	4a15cf2f-1fdf-4fc0-af48-6306b1ffec49	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	132da898-3061-4f2d-a013-44ae10508656	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	baff5797-6eb3-4a15-9f5b-3cc6355182b1	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	4986f7fa-6c56-4a7e-8f46-e496ad8032a8	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	ab55600a-b898-49b5-931c-0d3614c73699	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	9f99c556-721e-410d-a303-80e8339831c0	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	91ec24ca-e366-4435-a49d-0d3a0c4af9f3	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:54	0c2ef6d0-7405-4fe0-ba10-fb093cab194b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:55	ff2798ba-d429-49c0-839f-0972464d2525	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:25:55	9762e4fa-2d40-43e9-b23a-887297911d44	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:26:22	36547ee6-d2a1-4797-86fb-5faaa5ce1d0c	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	04:26:24	24bf834d-1038-4657-a6c3-c21aadd0784e	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	04:27:32	b4ddae43-d860-4a2a-bdc0-483b0002d13c	POST	http://localhost:5173	/api/v1/status : BadRequestError => API seems down
+
+20241204	04:29:07	de88ddf8-ddf4-47cf-bbf6-e600dd6a92ef	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:29:07	cb22f3d8-0059-421f-a818-e89d277b4bfe	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:29:10	46e866b4-f8ae-4659-9a65-29d001ab9a70	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:29:10	68b05348-65ca-41b4-807c-fa489113dd85	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:29:13	1da8dc4b-1110-457f-8d27-fe64bbf7756a	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:29:13	38a790a6-817f-461b-8f95-77e55982c7cd	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:11	ab7b32dc-1680-407c-8bdc-43009093bb09	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:11	07a146b6-5b07-4001-b448-615b8bf89b3c	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:14	55b2671a-da29-4f10-b4f9-14e8d6b1c3f6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:14	8ba7ade1-0775-46a6-9190-d557ded36f24	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:31	df859205-f49f-4f61-bdfe-b59f1f50df1b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:31:31	b88637a4-a9cb-4150-a4c7-b589a7c54f40	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:32:22	a89d9ab8-1b7f-4cce-9251-cb4689efb006	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:32:23	043cc057-60c6-4604-8c38-6ced7885d011	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:32:58	f54026fa-4c61-40a2-a4f2-1cd1156c7ae6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:32:58	02eff0ca-cad3-472b-9999-31179c71a2fe	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:48	62acfc20-a351-4c74-b607-b061e9c0cdc9	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:48	a91bb008-cbc2-41b8-9f99-3d17ca73998f	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:49	f6f6aea0-b3c5-4493-abf1-0d8b778cf6ce	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:49	f60cdb88-64e1-480f-a7d2-4a6ae2800856	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:49	5b2e8b8f-cf78-4a86-8911-209a56b1d6b3	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:49	9cbcb92c-5cdd-4299-a284-293933e866c9	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:50	e76b8dc9-4c6f-47e8-9d58-ceca876384cb	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:33:50	0e76043d-cc3d-446c-a8c6-07827b1f64db	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	04:39:33	a043506b-a87a-4d79-9f48-3c7e2b1cc04b	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:20:48	e4b43c7b-f287-4dfe-aae3-e7a79c894e56	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:20:53	02bf9207-415f-4b3d-a197-0dd87af4e304	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:20:53	cf886ecd-042d-44cf-9225-7550393f683b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:23:04	14cdf2ce-0ec8-4ca8-b631-4dcdc962050b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:23:04	1446526d-1947-4d87-903d-4062b360d3a4	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:27:02	3fa72cd7-4eac-41b5-9bf2-862534c68ba3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:27:02	2a3c9201-8a4a-4be2-9ab1-0cc6812cc4e3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	05:33:14	a243659b-eeac-433c-915f-ad08b3a01eeb	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:33:17	24e1d4e9-2308-49e1-8026-dde6d5159618	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241204	05:33:35	fff38a4d-65b6-464d-9b65-e12bd3e91b5e	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:33:37	d61d6329-c14f-425e-9568-8689808a27fb	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:34:15	4e5271a2-62b3-4ddf-9c21-1cb28d8ee699	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:34:18	4abfde55-0e71-4ee8-af90-68cd0efe6243	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:34:58	8cf3c08a-a229-4db0-9a4c-bcb6288eee32	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:35:05	2d992b04-5de6-408d-bcaf-9b637e125571	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:35:18	57224b96-8093-4465-b9d5-8e17f5bf39ad	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:35:39	da973e26-edfe-4f3d-9cc3-0239d567cdab	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:36:04	db70031a-0aaf-4a7c-aa32-0f46934961fa	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:36:24	cd7a96c6-4950-47fd-a4e8-7dee005c458d	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:37:02	ce60f895-c185-428b-b9f1-54277401ab89	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:37:04	47af5716-41f4-402a-90c1-6a3e46211f32	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:37:32	0d4a947a-ed4c-4813-940c-cbd8d5d77601	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:37:47	c4685d5b-891a-4893-9502-99270aff4638	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:38:08	08fd1588-d71d-4b72-8605-75a6d926b252	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:38:20	bf8b4299-9a7d-48a9-8daa-a530f0117509	GET	undefined	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:38:28	4ad98fb0-2c6b-4da4-b987-192bcc898bd4	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	05:38:57	806ec165-770c-4cc9-8822-13d6beea4063	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:39:11	ddd8baa7-0c59-46a5-a53b-3b9c9bff8a5d	GET	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:39:11	51840645-f6cc-41e4-99ce-ad6c48f7d92e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:58:27	e68fa596-fe05-42d2-98a4-9cc87de31993	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:58:28	182ba615-e4eb-4c22-bf92-b0dc35bc3477	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:21	51bf30bb-7da6-4891-8c41-77f09716e073	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:21	b2ebe05c-8ea1-4c1e-b73b-c1abbd78c9da	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:22	ae0b222a-2a32-49ee-8bf9-99fff21b39aa	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:22	5943f911-3e98-4bc5-9aea-77490fb9d4ed	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:47	5dba03f6-91b8-46d8-bf29-d0d7c89edfe4	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	05:59:47	7bf29537-14a4-46d3-9a10-0e9480dca882	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:26	15515eae-8cc2-469d-9c86-eaa98f1ed951	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:26	92058e2f-31ad-4e97-a2c0-977c063c178c	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	a27059f4-5e2b-43ed-9e01-0873675b7b02	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	e6d945ad-0572-4e0c-b58f-016d7236afcf	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	74673f91-4994-42b6-82bc-965049ff7dbd	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	34295dce-0398-4d44-a539-7cda8c96703f	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	f8888dad-251d-4829-bd08-8e56adde11e7	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:00:36	85c98a04-4d4b-4607-82dc-8013f3f1dc06	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:06:40	e3a9b3de-23e1-436d-a75c-f0ee54d0f9f6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:06:40	6b6a187e-c6e3-47e3-a5e5-377bb2e14cb2	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:06:44	beaf6f42-754a-4892-8a78-fcc82f9d5289	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:06:44	b0d35d6b-8073-4e90-8ae3-8fa9df12a401	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:09:44	1ebf6617-bdce-4885-a4ca-ffb3a27ae0ca	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:10:20	750bf9b5-239b-484b-a462-dde1d460867c	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:10:26	d7184663-269e-4a35-8dea-9997f0a0672c	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:11:10	9b15ebb4-2847-4ca4-947b-f7a2886102d2	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:19:05	6777946a-7198-4aa8-8ce5-49f20c5af2f2	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:19:05	0dcd3fc6-8852-4e89-acae-09edf8968009	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:19:37	f6170aa2-c5a8-4c9e-91af-303f16e70903	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:19:37	4b7d8e28-74bd-49d6-814f-76cfd500f590	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:19:37	6532fe43-ced7-43fc-a5b8-9ea24302cc49	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:19:37	aa71960b-8442-4253-8ae2-7d37fbc57db9	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:20:13	e6d66edf-2a65-436f-a1e9-185d92f2cd83	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:20:13	d2157de6-a6e3-4f26-99ee-4c69d269ae22	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	06:26:13	1b6b6023-567a-486a-a167-0f168f381405	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:26:25	88cc1fb1-ade9-4702-a543-1481c0c060bf	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:26:38	6072b407-ee7c-462a-b845-ef01465299db	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	06:27:00	cad4a4b8-ba68-48f8-b959-5d854ac424a2	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	18:30:08	475ff3fa-0ac5-407e-b7a1-8a3bd2deeca6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:30:19	4fcf2776-ae2f-4b9d-9a43-139e9fe3d965	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:30:19	cf0e2d7f-0a2c-4541-84f9-cbe2a10f6d1a	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:03	0e30bdcc-a436-4e38-8a89-18fb50d07627	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:03	7113598e-0b38-491f-b74a-224ef8d6a129	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:04	b6e26e98-fbe3-4600-a20f-0672ca46960e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:04	668ec2e8-2b9c-4787-9a71-b2dbd7656e5f	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:41	ec0c4692-9547-4cbc-b898-67595e21d13b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:41	32a97c1c-9ef2-4ae5-aa2b-bb54e747be3e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:41	beffaf2e-be3d-4aa8-aa1c-59683010755a	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:31:41	ecd660e1-4d07-4344-832b-bc9dc269b4f4	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:30	e65052fc-db9e-4eee-8464-8540f00e14e2	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:30	63140e03-9ff8-43ab-b6b4-33a60df4bc1b	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:49	95c3dac0-8bf7-4d8e-9229-ab0c645ec11f	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:49	38930a7f-5807-450a-9d8c-499e73377e48	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:49	42ca67c9-56bd-451e-9958-902e374a9ce7	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:33:49	4ab65b5b-8194-4095-bad3-e9ae3f6c0d64	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:00	4eb22e49-675e-43ff-a24b-83a46efb846d	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:00	22d86108-975a-4502-838c-e2fe28330721	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:05	0a46f6fe-dce3-4cf5-8be3-95d2f45aacfc	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:05	8f6aced3-6309-4ebf-8fa3-fbb5a601bda0	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:13	3fd29876-b66a-4dff-ae86-85eb94278fad	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:34:13	f5ff8177-811a-4be5-bd10-72a066ae3fb6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:40:24	c28c8bc9-6044-4401-b989-267581cf2d2b	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	18:41:08	38ef2b73-2c37-4d84-ab30-34987c41d9b1	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:41:08	dcd2a4b3-b9e1-405e-9b9d-6824b8f4aba8	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:42:13	b1ada30d-6070-4cfa-992a-4f4354800aca	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:12	19eff48e-fa1a-48aa-aa02-236c67cfd065	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:12	d210a8b6-d04d-4078-8ccf-a852b12f3531	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:15	014526ff-2a3d-4ff8-bcfd-6f5ce5f23be6	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:15	114dfa06-cc07-4e18-b9bd-01091a9bb451	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:52	c07df279-5f60-4488-88c5-9fcacda609e3	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:52:52	f6cbdf1e-6040-45b0-8f7d-3e155b544d92	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:53:08	d3b0a7f1-c676-42c1-8389-dd90f5689c97	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:53:08	17b517b8-aecc-4a51-9dc0-934b3b468d7e	OPTIONS	http://localhost:5173	/api/v1/status : UnauthorizedError => Unauthorized Access
+
+20241204	18:53:26	00281394-8f6b-4171-920e-771fc5de8a4b	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:26	0b676022-707a-4d1e-9cb0-18ae00942f8f	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:38	9dd577bd-1347-4376-bdcd-be8e81732946	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:38	9d4b7a02-b37b-4d99-985e-c323e527afd4	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:39	2d79b943-3115-45dc-9eca-0c7a974116ae	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:39	dfacda60-8707-4c08-8d06-0a9ab28b0755	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:52	51ebd08d-07bb-4bf7-8621-25d33fea7f5d	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:52	ce17727d-2f85-45cc-9a13-48a58d520589	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:52	b1475b3f-db44-45c0-b1d5-d17a172fa84d	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:52	fc4cc49f-acaa-49d6-be85-9190a040d989	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:53	ecf94735-99da-4f90-9656-a9ba30cf62fb	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:53	35257485-0229-4a94-be89-f520bfc5226a	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:53	4388ee8e-2137-49a3-9755-52b1e1c2f95a	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:53:53	56ae2202-8cb6-4fc8-b6b7-063d27dddef2	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:54:09	30244516-bcd8-480e-9fe7-6890da645ab9	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	18:54:09	f53b619b-b660-4cb7-a3b5-563674387d6f	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	20:12:37	c50b5395-3684-4d2b-97fd-bfd082ae55e3	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	20:12:51	1a604ced-ac7b-41ff-b03e-e078bfd420eb	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	20:12:51	cadb711b-ce88-47a1-b2f1-7f7be78f3cbe	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	20:20:04	21985fe4-6f6d-4ba7-b3af-12e997060999	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	20:20:04	1992c3c8-7945-4dfb-bffd-ded3dff986e0	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241204	23:27:10	40c15470-d053-4372-ad00-b70cf92bca16	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	23:27:19	88da883a-11a9-4cdb-b35f-16866ac4a18c	GET	http://localhost:5173	/api/v1/status : ForbiddenError => sss
+
+20241204	23:39:22	b33133ca-5cea-48b9-840b-80b8bd47dcc0	GET	undefined	/api/v1/candidates/null/null : ForbiddenError => sss
+
+20241204	23:39:53	8936596f-7926-4c94-9df2-b818ea031cd0	GET	undefined	/api/v1/candidates/674934dbfe6ba0e3879883ea : ForbiddenError => sss
+
+20241204	23:40:26	184ac563-f20e-4ae6-b2f4-e4a6e9b4adaa	GET	undefined	/api/v1/candidates/674934dbfe6ba0e3879883ea : ForbiddenError => sss
+
+20241204	23:41:07	e5884049-cc49-4658-a291-01d776b1d5b9	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	23:44:12	ef0eb991-02a0-4e7b-aaf4-9c0eee82d107	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	23:44:52	eea87df8-6f26-4e33-a94b-2e49ff201ce6	GET	undefined	/api/v1/status : ForbiddenError => sss
+
+20241204	23:46:27	abf0cf9b-138f-4f2e-b316-ac4d90446768	GET	undefined	/api/v1/elections : ForbiddenError => sss
+
+20241204	23:47:09	775f791f-f20a-4bf2-b2f5-1590b4265237	GET	undefined	/api/v1/elections : ForbiddenError => Forbidden
+
+20241205	00:37:58	f86fdfe1-74bb-4234-80e1-e4568fc94be6	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:37:58	dc108dd1-2aee-45aa-8f7b-b1c31f1b6486	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:25	268ab512-504a-400e-992f-589c3431cc48	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:29	57f1c124-e347-4020-90fa-23219b73783f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:33	bd7e87e2-46e2-4a9f-8dfe-82589cb91b6a	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:44	f7d923f1-a258-46a1-a61b-ba2d4f284a1c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:56	9a382086-33b1-44ca-a641-e41ad82e7c70	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:38:58	0b9d64ce-8117-4e2b-85fa-8eb47b289577	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:42:10	3dcc9529-2deb-4238-ad42-f5c9ff7b50d7	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:42:18	0fe02906-ebc7-4bcc-a7c8-16d9ed8adbad	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:42:31	e496207a-fcb8-49c8-8614-bfff61125ca6	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:45:19	515c780b-308c-4961-9cad-c6e15a0467f8	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:45:19	3f66c23e-1bec-4e49-8876-f77886df80dd	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:45:41	b4222a14-380a-4ecf-bcce-6712010812e8	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:45:41	3fd38e96-71ef-44a2-bcf0-0f3b682b69c8	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:48:46	9aa10129-a729-4546-9030-f233ff08f2d2	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:48:53	6003788b-5c70-4e9c-bb98-f926f33a5759	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:48:53	8f73bb20-9c80-444c-8001-5c7a99f5e78d	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:49:04	982805d8-3bf1-4986-9e52-77e6a19ecddf	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:49:04	966e48ae-5e52-4280-a546-6370f5566e0f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:51:32	925a86d4-7865-490c-a260-a4cba3f147a0	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	00:51:32	8afb9a2f-29cd-4979-a81e-ad924b72cc10	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:30:38	10aa9138-8a05-48d3-8388-9df9f1d536d9	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:30:38	b98f5ec9-ba97-40e1-9c2a-f117edd58287	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:30:45	1419d4cd-342c-4f8d-800f-0a4866340df1	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:30:45	ba492f4f-2c6a-4fe3-8fb1-8d0a5efd4d9f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:33:43	1f5e23da-01d3-4111-b9bc-c4f4447841e3	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:33:43	8371f973-8668-4755-9708-bb894abc7d0c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:35:05	476dbc4d-419e-40fc-a74a-eef08afc0e9c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:35:05	44ee23e2-3e95-4fbb-9c67-1efc820aff50	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:37:53	a16d6ed4-39a8-4fb4-bd3b-6c5d65d93f40	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	01:37:53	21ad1be6-e7ce-41a6-a153-53c35cfb5728	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:09:21	27638bc2-38ab-4e38-81ed-bebca5700043	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:09:21	18b6528c-d25c-471e-a9b8-145a931ffbf6	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:09:24	ba707270-f428-41ab-8ce1-aec930068066	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:09:24	6f54e5b6-d841-43d3-97c4-715f71f11e69	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:13:44	d8fc575b-8255-43fc-aa13-72cfe25ee39e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:13:44	ef18bc66-76ef-4747-88cd-0c31f9a8ce68	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:18:11	ae35f3fa-641d-40ad-859f-723125374bd3	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc1MTA5NmMzNTg2NWNjYTJjN2JkN2U5IiwiaWF0IjoxNzMzMzY0MDc2LCJleHAiOjIwNDg5NDAwNzZ9.c86IQao8bkp4NrINml2Fi_osPLW5FwMunnq6tjmkscI : ConflictError => user already validated
+
+20241205	02:18:11	808b1dfa-a21d-4ae1-b9f8-dd9afca495a4	PUT	http://localhost:5173	/auth/users/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc1MTA5NmMzNTg2NWNjYTJjN2JkN2U5IiwiaWF0IjoxNzMzMzY0MDc2LCJleHAiOjIwNDg5NDAwNzZ9.c86IQao8bkp4NrINml2Fi_osPLW5FwMunnq6tjmkscI : ConflictError => user already validated
+
+20241205	02:18:18	0e8d2a2c-5eb8-4fdf-89b0-ac8f10b06013	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:18:18	9f7a3605-e231-4ca7-80cf-a52dd86599f8	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:18:22	dd1dfaa1-0830-4302-b3ba-0af9cf2e1194	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	02:18:22	aa917d76-8123-4477-8e0d-fcc9a6dce2ee	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	03:00:36	ceaaee4f-a327-437c-b631-c173de1219d8	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20241205	23:38:12	d2f685bd-dd09-406a-bb3c-cb32519f1748	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:12	8152bad9-f8b1-40e4-a3c6-44cfa31b568b	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:19	c2da4c38-aa1b-4fe6-874f-9f8b3f2084b9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:19	ba390a43-4c12-4104-8292-c1d6ad975b30	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:33	7ae99052-e33b-4bcd-b5c6-e32289909230	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:33	1115c9b7-dd69-4e8a-951a-8c3778e5c3fb	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:44	ae77ef5f-4d19-4796-b1ab-8b9b00d0366a	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:44	be912d53-991e-447b-b992-472bbe228ad3	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:46	a6c7c57a-f84c-4392-951b-7810dfcc6eb7	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:38:46	1f7a8520-126d-40c6-9290-46ddeb79f34e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:39:45	290356e7-00c5-40af-8b60-79de26864d61	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:39:45	41752189-88c0-48e2-ba4b-d8290fc54ba3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:40:59	763c8e42-adc6-4a77-b974-25e54fb8c722	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:40:59	d9f0696e-539a-4bcd-9ea0-bf66aa67e3d4	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:41:05	a676ebfd-d816-4f80-8182-a6e2d2d11ee1	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:41:22	40a50427-9493-4cf4-8388-3dbd5d206f91	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:41:26	8a05cc9b-a822-4231-9072-0ea9ee1bf4e0	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:41:29	d746060b-cce2-4f09-ab96-6de4a9b4dd8b	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:42:00	a2d3cc8c-849e-441a-bd68-acfa392c7f4e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:43:28	16d59a07-1be7-4778-8000-b959439946b7	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:43:28	b8e32b1a-5388-4d2e-98d5-03beda671c2c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:43:43	5249e459-a9e6-43c1-bb7a-4fcdad1b7a35	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:44:10	63192505-c8ec-49dc-807d-633ef005aea4	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:44:54	4138ef48-023d-42f1-861c-ad7285509ddb	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:44:54	6d07bfb0-314a-4cd8-9e5f-fbc4ac19f6a9	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:38	8c6d75a8-f9cd-42d6-9e5d-82b610c31520	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:38	445d7cd0-d09a-49d6-b4da-2d6e99bdd086	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:45	88dfa30d-2215-43ff-b0e9-2f7cb3f09445	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:45	992ca865-aeea-48bc-90dd-8790dc7a8763	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:46	9399ae9a-12f8-42fb-9504-716975f3db29	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:46	b7f81bf0-f5a6-4600-a35b-14bdac47f4b1	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:49	80d69752-0d20-455b-a26e-d831c87f1345	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:46:49	940dc426-1b98-4ada-9d1d-3f439f96d178	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241205	23:48:38	ccf1a2f0-4648-4de1-8149-1b464d6fabd5	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:48:38	6d1ab099-7e58-4e0f-8496-68d7286100ad	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:48:40	5608b172-c6ba-4439-a643-af1b03ab3901	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:48:44	0eb64a40-7eb6-4dff-9a9a-c886772ba6cf	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:49:34	aa35da18-a6a3-4fd3-b214-819850f8bf24	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:49:36	961c3647-2493-452c-9cfc-99d6c2d82be4	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:49:41	7a2f377c-07f0-420f-aba3-adda7ba91d44	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:49:45	1591b719-da29-4222-9c11-d04a692a3618	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:49:54	ead9ba87-59b7-4ab0-975b-71f0b4015619	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:03	c936d1b2-ba27-4670-b1a7-bfcdf7993e21	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:10	f23491e1-8a4d-4aa4-8720-90d39bb90613	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:10	3f694df9-55cf-4286-b1d1-d94ed358d29e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:25	ea4bb265-cfaa-4462-98db-d138e4a0d4bc	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:28	09e45b40-3890-4d56-9d34-c6130b5bed1d	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:28	45618937-7908-457e-9f1a-62b7a2505b7e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:50	40fb4409-3992-4b85-9c89-df32128ff99d	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:50:54	95f84a7f-1790-4772-a30f-d40907d85114	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:51:52	7fcec104-e431-4b9a-862e-199f5dc11e6d	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:51:52	9ed641df-3200-402c-88a4-b829b4cad5ca	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:54:02	a3823dae-ecf9-49bf-82fe-0a0d1136209f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:54:02	5660da2a-012b-4cb6-8608-b95276871edf	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:56:05	00ecbc9c-7fbd-43d6-a734-e4fd2ee2a7e5	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241205	23:56:05	b0bbc63e-ed4f-4c1b-af68-facee251645f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:01:35	7428d90c-4b00-48f1-b783-e1783d0701a4	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241206	00:01:40	54a31b36-ca5b-45ef-9aee-b3bcf465d131	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:01:40	ea0d99fb-2d8c-4edb-b324-3e79d856818f	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:33	b61a4f48-6600-49f5-bf5b-10866f3bbdd7	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:33	3e43aa1e-624f-4e32-b3ac-9043e16370fe	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:35	5cad5c3b-6cde-4909-b917-77c76034b521	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:35	8cc6f070-3e90-4131-9b28-f6e244547011	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:37	def0a6e8-c81b-44ef-b829-b88da2880f46	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:37	3800bda0-d09e-42e5-9d13-091df859e7cb	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:43	47f0eac8-0c44-4691-8625-3cd59ebd7def	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:02:43	ca0a80bb-976d-4511-8abc-190f24bc6f38	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:09:51	3326ad48-8f2f-4a53-bf28-cd6b85c604a2	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:09:51	292ebb4c-159b-4cbc-bd7a-d47833bcdbe4	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:09:53	b18076d3-310c-4572-a9d4-074ca4a59e58	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:01	7a6cb0cf-ee65-40bf-99ce-dcd2c313df4e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:01	4bb164db-26ea-41b7-bd5f-1251629cd612	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:30	ab56b853-a9a2-4fb8-9e03-67e0fd474efd	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:30	89596d6b-ba31-4f66-bd2d-90c2f212aa89	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:33	cb21f36f-aa87-4327-9e7e-a6e407be161d	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:33	c4ce5260-d05e-40c2-a408-8a19de62ff1f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:10:55	857c0fb4-bffb-412f-8398-9c84a56ff5c8	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241206	00:11:01	ed84ac0c-be8a-4f2e-bd7a-0110661cf7cd	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:11:01	42e47cd4-4a85-4c1d-a885-dabc81257f7f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:11:09	17067d4c-8002-4151-a3ac-e4968be85753	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241206	00:11:14	e402e6be-33f7-47e6-8f25-1173c7e0c719	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:11:14	cf3529d2-3f4b-4a48-9468-ae5d17bab0d0	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:11:33	5c8616d9-d636-4563-8179-75111bb1af53	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:11:51	e89bad5a-27b9-479b-b944-79ec57fe3120	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:12	bb92f052-fb82-4be9-8d11-949f1957efd7	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:15	cc56991d-6390-47f9-b8d1-6b3375a429d9	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:26	90d55c3f-4526-46cb-9805-40226e338e4f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:26	8adf217a-f265-4333-9d72-55d917ca8e8e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:27	46fb771a-f897-44e0-9ba4-3cd2f562f763	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:27	478ad21b-89c4-4af6-9276-111c0e3cb92f	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:27	c0044022-de49-4b7f-930f-d8ff17c35e5f	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:27	4b7e54cd-0db1-4c47-a299-2d49300639f3	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:29	f871ac5f-6bfd-43c9-b5d9-41e3ffebffdb	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:29	36988420-abdd-4851-a506-61baf4b755d5	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:32	ff007cf4-ade2-45f3-8fe9-7bed2a107260	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:12:32	0a54f5c9-7048-4e64-a9e3-346b1a568362	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:23	6e932144-a1ac-4548-90dd-8b9ae0c18e49	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:26	d1ea0337-8eff-4c8a-b3ad-d7977abcc95b	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:28	da64be98-012e-4b08-838b-79883482bd36	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:31	9043420f-b6d3-419a-94a6-99e5543755c2	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:32	bd6ec2bb-95ca-46c7-92d6-4e77e1b674fc	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:39	e39d51c5-e1eb-4cff-9cee-6c455ce12b63	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:13:58	214a62d7-90da-406f-8651-d443eb26e63e	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:14:52	c7968de1-30a3-4192-bfee-a295160dd3d5	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:14:52	15f0edf4-5c4f-41c8-a1e5-6b74476fc6be	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:00	50554f0c-ba8a-4ea9-a0eb-043da6b0a43c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:00	d1c1a268-70ee-4824-a318-d5a32859b9fd	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:38	d7696c88-75d8-4299-9077-4b9c2848ec68	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:38	4e1b2dff-348e-4a0a-bae7-15c3a10cdd76	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:40	3c833353-e976-4655-8cc6-2269bf54dcb4	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:46	bfcf3464-25fc-49f5-9e54-28513fe5d6ac	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:49	f1e7a79e-3d70-41a1-8c33-d9248a9d280c	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:15:49	b87d674a-3183-4be8-91e4-1e7bcc625f16	GET	http://localhost:5173	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	00:33:48	1f130023-4caa-47ff-8583-b453dd8a37b7	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:33:48	f931b02c-cfa9-42e5-98ea-1d1e322176fb	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:36:28	6e3cbd62-51fa-4afe-ba3a-e3ac4d1906ae	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:36:28	33d8ab76-0f8b-417c-bcfe-cf0b65debac9	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:36:42	21ce38d4-73e4-4305-85ee-cf0ab3d690da	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:36:42	94be6e3e-6fba-492c-9408-1db221b2d0e8	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:51:39	ea7e91bc-e5a5-495b-a36c-2c093928c902	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:51:39	a197ceba-3bce-4e46-bec3-8a1d4e28ece9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:53:12	fcefdd4f-c4af-46ee-9ca5-70dc3d6d5acf	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	00:53:12	c9705110-e39d-4637-9956-7b1d9cbabdd2	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	02:38:48	a64db596-7dd8-4d2c-9f62-d9214d599f9b	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	02:38:48	bba9fb4e-b133-4fb3-9a8b-253279b37f68	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	02:43:13	15a2474e-8249-4159-9928-892fdc1dc308	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	02:43:13	2519a98c-8e46-40c7-9aeb-8ec9bea94774	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	02:43:14	0ea11f86-a9f4-4d24-981d-3c00de0e95a1	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:43:14	e498d9de-3002-4489-b072-be66efa80c92	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:43:21	082c9acf-b377-4c0d-9f27-f90b4ce61f54	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:45:08	b0bb0eba-eccc-42e2-a754-05d6aa92fb8c	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:45:32	671d668a-5b32-45ab-8d9c-f18f6df5ba13	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:45:46	b09bf5c1-f8fd-4395-bb08-62393350277f	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:46:13	4843d86a-69d2-44b0-b41f-b202d93dcdae	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:46:13	46eac322-adea-41e8-a4b1-0e7ba62c8f41	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:47:01	e93b1896-5572-4b3a-a216-c4eeb0c659b0	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:47:01	95213d11-cbf8-4ad3-8fa9-557489fe8089	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:47:38	694ca708-0758-4fac-a782-8afad8282622	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:47:38	d528f3e2-6ac0-46d8-883d-3fdc77a2fa8e	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:48:08	75a17781-fe2e-4256-bf01-a10f7a89dde5	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:48:08	8e90e796-0af3-421e-a674-fdb559e3d262	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:48:46	1f8385d5-4e6b-40d9-90e1-916bbfd1c8f1	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:48:54	0ca0bb5b-2f1f-4ca5-9aaf-e613cb30102e	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:49:10	ce39d0ca-e67f-4d56-8490-ef90304eeb0c	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:49:29	fb4fea2d-4634-4def-834c-b03e002158b7	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:49:37	78696d63-6c8d-43ba-aa85-f477a715d157	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:04	32a2c05f-be61-4c12-a8f8-a86c14736e76	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:05	d775c5d8-4149-40b6-a3c9-87929cff8236	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:10	8b8ca41c-c8a5-4e2b-a1ec-349d3534c198	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:23	bbda6268-ed04-4caf-9962-1f0fde3555d3	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:25	7b0cc4b6-9149-48da-a2c1-7ec96c24e27b	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:25	03e19c3a-4845-44c8-9c38-cdfffd492364	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:28	2a662e4c-bf75-4f37-8287-543941a310fd	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:48	393d0c66-81d3-43f3-9733-a0b12f8bfaba	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:50:48	e4507141-89d3-43a7-b3b1-2604c4087cf4	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:02	a7499c40-435f-4597-84a6-f4eb382df69b	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:02	9a21a7ba-24b1-435b-8d43-82e9fdcbb058	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:10	72b706cb-3a5a-4475-9c4f-8e3ee54a9125	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:10	dd75e43f-4e24-4bf4-b1b8-ce3326613bd6	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:38	7b6c1eb6-8597-40b0-8a7c-ba33073f396c	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:51:40	f8aa7ae6-3075-454c-a724-e21bd1860c39	GET	http://localhost:5173	/api/v1/elections/67523edd52e64bee4cad4150 : UnauthorizedError => Unauthorized Access
+
+20241206	02:56:23	07e76269-f90a-4838-84fb-cec286f30570	POST	http://localhost:5173	/api/v1/elections : BadRequestError => fill all fields
+
+20241206	02:57:32	02ade80d-755d-498e-8d47-5100ab0923da	POST	http://localhost:5173	/api/v1/elections : BadRequestError => fill all fields
+
+20241206	08:05:17	abcc87ee-fb91-476c-90e5-ef256af798e6	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	08:05:17	c438d02c-cd65-4a6a-bc0f-b7cc7645ac34	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	08:05:30	6863d657-6e5d-498d-b63c-9bfa423b2d4d	POST	http://localhost:5173	/api/v1/positions : BadRequestError => Bad Request
+
+20241206	08:05:37	28435a29-a38c-450d-a9ab-8f22398288ab	POST	http://localhost:5173	/api/v1/positions : BadRequestError => Bad Request
+
+20241206	08:08:21	a55349ed-9769-42c0-b82d-d4b8eac008a9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	08:08:21	a5fcbece-0122-4d08-99aa-f1240ac637c1	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	08:11:27	0848a79d-ccf9-48af-9a9b-641f2c0005ca	POST	http://localhost:5173	/api/v1/positions : BadRequestError => Bad Request
+
+20241206	09:21:35	c32e9a5a-0730-4e4f-8f21-bb80d2638c44	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	09:21:35	0c44608a-4e6f-4f89-95cb-ae57f2c45cb7	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	09:43:15	cb17a531-485f-4c21-b0be-ca20359f9d55	GET	http://localhost:5173	/api/v1/positions/6752b0ecd9dfac343ee51ca7 : UnauthorizedError => Unauthorized Access
+
+20241206	09:43:15	c634c172-7ebf-4c8e-a680-0ed7d1bfd4b5	GET	http://localhost:5173	/api/v1/positions/6752b0ecd9dfac343ee51ca7 : UnauthorizedError => Unauthorized Access
+
+20241206	09:43:29	c778d1b3-d6ec-4014-a18b-8e04f76b14ca	POST	http://localhost:5173	/api/v1/positions : BadRequestError => Bad Request
+
+20241206	09:45:30	d71f8805-3d79-421d-938e-e0a08d0cc218	GET	http://localhost:5173	/api/v1/elections/6752afb2d9dfac343ee51c7b?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	09:45:30	0f996203-656d-452d-83a0-34347f392e06	GET	http://localhost:5173	/api/v1/elections/6752afb2d9dfac343ee51c7b?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:10	822601ab-23e2-4bad-9dee-cdc5727089f5	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:10	0287405f-3bff-48a3-9578-3db9cc655d3b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:12	46088083-29c3-48ba-ab2f-260840fa88c4	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:12	85fbe41f-181e-4b4d-859b-f7212b72a1d0	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:14	9dda5f90-b98f-4bfa-aaa4-5dab3a080313	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:14	819a1737-83a9-473f-9076-7d80ed1612cb	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:55	14b3e9a9-b5c1-4d6a-837a-ce6943ed1244	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	12:47:55	2a07371f-b86c-44b1-b4bf-8d53988852e1	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	18:34:15	3627adc6-a4fc-4b69-9e0c-fb225c151ea3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	18:34:15	62963247-1cc1-43aa-876f-d972e11fcd1d	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	18:46:43	bc1e1470-524d-4e6c-9dd0-b110034bcef4	DELETE	http://localhost:5173	/api/v1/elections/6753464a35d54d727f63a82a : InternalServerError => An unexpected error occurred.
+
+20241206	18:47:53	a177364b-4f9f-4c2b-a37d-0edc4c391f9d	DELETE	http://localhost:5173	/api/v1/elections/undefined : InternalServerError => An unexpected error occurred.
+
+20241206	18:58:44	1bb7dbac-6ff6-4b7f-8b13-6398d2537b2c	GET	undefined	/api/v1/elections/675346e535d54d727f63a861 : UnauthorizedError => Unauthorized Access
+
+20241206	19:27:17	300d9d33-0999-494d-924f-5238ca500226	PUT	http://localhost:5173	/api/v1/elections/675346e535d54d727f63a861 : ConflictError => Request conflict
+
+20241206	19:27:32	d1d5d56d-4a38-4aaf-8d92-d178a1fdcc1f	PUT	http://localhost:5173	/api/v1/elections/675346e535d54d727f63a861 : ConflictError => Request conflict
+
+20241206	23:22:57	b3b80f74-387b-40e5-b266-7eafb44f3418	GET	undefined	/api/v1/elections : UnauthorizedError => Unauthorized Access
+
+20241206	23:24:53	63b4f2ee-7081-4c28-ac25-a1b01c20e5f7	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241206	23:24:53	642e6d13-7abc-47be-a683-f0488f7643f7	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	07:18:47	30bfef64-131f-430c-a8b8-a56729ec5783	GET	http://localhost:5173	/api/v1/elections/675346e535d54d727f63a861?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	07:18:47	a77099c3-df0c-4647-bf43-54cfbf7e666e	GET	http://localhost:5173	/api/v1/elections/675346e535d54d727f63a861?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	07:19:15	92b78f80-7ae9-4498-9e19-425f6c0f8dcc	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	07:19:15	53c70c8c-564e-4c7b-91eb-4a392a98b569	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	09:55:22	1ca4ea1d-62b1-48c3-90ec-ad2e69b4aade	POST	http://localhost:5173	/api/v1/elections : BadRequestError => fill all fields
+
+20241207	09:55:25	7194cb64-bbb8-4974-b9e8-951cbba9df84	POST	http://localhost:5173	/api/v1/elections : BadRequestError => fill all fields
+
+20241207	09:55:32	6b15ef5a-b44d-4ad5-963b-228bd55df365	POST	http://localhost:5173	/api/v1/elections : BadRequestError => fill all fields
+
+20241207	09:56:21	1e097a6a-c567-4efd-a572-f1b65c3c2d48	POST	http://localhost:5173	/api/v1/elections : ConflictError => election already exist with this name
+
+20241207	09:58:56	0ffe5019-6525-4bb1-babb-de40e2b8560a	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	09:58:56	d1b1a0e5-52d8-4712-a5bb-869ea1d4e436	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	09:59:10	51d1e714-aad6-449f-9636-d8686bc28d45	POST	http://localhost:5173	/api/v1/elections : ConflictError => election already exist with this name
+
+20241207	09:59:29	03ac3a1c-f61e-4fa8-a999-11861b61082a	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	09:59:29	99dd29cc-e5c3-4b21-8487-bd202aedf043	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:00:04	1fc876fc-e73f-4dc8-b501-c4ce999e9552	POST	http://localhost:5173	/api/v1/elections : ConflictError => election already exist with this name
+
+20241207	10:02:57	f1085e6c-3d09-4845-b84b-b72efb14f88d	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:02:57	bdc72ec8-23e0-4d02-9767-3031bfe5e36b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:03:30	aa28eade-3ae4-4645-9d86-a5702436ab66	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:03:30	31f1c257-ee22-4b34-9f8c-9498d807b6fb	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:03:57	37c55c5d-8b63-47fd-8997-4e6222bb101d	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:03:57	b2b6e9f0-96a5-441a-a14f-b2890cd856e0	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:05:06	0d7c8c19-c336-4c4f-b86a-2472b6d52555	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	10:05:06	fdfc8ee1-168f-4378-af06-637d1a4d5272	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:11:47	46d0a2f1-7be1-409e-9208-6a7a20a78c9a	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:11:47	45e7d7ba-52e6-4ae7-8dcb-1128bac3a48b	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:11:54	d33cb3c7-f17b-4b4f-8724-f956b5a15d3e	DELETE	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : NotFoundError => Resource Not Found
+
+20241207	11:18:19	9b9de262-665b-4e82-a327-4c884ee25e2b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:18:19	1a9ad757-4961-44b6-960f-8c9ce6200034	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:28:49	2dfa6034-eb43-4c6f-924b-ce00ea3dbff8	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:28:49	f9b90561-4de3-4dc3-98c5-63b631fbdf5c	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:29:07	dd6bd0b9-94f6-48bd-8c2c-6311472161dd	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:29:18	4324588a-9000-460a-af25-83e2e2c2da8d	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:29:20	a936feeb-c0ef-492f-a698-059ea892b6b8	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:30:10	526839c5-43fb-40ce-ba4b-e3fef637d5df	GET	http://localhost:5173	/api/v1/positions/67541d89af1e5fe9d655a96e : UnauthorizedError => Unauthorized Access
+
+20241207	11:33:27	ca07f4c0-28dd-45d3-a96d-c091ea8c066a	GET	http://localhost:5173	/api/v1/elections/undefined?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:33:27	4a6070e7-1c8a-41d8-823c-23e538dda671	GET	http://localhost:5173	/api/v1/elections/undefined?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:35:25	28f746ab-6f52-44c6-bc7c-075ea1a69657	GET	http://localhost:5173	/api/v1/elections/undefined?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:35:25	0e88ba10-686d-4bf3-bfcf-1eace533c7fa	GET	http://localhost:5173	/api/v1/elections/undefined?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	11:48:44	c24b7a6b-6385-4604-89a3-9a637462cb39	PUT	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : ConflictError => Request conflict
+
+20241207	11:54:08	65347676-17bc-4fb4-bcd9-e76a437e03f6	PUT	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : ConflictError => Request conflict
+
+20241207	12:16:16	1ebc6d4f-cfe4-4d87-b7dc-2ce15edc33d9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:16:16	15fb641d-9a64-4b74-b1e5-ad5a5ff82652	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:16:28	4a90c441-2077-453b-92b0-149c3a80d46b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:16:28	ed42071f-dd6b-45f5-b4b7-fde5812f86c4	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:16:49	f44ba170-a559-47fe-8d49-81e1fa3e21e5	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:17:47	deb1c1c0-a99d-4534-a483-da3a47c6b6e8	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:17:47	084f6fc9-d7bc-48a4-b8c9-2e0481b0c933	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:18:16	c4fdcf62-4676-4381-a1dc-341385f5e26b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:18:16	0c666e6d-3dcc-4c30-95d9-18aba59a2db0	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:20:18	97be32a9-d36c-4f32-95df-6d46918cb0de	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:20:18	fe311d91-5588-43cb-a6d2-f406ed5683f3	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:22:03	63f4a087-52c9-49d4-b308-bb1fe15a9d6f	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:22:03	c344820b-6bb4-4acd-a438-576a712d0ef6	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:23:51	1d930467-c582-471c-b0ef-9bd262159ee2	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:23:51	cdd71f1d-2049-4046-b972-0eb909053c75	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:24:55	a00a131b-36c1-44e0-8ac1-f7e92060188b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:24:55	be1ba643-df55-4bfe-b089-384a4a6115bf	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:26:40	90b07799-d08c-4e6d-aa2b-a643d65ecfe4	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:26:40	ded4df57-40a1-4538-be94-2b8b1b012d0e	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:29:05	0c0ea0b0-13cc-4afd-8491-b6c474ab013a	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	12:29:05	d4a1d64a-13ff-411d-8f83-4eb41b77cb2f	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:13:30	4f967d36-b29d-4880-9927-9fa043c4a093	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:13:30	21b0a9cb-e56c-4c5e-aa77-ee18746bea25	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:33:24	ecd82c49-46e3-416f-a79a-7d3588d5f522	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:33:35	51720d71-53c5-490a-916a-e916bc263ab5	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:35:23	d3cb07a8-fef7-4733-9601-d2212317692b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:35:41	42b2ecb7-4a38-438e-8f94-43e85b3736bc	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:35:43	ef970c61-bb5d-4ec8-84cf-084540cb5e7e	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:37:27	03a2a09c-8ddb-4aab-b473-5889a4cd1ba0	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:39:51	40d6b52f-0010-4bbe-b1d8-06c3d47f49b2	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f?org=674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	13:39:53	8b30d3aa-74e7-40d3-a6a5-4f1ef9d0d8cf	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:08	7bfb812b-9121-47a0-996c-06574c0e4eb8	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:10	40dbcb82-c21f-4c24-a6a5-5f1fe1ec162b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:14	63b15067-2851-4acd-b306-7126480e351b	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:16	9967638b-7d41-46e1-a198-c630a7e4b8d6	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:21	653f9b6c-372f-4bbb-8027-a19eb5331f48	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:21	d49fb3b8-1526-44f9-b78f-b782d6dc1c5d	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:41	59f79fd9-3746-4aa5-aacd-0c6a560b7d5f	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:51	8c168a48-c803-4198-ae27-aaf8581b9bf1	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:40:54	77bb534f-54a0-4991-99b4-76edaeae70fb	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:00	93bef328-94d7-4fe7-b772-c01dad2aef63	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:03	7b288e13-1a79-49a7-9db2-9d65fd6ddee2	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:04	268d49b0-1bad-4308-be8d-831b4df33af4	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:04	169b1a0d-b21f-4d33-bbb7-92ec8f41b599	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:08	1a6d52f1-0c92-4acc-9296-ab997d7cb5b0	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:08	bee29689-fb1c-4b1c-a311-de104736fa9d	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:16	5f0d65cf-6c88-4b30-a6e9-2cc29babb450	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	13:41:31	ddfa0854-d6aa-48d6-91de-3681737e6275	GET	http://localhost:5173	/api/v1/elections/67541b00af1e5fe9d655a88f : UnauthorizedError => Unauthorized Access
+
+20241207	14:00:19	b85f7c6a-99fe-48e5-9bfc-e00d6eaf23a8	POST	http://localhost:5173	/api/v1/candidates : BadRequestError => fill all form fields
+
+20241207	14:02:18	34380a9a-69dd-48ae-a53c-92929c132574	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	14:02:18	d878820c-6091-4542-9d78-2da342a3179f	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	14:07:26	83e3ac9d-761e-4a23-b4b3-f91129199798	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	14:07:26	04908131-62ed-4c4c-8433-fe1b7890e50a	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	14:07:46	141314dc-d60c-4bf4-acc9-b9688a2235f0	POST	http://localhost:5173	/api/v1/candidates : ConflictError => Request conflict
+
+20241207	14:09:10	6d40b9a2-0a5c-4c6c-aa7c-e419ac41ee9c	PUT	http://localhost:5173	/api/v1/positions/675432e1c3d558877fe9a4dd : NotFoundError => Resource Not Found
+
+20241207	14:35:09	bf860f5d-37a5-4517-97ef-d510e7e51997	PUT	http://localhost:5173	/api/v1/positions/67545c9b515a64c206b9fa4f : NotFoundError => Resource Not Found
+
+20241207	15:31:50	2a1103bd-6d41-4f77-8fb7-38e6225ef0a2	DELETE	http://localhost:5173	/api/v1/positions/675432e1c3d558877fe9a4dd : NotFoundError => Resource Not Found
+
+20241207	15:31:51	35e88e90-3032-4e8a-812e-e3bdb39a5be1	DELETE	http://localhost:5173	/api/v1/positions/675432e1c3d558877fe9a4dd : NotFoundError => Resource Not Found
+
+20241207	15:31:58	710e47dd-4d93-4106-84d8-a5f4c74db926	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	15:31:58	b6610761-1b3a-41aa-86a4-8946da522a3d	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	15:57:13	5b4b2e37-0cc3-43cb-bd82-0c4beb46e16f	PUT	http://localhost:5173	/api/v1/elections/67541b60af1e5fe9d655a8ce : ConflictError => Request conflict
+
+20241207	16:00:38	c41c5763-2946-4e06-992f-9edfb16817a2	DELETE	http://localhost:5173	/api/v1/positions/67547123515a64c206b9fd48 : NotFoundError => Resource Not Found
+
+20241207	16:02:29	09bae9b2-0ea7-4d70-85c6-65be1dd742b4	DELETE	http://localhost:5173	/api/v1/positions/67547123515a64c206b9fd48 : NotFoundError => Resource Not Found
+
+20241207	16:04:43	4ea9d167-5b70-40b4-affe-94ef74efda47	DELETE	http://localhost:5173	/api/v1/positions/67547123515a64c206b9fd48 : NotFoundError => Resource Not Found
+
+20241207	16:05:53	0960fce0-3015-4e37-b1d7-02f80b7c38aa	DELETE	http://localhost:5173	/api/v1/positions/67547123515a64c206b9fd48 : NotFoundError => Resource Not Found
+
+20241207	16:22:56	216c3e7c-409d-4dfc-b664-c343422e9da5	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	16:22:56	bcff7ae0-922b-4daf-b123-b560d5d7d024	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	18:38:35	b73ae915-18d1-4296-bb11-2e01e91e5849	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241207	18:38:35	dc68e14a-ae82-4329-bda3-15adbc073a97	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:10:31	e3f40679-06af-4f4e-8374-576d64e764be	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:10:31	fad862b2-2b51-4073-8896-92d1c6842c16	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:10:33	8ca8500c-8364-4b2d-907a-182ee3559ebf	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:10:33	97480693-041f-4dc2-a07d-a57b8b7a68ae	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:22:42	f557a04f-658a-4761-a6eb-fd3c0fa85817	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:22:42	a4fff914-298c-4643-9570-a664af9de6b7	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:25:19	2f8992c4-6690-47ff-811d-d47d0a8fa203	PUT	http://localhost:5173	/api/v1/positions/675473bdbf9feee81b53164e : NotFoundError => Resource Not Found
+
+20241208	02:26:25	52d022fb-dfee-46fc-9472-5ed96fefec5c	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:26:25	e4f9b83c-1b47-4d14-9e7b-9e0d19c9f47c	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:27:20	face96f4-d210-4748-aa42-273567ebaf21	POST	http://localhost:5173	/api/v1/candidates : ConflictError => Request conflict
+
+20241208	02:27:39	fa3b81de-2167-400f-a897-b76bc2d0fd35	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241208	02:27:39	688c7900-f23e-4877-a57b-f79e40148d37	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241208	02:28:19	c4a3b062-5d97-4c0d-8e7b-faa29ced1714	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:28:19	c546f97e-e3a3-4af3-b5e6-fdc9ef133732	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:28:35	da20c442-7eb8-4f0d-b91e-59fcaccaff16	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:28:35	beca2406-60c7-40b0-af76-fb596747fd76	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:29:09	96f74b6e-784a-429f-85af-5ddf38831b3e	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:29:09	0b8e02f6-0bbf-41f0-9f9b-7aeb376751ea	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:36:39	d98bd1cd-302b-44fe-bbb2-8ea427237546	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241208	02:36:39	06bb536c-97e5-413d-963b-ba1f25981505	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241208	02:38:10	616aec27-778f-44b9-a4a5-cdd0657ed011	GET	http://localhost:5173	/api/v1/candidates/one/675503f9990a3aa7923802ee : UnauthorizedError => Unauthorized Access
+
+20241208	02:38:10	2c1112da-f263-4712-9cae-c9157c354c68	GET	http://localhost:5173	/api/v1/candidates/one/675503f9990a3aa7923802ee : UnauthorizedError => Unauthorized Access
+
+20241208	02:39:28	fc04fa1e-5148-4b50-8135-b0fcf76005cc	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:39:28	97338414-c79e-4de9-a034-b94fd568b47b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	02:39:45	958a58ba-2312-4937-b2bb-3c3eeb2f70e6	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:39:45	bbef6b89-6968-4195-ae12-cc019d37059a	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241208	02:40:58	f6ccfcde-bde4-48a7-bfb4-82fdd9693616	PUT	http://localhost:5173	/api/v1/positions/675473bdbf9feee81b53164e : NotFoundError => Resource Not Found
+
+20241208	02:41:21	4cb416ba-f5f0-4fd1-9d9d-90c977dd208b	DELETE	http://localhost:5173	/api/v1/positions/6755074b990a3aa79238049d : NotFoundError => Resource Not Found
+
+20241208	02:41:22	2b7c6f29-1b77-40a4-b207-d437db3300ef	DELETE	http://localhost:5173	/api/v1/positions/6755074b990a3aa79238049d : NotFoundError => Resource Not Found
+
+20241208	02:41:23	923a708d-ce4a-4e84-a246-14c78effe0f0	DELETE	http://localhost:5173	/api/v1/positions/6755074b990a3aa79238049d : NotFoundError => Resource Not Found
+
+20241208	02:41:47	f3ac6088-8356-43c3-886f-9e96de5547cc	PUT	http://localhost:5173	/api/v1/positions/6755074b990a3aa79238049d : NotFoundError => Resource Not Found
+
+20241208	02:47:28	5dadad8c-e9e0-4e4e-9aac-d578d4d2b7c8	DELETE	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => Resource Not Found
+
+20241208	02:50:42	cb712140-c4d6-4e8d-b282-34e4e3e62135	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:50:57	64c4b92b-ea5b-4501-9a94-7e02a7b3ca42	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:04	e8399dab-aef5-4884-841c-c05b270ba483	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:14	5f6bcbd4-6268-4490-abf1-31a0c246c045	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:20	71dabe84-230f-40d9-9b87-0effd062d6df	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:34	f4fe70cc-f8d5-44a6-b715-cd03f10e71e4	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:40	ae594d6c-4dba-4c54-841b-bd65a8d2c4af	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:43	512112a9-26f3-451a-8ca1-88c2eb380903	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	02:51:43	33d7e8a2-342c-4b49-8cfc-7a0cea96a825	GET	http://localhost:5173	/api/v1/positions/675508bd990a3aa792380572 : NotFoundError => position not found
+
+20241208	03:09:49	3b4cd4ce-3e3e-48f6-8058-99353b506648	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:09:49	f90302c0-8467-4bba-8504-d07d06415d1c	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:10:14	f1b7f19e-fc48-4e53-969a-72c9356527a0	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:10:14	1e8aa8eb-81f6-44a5-b76d-2a2fa0a99c97	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:10:30	dd0fee79-09a6-492b-ba61-c6ac5ee24046	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:10:30	f8cd6375-3924-49ca-93f6-026c28f5c2ae	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:12:56	794719cf-e835-4f8e-92d5-76af6d1be5e8	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:12:56	bcc37e72-bdf6-478b-816f-88a02b36b83d	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:54:15	f7b7df7b-b729-4465-aa9b-b284cd47aaaf	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:54:21	547782e1-a7d4-441a-8d70-a4a67f7cf106	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:54:22	62ca192d-617c-4ad8-9f89-3f121a399e17	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:54:23	e4fba7d2-327f-4f3c-b5b9-a1e4c7c30a1d	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:54:42	298beee7-3c34-4424-995a-6cf27b0a0a5e	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:54:58	e0bc179b-35d5-4cad-9efd-156114b7390b	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:01	e9b7aa3f-c969-410c-9753-e63583f5ede1	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:04	b8433993-3506-421a-b017-352df75a604c	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:12	42f6dd70-3fc4-4e91-8a8a-37cbc4168ec6	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:16	f5a94c6f-3381-4281-8779-7639d5c8a813	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:20	b546d7e7-b8c2-4adb-88c5-1cfeac0dd062	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:55:37	3bd740d8-7f29-4a98-b819-66bd673b25ce	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241208	03:59:01	e86de80d-6174-48b3-b886-90ebeab80eec	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	03:59:01	ba5fbca8-43a3-4ca1-8a06-b9ce34893eac	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	04:06:31	2e298888-884a-4b8c-b781-3d44a8a00fe8	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	04:06:31	24f1058d-5bbe-4437-b018-dc3b7c13f038	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	04:19:54	24b101a7-ee6a-4e73-9ee3-8cdd08fccb9c	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	04:19:54	0c1bd7cf-d611-4a47-b361-94ccdd9c0b54	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	05:12:35	c513cbe8-1987-463c-92de-11ce67efc9cd	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241208	05:12:35	5230b5cc-2e6c-46f1-840d-1dc2b7074ad0	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:25:36	e3f6db22-d37e-46e7-924f-e3e1deb48be6	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:25:36	c9f588e0-cc8f-4f86-92db-7367f1925784	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:52:48	7dde71ad-f44b-4be2-a521-7484f9695b67	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:52:48	80e8181d-0973-42cf-8c91-09cbfdb4af0f	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:53:16	bf64e7ba-d539-4ce8-a9ce-27dfdf8395a6	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:53:16	bdb1c9cf-914f-4d4b-aac0-8e99f566bc1c	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:53:45	faee6664-41fd-4a50-992c-5360a8b9eae9	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	00:53:45	8d3eeb4e-3ad2-4fa1-8cc4-862b16838aba	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	01:33:36	d6a3ce3c-b6bc-45fa-aff5-50e25194fb21	GET	http://localhost:5173	/api/v1/candidates/one/675503f9990a3aa7923802ee : UnauthorizedError => Unauthorized Access
+
+20241209	01:33:36	72f4d8c9-1d2c-4b66-889f-093fbc008365	GET	http://localhost:5173	/api/v1/candidates/one/675503f9990a3aa7923802ee : UnauthorizedError => Unauthorized Access
+
+20241209	01:46:11	12fbe262-390b-4b16-bda8-62b3ee702545	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241209	01:46:11	d36704ba-e532-4da3-a523-cedb168c5552	GET	http://localhost:5173	/api/v1/candidates/one/67550414990a3aa792380313 : UnauthorizedError => Unauthorized Access
+
+20241209	02:00:55	cd3b8a48-d4b3-4425-8f97-e6c8b45beb94	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:00:55	b0cfd2b1-0ce7-4077-9ebc-093ce3ee2cfb	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:01	b95e3e1e-a9b0-4822-9e84-b51f9e25e05b	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:01	99d7e57e-534e-457e-a9fd-c1fc8a473520	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:27	9ae9ae78-1ef2-4c9b-b05b-6a86bbf70595	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:27	e9c39f69-2a2e-4901-bc8d-f584d703da7f	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:32	80cd5f66-d195-4f0d-b603-05af8940ae4f	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:01:42	fc7fe607-8ea6-424b-a9a1-acc9bb2e82d0	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : UnauthorizedError => Unauthorized Access
+
+20241209	02:02:01	d83db3c6-5128-42dc-b749-623d4c464cf5	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : InternalServerError => An unexpected error occurred.
+
+20241209	02:02:01	49dfddfb-f0b5-4294-9d6d-673d90a5bd00	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : InternalServerError => An unexpected error occurred.
+
+20241209	02:03:59	0fecfb3b-92a6-4156-8572-8113746c9d90	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : InternalServerError => An unexpected error occurred.
+
+20241209	02:04:00	bb1bc52c-4678-4b66-9cc2-06dea5646a81	GET	http://localhost:5173	/api/v1/candidates/one/675477af14a121f622da8f3b : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:18	e60b2111-a659-4756-a192-c7ef669640e1	GET	http://localhost:5173	/api/v1/candidates/Amin : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:18	5ba9338a-9387-4ef5-97d2-a3fee2bd952c	GET	http://localhost:5173	/api/v1/candidates/Amin : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:29	87507060-ce2b-4067-9372-8e82e7fae9ec	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:40	c8650c9d-5e21-4de4-830f-51cc232458d6	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:46	269e93f5-15df-4025-a8e7-cb96e30068cf	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:50	a0b2777c-ce69-4b36-890b-970f19e1e211	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:52	13bd7349-b99f-4d96-8b1b-3936d1c49732	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:24:54	de78df28-8c2c-4bf7-9643-186e9085af15	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:25:01	c30a0e28-8f44-43cc-8431-fa3120ba74e9	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:25:01	0ae974ba-7375-426e-954c-f84b823432f9	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:25:26	73de2a5d-51a6-4087-b507-cddf595a0193	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:25:26	43713c9a-5000-4acb-a3e0-553ae1f1e01f	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241209	02:33:33	4a9fe9e6-85c1-4974-90fe-0d9259a845ef	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:33:33	a7c5f1d9-af4c-4959-ab4e-1f310dcad715	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:40:54	c134209f-bb6b-439b-9293-6af66940e002	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:40:54	177a5026-2112-4ccb-8adb-9aa5b0e16aeb	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:42:53	48d7f0e3-565f-4687-a6f8-ba91b62bf383	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	02:42:53	14e82bb3-4730-4104-b9c8-22737e049efe	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:43	57221de4-5e4c-4044-b872-7058110e2cec	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:43	bbbec9e1-7f76-4565-b9ae-58067440baf3	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:45	287cc096-ed99-4df6-8721-a80e063ed26f	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:45	327cb5be-e313-4a84-8233-3eef9fda115a	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:49	c5cd83ee-9994-415b-aa4b-9dcddac676d4	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:49	2cc083d9-978a-4853-ae26-86465562fea6	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:52	12689f04-f5cd-4b57-93c7-dd25158f6016	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:10:52	f2998932-8687-4bae-a7f4-c52b74c761a1	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:11:07	7b5aa209-ef48-4103-8c73-a8ee9a771c9f	GET	http://localhost:5173	/api/v1/candidates/organisation/674e56763d894782062447c3 : UnauthorizedError => Unauthorized Access
+
+20241209	03:11:36	06cbc7b1-390c-4c06-876e-d4e707cb0429	GET	http://localhost:5173	/api/v1/candidates/ : UnauthorizedError => Unauthorized Access
+
+20241209	03:12:02	defb31aa-d2bc-476e-879a-5f83a2af1c3d	GET	http://localhost:5173	/api/v1/candidates/ : UnauthorizedError => Unauthorized Access
+
+20241209	03:12:02	fc2bd45f-8005-4803-ad3d-a2891a880380	GET	http://localhost:5173	/api/v1/candidates/ : UnauthorizedError => Unauthorized Access
+
+20241209	03:12:23	d1d77005-3acc-4571-a206-c110731350a4	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:34:35	8a29bc54-a0b2-4fec-a011-1a337891576e	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:34:35	416103b1-beba-47e1-bb25-b6411431f3c4	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:34:37	5d51783d-9bae-4138-9b7a-7b133a698a57	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:34:37	4fb3e681-4d8f-44c1-bb22-b2aaa3a6a3be	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:46:36	e67c2eda-8a81-4a5a-a5a7-94f2a453ef30	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241209	03:46:36	56585c6a-7dc4-4267-987b-f55418742517	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241209	03:47:40	74fcdf20-7517-4d02-87f0-784aaba55f6a	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	03:47:40	40ac4a14-90b0-48fb-bac4-c474d12036aa	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	04:09:43	8ab1cd11-827f-4e23-ac4d-35c1a0e061a7	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	04:09:43	244b2eb3-d32e-4e7b-a032-7d36a254a01f	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	04:30:07	68a777fe-c353-46d4-9319-071f6a78c27f	GET	undefined	/api/v1/candidates/67541b60af1e5fe9d655a8ce : InternalServerError => An unexpected error occurred.
+
+20241209	04:30:11	adf07e5b-251d-45ef-80df-fc30d09d235a	GET	undefined	/api/v1/candidates/67541b60af1e5fe9d655a8ce : InternalServerError => An unexpected error occurred.
+
+20241209	04:30:27	c670c576-462f-402a-825a-583530f1351f	GET	undefined	/api/v1/candidates/67541b60af1e5fe9d655a8ce : InternalServerError => An unexpected error occurred.
+
+20241209	04:30:35	cdc6fab7-2d12-4d0f-b2ff-ff114e88a589	GET	undefined	/api/v1/candidates/675477af14a121f622da8f3b : InternalServerError => An unexpected error occurred.
+
+20241209	04:32:46	901569d2-9fe7-44f0-8401-011b59d7af94	GET	undefined	/api/v1/positions/6752b0ecd9dfac343ee51ca7 : NotFoundError => position not found
+
+20241209	04:42:56	25193f6e-7768-4279-8018-45a69226b849	PUT	undefined	/api/v1/candidates/675503f9990a3aa7923802ee : NotFoundError => Resource Not Found
+
+20241209	04:43:07	5dd1584c-02cd-4cd4-9032-0124150553db	PUT	undefined	/api/v1/candidates/675503f9990a3aa7923802ee : NotFoundError => Resource Not Found
+
+20241209	05:49:40	e1cdaa4f-043d-47d3-a961-7eff59f76098	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	05:49:40	41ae557f-86da-407d-b5bf-49e86a8d9030	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+

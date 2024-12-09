@@ -1,4 +1,5 @@
 const Election = require("../../model/election.model");
+const Position = require("../../model/position.model");
 const {
   UnauthorizedError,
   NotFoundError,
@@ -63,19 +64,24 @@ const createNewElection = async function ({ formData }) {
 
 // update an election using name and user id
 const updateAnElection = async function ({ id, creator, formData }) {
-  try {
-    if (await getElectionByNameAndCreator({ name: formData.name, creator })) {
+  const findElection = await getByElectionByCreatorAndId({ id, creator });
+
+  if (formData.name.trim() !== findElection.name.trim()) {
+    const electionByName = await getElectionByNameAndCreator({
+      name: formData.name.trim(),
+      creator,
+    });
+
+    if (electionByName) {
       throw new ConflictError();
     }
-    const findElection = await getByElectionByCreatorAndId({ id, creator });
-
-    if (findElection.creator.toString() !== creator) {
-      throw new UnauthorizedError();
-    }
-    return await Election.findByIdAndUpdate(id, formData, { new: true });
-  } catch (error) {
-    throw new Error(error);
   }
+
+  if (findElection.creator.toString() === creator) {
+    return await Election.findByIdAndUpdate(id, formData, { new: true });
+  }
+
+  throw new UnauthorizedError();
 };
 // update an election using name and user id
 const updateAnElectionById = async function ({ id, formData }) {
@@ -96,7 +102,8 @@ const deleteAnElection = async function ({ id, creator }) {
     if (findElection.creator.toString() !== creator) {
       throw new UnauthorizedError();
     }
-    return await Election.findByIdAndDelete(id);
+    await Election.findByIdAndDelete(id);
+    return await Position.deleteMany({ election: id });
   } catch (error) {
     throw new InternalServerError();
   }

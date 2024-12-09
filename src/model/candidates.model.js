@@ -5,6 +5,15 @@ const candidateSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  email: {
+    type: String,
+  },
+  tel: {
+    type: String,
+  },
+  motto: {
+    type: String,
+  },
   manifesto: {
     type: String,
     default: "",

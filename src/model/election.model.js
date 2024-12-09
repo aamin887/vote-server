@@ -5,6 +5,7 @@ const electionSchema = new mongoose.Schema({
     type: String,
     required: true,
     lowercase: true,
+    trim: true,
   },
   description: {
     type: String,
@@ -19,6 +20,12 @@ const electionSchema = new mongoose.Schema({
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Position",
+    },
+  ],
+  voters: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
     },
   ],
   posterId: {

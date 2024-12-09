@@ -69,7 +69,7 @@ const addCandidate = async function ({ formData }) {
     // should return photoURL and photoId
     const profilePhoto = await gcsUploader(
       imgfile.buffer,
-      imgfile.originalname + `${fullName}`
+      imgfile.originalname
     );
     // update
     await Position.updateOne(
@@ -93,11 +93,25 @@ const addCandidate = async function ({ formData }) {
 
 //update a candidate by ID
 const updateCandidateById = async function ({ id, formData }) {
+  const { imgfile } = formData;
+  let formattedData = { ...formData };
   const findCandidate = await Candidate.findById(id).exec();
   if (!findCandidate) {
     throw new NotFoundError();
   }
-  return await Candidate.findByIdAndUpdate(id, formData, { new: true });
+  if (formData?.imgfile) {
+    if (formData?.photoId && formData?.photoUrl) gcsDelete(formData?.photoId); //remove profile image from cloud
+    const profilePhoto = await gcsUploader(
+      imgfile.buffer,
+      imgfile.originalname
+    );
+    formattedData = {
+      ...formattedData,
+      photoUrl: profilePhoto.url,
+      photoId: profilePhoto.name,
+    };
+  }
+  return await Candidate.findByIdAndUpdate(id, formattedData, { new: true });
 };
 
 // delete a candidate by ID
@@ -105,9 +119,9 @@ const deleteCandidateById = async function (id) {
   const findCandidate = await Candidate.findById(id);
   if (!findCandidate) throw new NotFoundError("candidate not found");
   const { _id, photoId, photoUrl, position } = findCandidate;
-  if (photoId && photoUrl) gcsDelete(photoId);
+  if (photoId && photoUrl) gcsDelete(photoId); //remove profile image from cloud
   if (await Candidate.findByIdAndDelete(id)) {
-    // update
+    // add candidate position
     await Position.updateOne(
       { _id: position },
       {

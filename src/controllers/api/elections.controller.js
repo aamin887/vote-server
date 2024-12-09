@@ -23,6 +23,7 @@ const {
 const createElection = asyncHandler(async function (req, res) {
   const { name, description, startDate, endDate } = req.body;
   const creator = req.user._id;
+
   if (!name || !description || !startDate || !endDate) {
     res.status(400);
     throw new BadRequestError("fill all fields");
@@ -70,6 +71,7 @@ const getElection = asyncHandler(async function (req, res) {
  */
 const getAllElections = asyncHandler(async function (req, res) {
   const elections = res.paginatedResults;
+  console.log(elections);
   if (elections) return res.status(200).json(elections);
 });
 

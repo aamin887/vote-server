@@ -17,17 +17,25 @@ const auth = asyncHandler(async (req, res, next) => {
   ) {
     accessToken = req.headers.authorization.split(" ")[1];
 
-    try {
-      const decoded = token.verifyAccessToken(accessToken);
-      const user = await User.findById(decoded.id).select("-password");
+    const decoded = token.verifyAccessToken(accessToken);
 
-      if (user.verification === true) {
-        req.user = user;
-        next();
-      }
-    } catch (error) {
-      throw new ForbiddenError("sss");
+    if (!decoded) {
+      throw new ForbiddenError();
     }
+    const user = await User.findById(decoded.id).select("-password");
+
+    console.log(user, "hjk");
+
+    if (user.verification === true) {
+      req.user = user;
+      return next();
+    }
+
+    if (user.verification === false) {
+      throw new ValidationError("user account to verified");
+    }
+
+    throw new ForbiddenError("");
   }
 
   if (!accessToken) {
