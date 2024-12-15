@@ -16,4 +16,10 @@ router
   .put(uploads.single("image"), electionsController.updateElections)
   .delete(electionsController.deleteElections);
 
+// voters
+router.route("/:id/voters").get(electionsController.getVoters);
+router
+  .route("/:id/voters")
+  .post(uploads.single("image"), electionsController.registerVoters);
+
 module.exports = router;

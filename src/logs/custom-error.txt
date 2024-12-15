@@ -2909,3 +2909,355 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241209	05:49:40	41ae557f-86da-407d-b5bf-49e86a8d9030	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
 
+20241209	11:07:24	8b5e934d-2afa-48d9-a4ef-04a5063a962c	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:07:24	109bf860-4804-4c7f-9007-ee5ae8653b1e	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:17:20	9993a3b5-ea10-4627-b152-49023d0381cb	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:17:32	c9016345-c4ac-4296-a853-35736d284043	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:17:35	f5504cc0-6546-4e3d-b9ec-4288c8b59e52	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:17:59	6657efe7-f73d-4c95-87d9-7580ec4bd0b6	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:18:01	5a8e2e46-e1ab-4eda-84ab-e65d47f731ef	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:18:02	44d4af92-0c8c-4905-88ba-ce6e8bba7588	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:18:40	dbfdcc45-694a-4164-af13-618b54e37475	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:20:14	fb9334f0-fe01-4af4-af81-73b2ea063eb0	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:20:14	79624917-44c8-4232-8953-30fe8a6cc2a0	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:20:26	ee380518-8f2c-4b85-babd-1addb0847920	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:20:26	7aa1306c-a944-42e0-9b76-8eb7fdf331b9	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:22:14	689318e6-bcf9-4a53-a74a-729eb1f8dbb8	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	11:22:14	2b70671d-8fec-4931-b87b-135fbede886e	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	16:14:48	531e2503-2c9a-4acf-a52c-060a324792d0	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241209	16:14:48	b60b4942-e043-481d-9fec-45acac04d4f9	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:48	f12bf65a-4eaa-43f6-a177-ebb37c745176	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:48	f5065592-2dc6-485b-8d88-14f2cef9ed22	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:49	64618412-47b4-4ae6-97e2-a49aeefdbc57	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:49	47f6c794-57d8-4639-8325-8bdaa860ac53	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:56	03a20980-a019-4873-ac76-ef09a0868906	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241210	15:39:56	22d263ef-71e0-4072-a67e-9b59e313548e	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241211	09:16:02	5024fe80-708d-4486-9e52-d9656257f7f0	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:16:02	54ab3b97-50a3-4412-b722-d43277c430f7	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:16:04	cde8a1ec-a4b3-4f91-bcb6-af23edc3dbae	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:16:04	f7f47e9c-8728-4b9f-882a-722a6ae89ae2	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:17:15	5beccf23-9fef-4089-9f89-2f3ccba73a1b	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:17:15	0460247b-39c3-40df-b9c8-a1096a91b751	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:17:30	3116f7c0-b85e-4ce2-90a2-a4356d71f9f2	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:17:46	f3e37881-73cb-4bb5-b90a-26ff6de9cdbf	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:17:48	4a9a4922-38d9-4b5d-bdbe-0ace6387dd16	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:19:08	d12df6af-845a-4179-9fc1-fc4042169e50	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:19:10	549b09df-95fc-41ca-8e40-7d5d4713457b	GET	http://localhost:5173	/api/v1/voters : UnauthorizedError => Unauthorized Access
+
+20241211	09:19:46	86b509cf-4bdb-4da8-8d88-1005baede9d0	GET	http://localhost:5173	/api/v1/candidates : UnauthorizedError => Unauthorized Access
+
+20241211	09:21:49	a47e22af-2090-4e94-8528-b8ef673be700	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:21:49	92cb775c-1a48-4391-bfdf-703b43b64a44	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:21:53	1d9bc44c-3d82-473f-9158-c0dfd9816b43	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:21:53	fc49d304-268d-421d-be6a-06e4f1c8bb85	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:22:05	1c88c4b0-3a8c-49ac-82b1-b6394f5aa000	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:22:09	0399a839-23c5-4877-95b1-90a235403228	GET	http://localhost:5173	/api/v1/candidates/elections/67541b60af1e5fe9d655a8ce : UnauthorizedError => Unauthorized Access
+
+20241211	09:46:44	348b997e-9a2b-4283-8c12-260dd83e93bf	POST	http://localhost:5173	/api/v1/positions : ConflictError => Request conflict
+
+20241212	05:27:19	89041d45-c0df-4865-911c-7082f967f00a	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241212	05:27:19	6c63f046-b311-4441-9a0f-6ff3a7a7b257	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241212	09:00:28	17c74313-fb43-4b7e-ab27-713a45c868f9	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:01:02	ea6ada35-b20c-4aee-ab0a-a93b01f26c78	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:02:25	6db9895a-1f80-4592-84fd-1711163dcc9a	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:05:00	5f063b63-7c1e-4d71-926b-ac1ddd6e65a9	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:05:18	4825dca4-3992-43ce-aecb-8a4c8af56dce	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:08:35	f42a843a-0f3f-4fd5-b371-1842e3731d2c	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:08:57	f8fe26e5-9a4b-4f57-9825-6c072dec5e88	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:09:20	26e63c86-186d-4348-8384-5ded2a9437bb	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:10:53	ac06548e-d7f7-4783-848c-173a6f798638	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:11:50	a03a3864-4f44-480b-82f8-2ab9f3a1b7c6	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	09:16:19	e5262257-53a2-4d86-bcec-f400d60c9a09	POST	http://localhost:5173	/auth/users/register-voter : BadRequestError => fill all fields
+
+20241212	12:21:54	0054c610-40e5-470c-a9cb-018aba826cac	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241212	12:21:54	f40baa30-57e7-440c-9a6c-5edfe7eeaf5f	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241212	12:22:01	87a32e2c-b02e-4f5e-91be-995c9f8032b7	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241212	12:22:01	e4234fbc-274d-4bca-acde-4857217e479d	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241213	13:14:35	1f682c36-27d2-4045-9d72-8418ded89863	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241213	13:14:35	df7c5c99-1952-4e1c-afc7-fd74761b9f43	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241213	13:14:35	f480f924-3227-45ef-a1a9-70768ebd3292	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241213	13:14:35	a75dfe08-549e-4933-8324-405c50f49bb9	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	03:20:10	c4e02339-ef81-4863-b03d-5a85ad439286	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	03:20:10	cc930d2e-c6d9-44c0-b761-331a752f2265	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	03:25:38	f4380713-d0dd-4a77-81e6-794fa0345b51	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	03:25:38	f19f6592-2fcf-4756-9dfa-8c23c5e65a29	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	03:29:15	b2e41720-3d26-4799-888c-fec70dca4ab7	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	03:29:15	b24414d0-638a-4beb-9993-446c22b03cea	GET	http://localhost:5173	/api/v1/candidates/undefined : InternalServerError => An unexpected error occurred.
+
+20241214	04:44:32	2aebad7d-d6d5-4217-bcb3-95bbe96bb3dc	POST	http://localhost:5173	/auth/users/register-voter : ConflictError => User already exist
+
+20241214	05:15:36	061beefc-f185-4724-8291-617c4109e1b4	POST	undefined	/auth/users/verify-voter/674e56763d894782062447c3 : ForbiddenError => Forbidden
+
+20241214	05:16:21	e476147a-4bc0-49f2-a4a5-a934b5409ed1	POST	undefined	/auth/users/verify-voter/674e56763d894782062447c3 : ForbiddenError => Forbidden
+
+20241214	05:18:05	f1036072-fd49-4602-a4db-fa938f7d2059	POST	undefined	/auth/users/verify-voter/674e56763d894782062447c3 : ForbiddenError => Forbidden
+
+20241214	05:18:51	0b6c8a1e-424d-4bee-9608-3323fd8d0677	POST	undefined	/auth/users/verify-voter/674e56763d894782062447c3 : ForbiddenError => Forbidden
+
+20241214	13:39:22	48da0301-92cc-4a00-b982-19af2aa8d8c5	POST	undefined	/auth/users/register-voter : ConflictError => User already exist
+
+20241214	13:39:23	3833c2e9-28dc-4491-8c64-c81d58981bbd	POST	undefined	/auth/users/register-voter : ConflictError => User already exist
+
+20241214	15:29:29	771b4bb9-67bc-4a93-8b9c-cd818fd10691	POST	undefined	/api/v1/elections : ValidationError => Validation Error
+
+20241214	15:29:59	a3022126-14cf-4927-b1c3-3a5b45c242f0	POST	undefined	/api/v1/elections : ValidationError => Validation Error
+
+20241214	16:36:13	cef79670-77ad-42b3-8a0b-3b4414ced224	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	16:36:13	529798db-b642-4e31-a395-85ad5bdcd9a5	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	16:36:13	a93233f8-d392-40d0-aad9-adfc47c3ec82	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	16:36:13	9043a162-97cf-4d04-821c-bf24a2095a6e	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	17:01:10	4dc81a1c-6a20-445d-91fc-d22d466654c7	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:06:30	0d1925c3-4e15-4cae-b423-4ef6c4386027	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:06:33	1adc1f59-a137-4b41-bc57-8430f826e364	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:18:12	ac36129e-e827-43de-8ad4-6bc70036cbeb	POST	undefined	/auth/users/register : BadRequestError => fill all fields
+
+20241214	17:20:34	4cf851ce-6002-486c-8b2f-b208161963ed	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:20:45	fb81a3ae-9192-4add-b3f9-cef60f8862bf	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:29:08	d257dc7e-9888-421d-ac81-79cede17e887	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:29:09	a7c38121-c074-4a59-8864-ea251d8fa3b5	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20241214	17:33:22	773ab43d-8ff3-4446-a3be-daf795698324	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241214	17:33:24	38bd59cb-39ab-4d63-a28d-d2562cf8ab1e	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241214	17:33:25	448a80c6-9e6f-4ce8-89ee-936c0fc48599	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241214	17:33:48	c7ef40e3-56bf-4c8d-88f0-af15affc15d5	POST	undefined	/auth/users/login : ValidationError => Validation Error
+
+20241214	21:46:09	97a23480-20cb-4ed9-9559-67db4829ae85	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241214	21:46:48	b12e17f0-7b53-4ff6-9928-73f81bc9bbe2	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	21:46:48	aa3cb43f-1430-48b9-98fb-22d07105904d	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	21:47:03	593e90f8-50a5-4c95-a0af-5a6dd3148cdc	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	21:47:03	9ca9d5b7-da19-4bfa-9fd5-684e46ccd3b4	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	21:59:30	6666f15f-9efa-4854-b1cc-6408eb1d93f2	POST	undefined	/api/v1/elections/675dab3fb3216a6c99461fdd/voters : ValidationError => Validation Error
+
+20241214	21:59:33	f331bcbf-11ab-491c-b1db-decabbb8bb19	POST	undefined	/api/v1/elections/675dab3fb3216a6c99461fdd/voters : ValidationError => Validation Error
+
+20241214	21:59:56	8b02ec68-eca6-4f37-8516-8fcfea779db2	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	21:59:56	20b3f75b-9cb4-4b83-8595-f3965722c799	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	21:59:57	2f503449-3ead-4699-bf87-8789eda4dfbf	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	21:59:57	2f76d350-ea30-4c99-b206-6df9b1d3f535	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	21:59:59	c9880e8c-c1ed-44e7-980f-75dd59423976	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	21:59:59	d069fd84-5ea4-46e9-8853-720eaed54410	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241214	22:00:00	cc01cdf4-8d87-464f-8bbb-9651aa17af99	POST	http://localhost:5173	/auth/users/login : ValidationError => Validation Error
+
+20241214	22:00:36	3ef3d959-d5d5-4af8-b0bc-5f830f808898	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	22:00:36	39ab1e7f-f854-4144-aa9d-78d2e9c405e2	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241214	22:03:20	5d37c73f-5684-438c-a7d8-fef7d655021b	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241214	22:21:48	69ea4fee-32ac-4384-adca-ab1ae947eb8d	POST	undefined	/api/v1/elections/675dab3fb3216a6c99461fdd/voters : NotFoundError => election not found
+
+20241214	22:44:25	345bdad6-7bb1-4999-af19-071a777e51b0	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241214	23:17:31	99a665b3-d4f3-4d78-8420-6ddc56fc190c	POST	undefined	/api/v1/elections : ValidationError => Validation Error
+
+20241215	16:38:56	88db8026-8753-477c-9f74-2867dca9ab37	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : NotFoundError => Resource Not Found
+
+20241215	16:42:33	41068d4f-9ee3-4aa0-a014-5ffe002cea01	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	16:42:36	4dec78c2-0bed-4f1e-8d02-a1f1f0cf99c4	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	16:44:57	2139e3f9-7c96-46fa-85fa-df90fb58c9fa	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	16:50:21	5e93e959-d337-4247-8650-f6515018f314	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	16:52:32	a16e9b33-9b03-40e9-ac83-c9441e029229	POST	undefined	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	16:56:11	417ef1ed-c561-4806-91c7-24c9e4000b92	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20241215	17:03:43	f9cb27ad-d61f-4132-a7bc-15dd36c1c842	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : BadRequestError => fill all fields
+
+20241215	17:03:49	67b47fa4-c5c6-44b0-b82a-e6e4a050eedc	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : BadRequestError => fill all fields
+
+20241215	17:05:56	764bf9ab-836f-4be0-a8b0-9afaffbafb87	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : BadRequestError => fill all fields
+
+20241215	17:08:56	70079b9e-2f81-4059-aa2f-c80b9a37a2dc	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : BadRequestError => fill all fields
+
+20241215	17:11:21	36b9bb2b-5a6e-413e-9fb9-5d73d9ad3da3	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : BadRequestError => fill all fields
+
+20241215	17:11:56	ca32c463-702b-4e70-aed0-58eb06753980	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	17:12:41	f9753e48-26d4-4195-8954-2067a0314bfc	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241215	17:16:32	d12c8560-a4b6-4dd0-9410-0161f8e2f224	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:32	51c04ba8-b87f-47e0-830d-bf1427119999	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:38	87c89e9a-d25a-4434-987f-cdbbeb134732	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:38	fb8cf1be-e016-4611-9e8e-4882aa7fd0eb	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:39	911baf67-9390-405d-962c-0a48ae013565	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:39	295c6036-d218-49ab-b070-7bbe1ce41765	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:45	65a406a0-6a51-4799-8de6-701598bb5820	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:45	4f9f27cb-5f3d-4000-963f-6cc808295db4	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:45	e8b4b5e5-c47b-4826-8778-84d89236591f	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:45	1976716b-b8a2-43c3-a10f-411ab4cb87f4	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:46	9bba87bb-b7f8-4230-837c-f706f2d88743	GET	http://localhost:5173	/api/v1/elections/?org=675f0e361ebde96ac334fdd0 : ValidationError => Validation Error
+
+20241215	17:16:46	2ef1a649-2b2a-4887-bb6e-9f49e1e18ba9	GET	http://localhost:5173	/api/v1/elections/?org=675f0e361ebde96ac334fdd0 : ValidationError => Validation Error
+
+20241215	17:16:49	8e6aeac3-6b3b-4d1f-b9a0-ba90c326bc97	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:49	8114ac07-4677-4c7f-80a5-c9d3a543094f	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:51	893a3da0-c3f5-4d3e-b7bf-df922816e1ac	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:51	393ae379-7123-4630-8b2a-a1ff7a978b74	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:51	126ca6c9-adcc-4eaa-807f-80a47b86d105	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:16:51	0e066d65-97ab-4508-a888-be0e03221592	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:17:21	e6522d3b-fe4a-43f3-a400-8161f5b5dee3	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:17:49	6eb0c466-b425-411d-8912-b871f9ca8c17	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:18:07	25818a19-b406-41e7-963b-308c43ab86bc	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:18:07	eedbc513-4b74-41ec-8c6a-c1fe293860bb	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:18:07	8a32ac2d-3a83-48ed-ae12-7bf4fb2d66d9	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:18:07	00916898-f2bf-4db7-adce-5c6ebbc7f8ce	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:21:45	2e98eef6-3c99-46e8-b951-7db95aa5cc21	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:21:45	10836755-1e79-4517-a23e-0141b24eaa4e	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:24:50	e49e769a-9d3b-4d92-ab27-100377393276	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:24:50	2accce28-2095-481b-96cf-2b126e7d377c	GET	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842 : ValidationError => Validation Error
+
+20241215	17:25:05	6da07ee2-88df-436d-bc04-15111c4e8dac	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:25:05	292db34f-b9e9-422d-8d5e-06e292539a04	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:25:06	3354bda8-c056-46e5-ba58-ca68917b1bcc	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:25:06	e54c606c-4b7d-4e24-b0ca-b21092790036	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:27:22	35873f5e-5d7f-43ce-b601-819b4f8bc83d	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:27:22	30a8034e-13d2-4780-b475-cf975549a954	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:28:04	aa7ff11f-205d-409d-ab95-16c992004220	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:28:04	dfc0afb1-b366-47c5-8341-03ff81e89d10	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:29:00	662391ce-b0eb-4360-a8b8-48afa55167fa	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => account not verified
+
+20241215	17:29:04	14ba49a0-98ca-454e-9134-b3a3013e926e	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => account not verified
+
+20241215	17:29:06	36a254d9-8d26-4a78-bd84-4d37b0728e46	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => account not verified
+
+20241215	17:29:06	716fc4cd-37b7-414a-93d9-00249c173661	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => account not verified
+
+20241215	17:30:33	698c9d50-3a63-42de-9a98-0d355c3a157e	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:31:21	3597c2e3-cb0f-4a43-942a-8b130733cb95	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241215	17:31:23	7d7b6918-fda8-472d-a4ea-1c22dd2668dc	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241215	17:31:52	2e1b0a9b-3819-4cfb-ab01-d51000708bc1	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241215	17:39:40	dedabeea-47e4-4dd8-b24b-66fb4c97674d	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:45:05	ad6b7650-f509-4e74-85ab-2b7768be67a9	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:45:10	ff78e40a-edc7-4cbd-be4b-de9a7c525567	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+
+20241215	17:45:13	22f68617-9221-4828-8d94-90e492369940	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
+

@@ -2,6 +2,12 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
+    userName: {
+      type: String,
+      trim: true,
+      minLength: 4,
+      required: [true, "Username is required"],
+    },
     fullName: {
       type: String,
       trim: true,
@@ -37,6 +43,21 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    elections: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Election",
+        validate: {
+          validator: function (value) {
+            if (this.role === "VOTER") {
+              return !!value;
+            }
+            return true; // No validation needed for other roles
+          },
+          message: "Election ID is required for the VOTER role",
+        },
+      },
+    ],
     role: {
       type: String,
       default: "ADMIN",

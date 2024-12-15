@@ -6,6 +6,7 @@ const {
   updateUserById,
   getUserByEmail,
   getUserByEmailAndAdmin,
+  checkUserName,
 } = require("../../services/auth/user.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
@@ -25,6 +26,7 @@ const {
   ValidationError,
 } = require("../../helpers/CustomError.lib");
 const { createResetToken } = require("../../services/auth/token.service");
+const UsernameGenerator = require("../../helpers/CustomUserName");
 
 /**
  * @Desc    Register User
@@ -32,19 +34,20 @@ const { createResetToken } = require("../../services/auth/token.service");
  * @Access  Public
  */
 const register = asyncHandler(async function (req, res) {
-  const { fullName, email, password, confirmPassword } = req.body;
-  const admin = req?.user?._id;
-  if (!fullName || !email || !password || !confirmPassword) {
+  let userName;
+  const { email, password, confirmPassword, election } = req.body;
+  if (!email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
 
   let checkUser = await getUserByEmail(email);
+  const generateUserName = new UsernameGenerator();
+  userName = await generateUserName.generateUsername(email.trim());
 
-  console.log(checkUser);
-
-  if (req.user) {
-    checkUser = await getUserByEmailAndAdmin({ email, creator: admin });
+  while (await checkUserName(userName)) {
+    userName = await generateUserName.generateUsername(email);
   }
+
   if (checkUser) {
     throw new ConflictError("User already exist");
   }
@@ -55,11 +58,9 @@ const register = asyncHandler(async function (req, res) {
   }
   const hashedPassword = await encryptPassword(password);
   const user = await createUser({
-    fullName,
     email,
+    userName,
     password: hashedPassword,
-    role: req.body?.role,
-    creator: req?.user ? req?.user?._id : null,
   });
 
   const token = createToken({
@@ -83,8 +84,7 @@ const register = asyncHandler(async function (req, res) {
       "welcomeTemplate.hbs"
     ),
     replacements: {
-      name: `${fullName}`,
-      username: `${fullName + "887"}`,
+      username: `${userName}`,
       confirmationLink: link,
     },
   });
@@ -99,11 +99,19 @@ const register = asyncHandler(async function (req, res) {
  */
 const login = asyncHandler(async function (req, res) {
   const { email, password } = req.body;
+
   if (!email || !password) {
     throw new BadRequestError("fill all fields");
   }
 
   const checkUser = await getUserByEmail(email);
+  console.log(checkUser);
+  if (checkUser.verification === false) {
+    throw new UnauthorizedError(
+      "Your account is not verified. Please verify your email."
+    );
+  }
+
   if (!checkUser) {
     throw new ValidationError("User does not exist ");
   }
@@ -120,9 +128,12 @@ const login = asyncHandler(async function (req, res) {
     lifetime: "1d",
   });
   const accessToken = createToken({
-    payload: { id: checkUser._id, email },
+    payload: {
+      id: checkUser._id,
+      email,
+    },
     secret: process.env.ACCESS_TOKEN_SECRET,
-    lifetime: "15min",
+    lifetime: "30min",
   });
 
   res.cookie("refresh_token", refreshToken, {
@@ -139,6 +150,7 @@ const login = asyncHandler(async function (req, res) {
     msg: "access granted",
     id: checkUser._id,
     email: checkUser.email,
+    terms: checkUser?.terms,
     accessToken: accessToken,
   });
 });
@@ -162,6 +174,8 @@ const refresh = asyncHandler(async function (req, res) {
       secret: process.env.REFRESH_TOKEN_SECRET,
     });
 
+    console.log("refresj", decodedCookie);
+
     const email = decodedCookie.email;
     const checkUser = await getUserByEmail(email);
     if (!checkUser) throw new UnauthorizedError();
@@ -170,6 +184,7 @@ const refresh = asyncHandler(async function (req, res) {
       payload: {
         id: decodedCookie.id,
         email: decodedCookie.email,
+        terms: decodedCookie?.terms,
       },
       secret: process.env.ACCESS_TOKEN_SECRET,
       lifetime: "15m",
@@ -180,6 +195,7 @@ const refresh = asyncHandler(async function (req, res) {
       newAccessToken,
       id: decodedCookie.id,
       email: decodedCookie.email,
+      terms: decodedCookie.terms,
     });
   } else {
     throw new UnauthorizedError();
@@ -315,7 +331,6 @@ const updateProfile = asyncHandler(async function (req, res) {
  */
 const verifyVoter = asyncHandler(async function (req, res) {
   const { userId } = req.params;
-  console.log("userId", userId);
   const { password, confirmPassword } = req.body;
   console.log(password, confirmPassword);
 
@@ -342,14 +357,22 @@ const verifyVoter = asyncHandler(async function (req, res) {
 });
 
 /**
+ * @Desc    Get voters
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
+const voters = asyncHandler(function (req, res) {
+  const creator = req?.user?._id;
+  res.status(200).json(creator);
+});
+
+/**
  * @Desc    Verify voter
  * @Route   POST /api/auth/new-password
  * @Access  Public
  */
 const logout = asyncHandler(function (req, res) {
   const cookies = req?.cookies;
-
-  console.log(cookies);
 
   if (!cookies) return res.sendStatus(204);
 
@@ -374,5 +397,6 @@ module.exports = {
   verifyVoter,
   profile,
   updateProfile,
+  voters,
   logout,
 };

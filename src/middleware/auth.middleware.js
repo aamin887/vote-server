@@ -6,7 +6,6 @@ const {
 } = require("../helpers/CustomError.lib");
 const User = require("../model/user.model");
 const token = require("../utils/token.utils");
-const roles = require("../config/roles.json");
 
 const auth = asyncHandler(async (req, res, next) => {
   let accessToken;
@@ -19,12 +18,13 @@ const auth = asyncHandler(async (req, res, next) => {
 
     const decoded = token.verifyAccessToken(accessToken);
 
+    console.log(decoded, "hc");
+
     if (!decoded) {
       throw new ForbiddenError();
     }
-    const user = await User.findById(decoded.id).select("-password");
 
-    console.log(user, "hjk");
+    const user = await User.findById(decoded.id).select("-password");
 
     if (user.verification === true) {
       req.user = user;
@@ -32,6 +32,7 @@ const auth = asyncHandler(async (req, res, next) => {
     }
 
     if (user.verification === false) {
+      console.log("not verified");
       throw new ValidationError("user account to verified");
     }
 

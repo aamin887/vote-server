@@ -38,7 +38,6 @@ app.use("/", root);
 
 // admin authentication
 app.use("/auth/users", require("./routes/auth/users.routes"));
-app.use("/auth/voters", require("./routes/auth/users.routes"));
 
 // version one of the api
 app.use("/api/v1", v1Index);
