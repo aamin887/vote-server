@@ -1,4 +1,7 @@
 const asyncHandler = require("express-async-handler");
+const User = require("../model/user.model");
+const { gcsDelete, gcsUploader } = require("../utils/gcsUpload");
+const { NotFoundError } = require("../helpers/CustomError.lib");
 
 /**
  * @Desc    Refresh token
@@ -38,7 +41,37 @@ const getVoter = asyncHandler(async function (req, res) {
  * @Access  Public
  */
 const updateVoter = asyncHandler(async function (req, res) {
-  res.send("update candidate");
+  const { id } = req.params;
+  let formData = { ...req.body };
+  const imgfile = req?.file;
+
+  const findVoter = await User.findById(id).exec();
+
+  if (!findVoter) throw NotFoundError();
+
+  if (imgfile) {
+    if (findVoter?.photoId && findVoter?.photoUrl) {
+      //remove profile image from cloud
+      await gcsDelete(findVoter?.photoId);
+    }
+    // replace removed image width current image
+    const profilePhoto = await gcsUploader(
+      imgfile.buffer,
+      imgfile.originalname,
+      findVoter?.fullName
+    );
+    formData = {
+      ...formData,
+      photoUrl: profilePhoto?.url,
+      photoId: profilePhoto?.name,
+    };
+  }
+
+  const updatedVoter = await User.findByIdAndUpdate(id, formData, {
+    new: true,
+  });
+
+  res.status(200).json(updatedVoter);
 });
 
 /**

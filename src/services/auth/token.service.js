@@ -19,15 +19,11 @@ const createResetToken = async function ({ id, token }) {
   if (findToken) {
     await Token.deleteOne({ token });
   }
-
-  try {
-    const newToken = new Token({ user: id, token: token });
-    await newToken.save();
-    return newToken;
-  } catch (error) {
-    throw new NotFoundError();
-  }
+  const newToken = new Token({ user: id, token: token });
+  await newToken.save();
+  return newToken;
 };
+
 const updateResetToken = async function ({ tokenId, updateData }) {
   try {
     const updatedToken = await Token.findByIdAndUpdate(tokenId, updateData, {
@@ -38,9 +34,9 @@ const updateResetToken = async function ({ tokenId, updateData }) {
     throw new NotFoundError();
   }
 };
-const deleteResetToken = async function ({ id }) {
+const deleteResetToken = async function (id) {
   try {
-    const deletedToken = await Token.findByIdAndDelete(id.id);
+    const deletedToken = await Token.findByIdAndDelete(id);
     if (!deletedToken) throw new UnauthorizedError();
   } catch (error) {
     throw error;

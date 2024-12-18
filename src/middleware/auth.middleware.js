@@ -18,8 +18,6 @@ const auth = asyncHandler(async (req, res, next) => {
 
     const decoded = token.verifyAccessToken(accessToken);
 
-    console.log(decoded, "hc");
-
     if (!decoded) {
       throw new ForbiddenError();
     }
@@ -32,7 +30,6 @@ const auth = asyncHandler(async (req, res, next) => {
     }
 
     if (user.verification === false) {
-      console.log("not verified");
       throw new ValidationError("user account to verified");
     }
 

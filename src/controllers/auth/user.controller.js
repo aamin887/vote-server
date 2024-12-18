@@ -1,5 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const path = require("path");
+const User = require("../../model/user.model");
+const Token = require("../../model/token.model");
 const {
   createUser,
   getUserById,
@@ -8,6 +10,11 @@ const {
   getUserByEmailAndAdmin,
   checkUserName,
 } = require("../../services/auth/user.service");
+const {
+  getResetToken,
+  deleteResetToken,
+  updateResetToken,
+} = require("../../services/auth/token.service");
 const { mailerInstance } = require("../../utils/mailer.utils");
 const {
   matchString,
@@ -35,7 +42,7 @@ const UsernameGenerator = require("../../helpers/CustomUserName");
  */
 const register = asyncHandler(async function (req, res) {
   let userName;
-  const { email, password, confirmPassword, election } = req.body;
+  const { email, password, confirmPassword } = req.body;
   if (!email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
@@ -122,6 +129,12 @@ const login = asyncHandler(async function (req, res) {
     throw new UnauthorizedError("invalid email or password");
   }
 
+  await User.findByIdAndUpdate(
+    checkUser._id,
+    { lastLogin: new Date() },
+    { timestamps: false }
+  );
+
   const refreshToken = createToken({
     payload: { id: checkUser._id, email },
     secret: process.env.REFRESH_TOKEN_SECRET,
@@ -163,8 +176,6 @@ const login = asyncHandler(async function (req, res) {
 const refresh = asyncHandler(async function (req, res) {
   const cookies = req?.cookies;
 
-  console.log(cookies, "refresh token");
-
   if (!cookies) return new ForbiddenError("not allowed");
   const refreshToken = req?.cookies?.refresh_token;
 
@@ -173,8 +184,6 @@ const refresh = asyncHandler(async function (req, res) {
       token: refreshToken,
       secret: process.env.REFRESH_TOKEN_SECRET,
     });
-
-    console.log("refresj", decodedCookie);
 
     const email = decodedCookie.email;
     const checkUser = await getUserByEmail(email);
@@ -210,6 +219,8 @@ const refresh = asyncHandler(async function (req, res) {
 const passwordRequest = asyncHandler(async (req, res) => {
   const { email } = req.body;
 
+  console.log(email);
+
   if (!email) {
     throw new BadRequestError("enter your email");
   }
@@ -219,13 +230,13 @@ const passwordRequest = asyncHandler(async (req, res) => {
     const resetToken = createToken({
       payload: { id: user._id },
       secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
-      lifetime: "10m",
+      lifetime: "1d",
     });
 
     // const resetToken = await resetTokens.passwordResetToken(user._id);
     // const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${admin._id}`;
 
-    const link = `http://localhost:5001/auth/users/reset-password?token=${resetToken}&id=${user._id}`;
+    const link = `http://localhost:5173/new-password?token=${resetToken}&id=${user._id}`;
 
     await createResetToken({ id: user._id, token: resetToken });
 
@@ -241,13 +252,13 @@ const passwordRequest = asyncHandler(async (req, res) => {
         "passwordResetTemplate.hbs"
       ),
       replacements: {
-        name: `${user.name}`,
-        username: `${user.name + "887"}`,
+        name: `${user?.fullName}`,
+        username: `${user?.userName}`,
         resetLink: link,
       },
     });
 
-    res.status(200).json({ resetToken, id: user._id });
+    res.sendStatus(201);
   } else {
     throw new NotFoundError();
   }
@@ -260,18 +271,22 @@ const passwordRequest = asyncHandler(async (req, res) => {
  */
 const resetPassword = asyncHandler(async function (req, res) {
   const { token, id } = req.query;
-  const { password, confirmPassword } = req.body;
-  if (!password || !confirmPassword) {
+
+  const { newPassword, confirmNewPassword } = req.body;
+  if (!newPassword || !confirmNewPassword) {
     throw new BadRequestError("fill in all fields");
   }
-  await decodeResetTokens({ resetToken: token, id });
-  if (matchString(password, confirmPassword)) {
-    const newPassword = await encryptPassword(password);
-    await updateUserById(id, { password: newPassword });
+
+  if (matchString(newPassword, confirmNewPassword)) {
+    const password = await encryptPassword(newPassword);
+    await updateUserById(id, { password });
+    const storedToken = await Token.findOne({ user: id });
+
+    await Token.findByIdAndUpdate(storedToken._id, { activated: true });
     // send email to tell user about new password
     res.sendStatus(204);
   } else {
-    throw new ConflictError();
+    throw new ValidationError();
   }
 });
 
@@ -371,6 +386,35 @@ const voters = asyncHandler(function (req, res) {
  * @Route   POST /api/auth/new-password
  * @Access  Public
  */
+const checkToken = asyncHandler(async function (req, res) {
+  const { token, id } = req.query;
+
+  const decodedToken = verifyToken({
+    token: token,
+    secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
+  });
+  if (!decodedToken) throw new ValidationError();
+
+  const findToken = await Token.findOne({
+    user: decodedToken.id,
+  });
+
+  if (!findToken) throw new ValidationError();
+  console.log(findToken);
+
+  if (findToken.activated === true) {
+    await Token.findByIdAndDelete(findToken._id);
+    throw new UnauthorizedError();
+  }
+
+  res.sendStatus(204);
+});
+
+/**
+ * @Desc    Verify voter
+ * @Route   POST /api/auth/new-password
+ * @Access  Public
+ */
 const logout = asyncHandler(function (req, res) {
   const cookies = req?.cookies;
 
@@ -399,4 +443,5 @@ module.exports = {
   updateProfile,
   voters,
   logout,
+  checkToken,
 };

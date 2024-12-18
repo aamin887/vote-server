@@ -153,7 +153,6 @@ const registerVoters = asyncHandler(async function (req, res) {
   if (!fullName || !email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
-  console.log(req.body, "register");
 
   const findElection = await getElectionById(election);
   if (!findElection) {
@@ -163,7 +162,13 @@ const registerVoters = asyncHandler(async function (req, res) {
   // if user already exist user add elections
   let checkUser = await getUserByEmail(email);
   if (checkUser) {
-    const checkElection = await User.findOne({ elections: { $in: election } });
+    const checkElection = await User.findOne({
+      _id: checkUser._id,
+      elections: { $in: election },
+    });
+
+    console.log(checkElection, "Amin");
+
     if (checkElection) {
       throw new ConflictError();
     }

@@ -1,6 +1,6 @@
-const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
 
-const tokenSchema = new Schema({
+const tokenSchema = new mongoose.Schema({
   user: {
     type: String,
     required: true,
@@ -15,4 +15,4 @@ const tokenSchema = new Schema({
   },
 });
 
-module.exports = new model("Token", tokenSchema);
+module.exports = mongoose.model("Token", tokenSchema);

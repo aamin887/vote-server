@@ -64,6 +64,12 @@ const userSchema = new mongoose.Schema(
       enum: ["ADMIN", "VOTER"],
       required: [true, "Role is required"],
     },
+    photoUrl: {
+      type: String,
+    },
+    photoId: {
+      type: String,
+    },
     creator: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
@@ -76,6 +82,17 @@ const userSchema = new mongoose.Schema(
         },
         message: "Creator ID is required for VOTER role",
       },
+    },
+    lastLogin: {
+      type: Date,
+    },
+    tel: {
+      type: String,
+      default: "",
+    },
+    gender: {
+      type: String,
+      default: "",
     },
   },
   {

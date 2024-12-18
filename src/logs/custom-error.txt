@@ -3261,3 +3261,763 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241215	17:45:13	22f68617-9221-4828-8d94-90e492369940	GET	http://localhost:5173	/api/v1/elections : ValidationError => Validation Error
 
+20241216	11:10:22	4a4faff2-5823-4598-a948-878c4bbe1eb4	POST	undefined	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	11:10:59	0021800c-dd61-4095-b50e-75b04c23b588	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	11:12:01	e3ddfcec-daa6-4ae8-b19b-9a9a566bb6db	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	11:12:32	75c29c3a-d2ed-47e6-a4ec-303601c61651	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	11:12:48	e6d8dd07-5b67-4d00-a01e-ebbb0decd5ee	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	11:13:32	1d8cf709-4339-4fe8-a2a3-1df82676e4b1	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	11:13:57	2298c9be-0008-4727-b8ca-be9692c0b6c8	POST	undefined	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	11:42:49	1217b3ba-ba1a-442d-a360-9764a58f3221	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241216	11:43:17	2f5181fb-6513-4acf-81c7-e27427a77298	POST	http://localhost:5173	/api/v1/elections/675e1231dc0339d26d438842/voters : ConflictError => Request conflict
+
+20241216	11:43:47	ff1ecd2b-1323-4b49-a7e7-1488e811d5c5	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	11:45:26	184d2992-496b-43e4-ad09-3721bdca01a6	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	11:45:45	7d511ab9-93b2-4a7a-be3a-81c83f627fe8	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	11:48:58	6c7adf1d-2bc9-4aa4-b912-2f21a693c029	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	11:51:11	4ff85f33-70d0-48ce-80aa-d4c8008bdf0c	POST	http://localhost:5173	/api/v1/elections/675f0a2742e74354e6b298e8/voters : ConflictError => Request conflict
+
+20241216	12:37:45	d080e295-3dbd-43a4-a91c-3954f6b83a96	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	12:38:04	e6f4d376-e835-492a-95d4-2ca7102f49b9	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	12:38:05	31eea408-26b9-466d-8104-4807b90617d6	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	12:38:16	f93b0bb2-6517-4dca-ba1a-ea3c38897839	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241216	12:39:07	f2517641-a396-4443-a911-6dc1d41d3eee	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241216	12:39:07	3ebf2a36-e96e-4181-b9c7-401ea0259240	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241216	12:46:10	a4671615-775c-40a5-8a06-7aa3bf631178	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	12:46:17	2dfdce32-0a29-4578-92ef-0f13c5489d6b	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	12:46:18	33d9c235-4d32-4c21-94c0-449be0a9c55e	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	12:46:36	36ba7ed3-e5c1-4896-a21b-2b09fb22540f	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241216	12:50:50	e7a58f91-5432-4f81-9ef1-4bfd8ecbb185	POST	http://localhost:5173	/api/v1/elections/676021baca18ed86629bd685/voters : ConflictError => Request conflict
+
+20241216	12:52:58	a517d194-cf99-497c-bcde-07e60f6349bb	POST	http://localhost:5173	/api/v1/elections/676021baca18ed86629bd685/voters : ConflictError => Request conflict
+
+20241217	08:56:27	5741fd63-81fc-46e9-8415-be6d604a1923	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:56:28	ab3b35fa-6e20-45f6-a37e-8b8dc2f2ddcc	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:56:57	835b825f-1fe3-4f3f-9eea-4a931f11b0e8	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:57:16	b3c83081-4f71-4c01-996c-0b5d71e86060	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:57:37	00bd9281-7500-44b4-b353-a6f111695a7d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:58:07	5f8cb29d-6952-41ea-b7c0-fec764e5be4b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	08:58:10	99a6946e-2cf8-4f72-8f8a-482602b89893	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:05:25	3df63662-2cb8-4031-b021-e1a5fd4d4868	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:10:52	6de5ccdf-1a9d-49c4-8704-d2c826ef82c2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:10:52	8f4b2786-33fa-49c2-bfb6-402d53e053d4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:22:39	7d5ba9ab-4e93-4958-a8d2-34267470876e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:04	0120ea42-a0db-43df-b056-4adf3c3ff27e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:05	86306335-7950-4c4d-a5b9-2465766e7203	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:13	00667727-4f68-4fad-8ebd-e3c359b16be7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:16	1dc8ae49-1d85-4796-8e7e-bcf8317553c1	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:21	1b24e61d-c4fd-4c1d-937f-164ba8036830	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:27:40	b3f2b2f6-680f-4591-b6c4-92267cf8b604	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:04	a3844452-1846-466c-aad7-9518fdcafe58	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:09	4237846f-eac7-4c5b-9f60-3922e896542b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:16	ced56460-93e6-4caa-a7af-43c87a27237d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:22	066ebabb-86f3-48e6-90e3-42006008006a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:28	40c92726-a8f0-4b08-b215-9dfdefbb42af	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:30	7bf587ce-7f2b-4758-80c3-61c47f7d1ee5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:49	ea8f0065-3561-45c2-bace-3c8a6c51af3a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:28:50	a10c20d0-0ca3-4f87-bfbe-937274e4f110	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:29:47	73a1975b-b560-4fe2-986e-2d256c8c2d67	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:29:50	e0a85a80-54b7-4094-8c87-dfe12388d43c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:29:55	326fdc2a-4d0d-4a89-89cf-111b1dea0099	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:30:19	c021278c-9978-483a-8598-0d4f2b231018	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:30:55	448bc7e9-22a7-4960-a0de-19602580cc8b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:30:56	6a512429-b445-4b36-bf77-cc496cde88d6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:33:13	e87bb65b-8e7f-4417-bc4b-a0779744fa56	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:34:22	ea357a89-7ec3-4fc0-9181-6171dabd1a98	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:26	5f4c4741-e2a4-430b-9d7b-a4c1834e0022	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:27	3e4e5839-44c7-4a15-baab-7e6916611e2b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:30	f9ca5703-b605-40bf-8f22-f5c67f70b269	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:35	a04d9e3d-e3c2-4817-aafe-3cafd4faaf5d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:45	6f8d850a-d2d9-47cf-bf73-23867cc19287	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:46	3909540a-6ede-486e-b7be-6f0fbce9a3c3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:48	07a63c7b-4b57-43ca-a302-3790e444bdea	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:36:56	1762b9ae-7e4d-46d6-954f-eb9ac34c9b26	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:37:35	d66fcf38-e7c1-4d5b-93d8-c9f9c92d5d01	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:37:40	277d881e-ed3b-4e3c-a00b-718e70af6884	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:37:54	af4d2178-286e-4a0c-8298-e2b420616dd3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:39:15	25655ac9-f315-42a3-9be4-6e9748565c8f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:01	9cdd44ce-545c-4dae-8ccf-132490529b24	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:11	aa077a9f-b34d-4d71-a63c-9131b4b65d26	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:23	c76ebd49-9d58-4698-8dbd-4f3fdbfc0005	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:28	bd3e6cae-d0bf-4e21-b0c3-e754f71d70ad	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:36	af1b6541-a516-4ded-9fd2-fd45e70961dc	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:37	1842e63b-5bba-4286-92b9-fefa45d2817c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:41	cdbd52b3-0885-42bb-8c6d-c63c17bf4dd5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:45	78e42d33-353e-4073-a99a-187d7f58a3e3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:40:56	26d0afe0-676f-43fe-8cda-72cfecc379e8	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:41:01	4a3aebc0-313f-4ca2-8962-55576e579360	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:43:20	1a64ba16-4553-4c96-976e-b02199483df4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:43:20	adb0314e-9733-4630-b958-742e4bf4d88f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:50:53	6b9478e9-586a-4a91-9b04-9b403b6676e3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:15	189138db-a5d7-4e6b-bf68-0fd0b03e9515	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:23	0a05c284-f89e-4559-9aa7-99cd5f6a88fe	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:27	3f92c012-4b97-4016-b8cd-fd33a1dbcc3e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:29	12b16c1d-5036-464d-8f64-d4a6c629c794	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:35	f15c2688-7fbc-481b-a72f-485f3033b337	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:51:47	5f9aa9d0-849c-44ea-a4a4-4956b6650c6f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:53:26	f824feaf-a51c-4cd3-85ce-9c548fd46911	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:53:26	5a0229b9-c423-47dd-bbfe-8684d4f35d0a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:53:59	aa0a4432-7cf4-4a67-9360-d8a0e8e21cb2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:54:08	b2de0b86-ac0a-41e3-ad43-4b72ceb23dd2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:55:16	5754f28b-fe49-4c3a-86f6-e788e6a261f2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:55:16	1da41759-4144-4764-be92-643439249162	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:55:39	8fab7680-553b-4bbc-8614-abfaeb58c6c7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:55:42	a4b2272f-acfd-409b-bb67-393962c5eb5b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:55:49	20a125a9-7fa2-4aed-8d49-fbc6c2348d7b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:08	99d6c54d-b658-4c0e-bfb6-b0a969f3da35	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:13	aa31d3ec-74fc-4343-8820-597d707427e9	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:15	22166749-b246-4283-a5e1-3329fc84af80	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:17	ceff54dd-c88a-455c-9c41-ccf5fb5884a4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:24	570c5751-0958-490f-b6b3-f3a0c0673c52	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:26	ea2e7248-5bdb-4ff1-94cb-6206810f3546	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:31	a82d9736-2338-4908-9b9a-0c2e02c314b5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:44	99b7a8d5-e6d8-410d-8acc-5a7af3bcfe96	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:45	cb9a5eee-3c37-457f-91c2-907fb4f86e17	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:55	34f90568-789b-4015-96a3-a05a01a0f19b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:56:55	436664a1-da84-4f92-9f6b-990bb997c49f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:57:09	6481155f-da32-4174-b099-a3de643c3aee	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:57:09	ecee9282-1b13-4bda-9035-a918860a24a5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:57:31	5b081c49-e5b3-4a56-b5df-ff05546a6c39	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:57:31	405a0ae3-83fe-41e8-8973-0c30673da3c9	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	09:57:37	7065fe4b-1cd2-4c71-b829-85311659bfeb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:00:08	301f741f-0d8b-475d-9d7e-ecb7ab56770c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:00:08	4f770876-8893-4ea8-86cc-5f55c929d7d5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:16:34	a70ea096-bdc2-49c4-9c9f-5a9bfb57962d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:16:34	18a565d2-d7c6-4348-b79b-d5dcc4ef5f36	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:33:25	6c9a79d8-8de0-4de5-a656-8b17cac446c9	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:33:25	bb0b26c0-6ff7-4f97-9cc2-5edddbec4552	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:43:53	dcfbe089-4f5d-4b73-a8fe-4f30a8f0adb1	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:44:00	9e85dd09-677c-4b0a-b71e-80a58019f77e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:44:00	02d19ef3-a27a-451d-b14c-e5d51357ab99	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:44:12	8d70575c-8bd9-4868-815f-f77d2b8b3196	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:44:50	aa320d72-e021-4bfe-b463-497c4ba628bd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:44:53	92dc8444-5bac-4c16-9bb6-ea512723e077	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:00	1239b0e2-638e-4dff-b2e2-96fab6fd62f7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:05	d4dad741-4415-4011-a4c4-a8e091c0f6e2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:10	06a3c181-2b70-4ee8-b285-4d2dc2476062	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:15	e4b1b2ad-958f-4f14-b20a-91cf8caa984c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:20	396ab709-ed04-48e7-b3f3-619e5052fa70	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:23	e065045c-971b-47df-95b7-8a0895785e0d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:52	f6153a8c-c420-4f77-b61c-580aa30d2370	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:45:57	059f2f02-e95a-4ab8-ae03-c3b345bff1fe	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:46:00	fd8572ca-e273-4885-84f9-613023bc018c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:15	e048da1c-83ce-4628-9cdc-5a196b155b82	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:15	e76754a4-547c-42cc-9f0f-09e902dbce29	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:28	74124458-2aff-4669-bd47-fe9d5bb09238	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:31	b517908f-9516-4854-8422-dc4db19aca7e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:32	68d452a2-78d8-465a-8c3d-fd2bf3ccc8ca	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:37	03fbbe62-9d5a-42a2-8e4e-30642d03844c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:47:40	7617a71a-4efa-4887-b8e8-ab51ff8ccb00	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:09	a24831c2-5edb-4d9a-a4e8-acc355d8f0a3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:25	2fd3122a-1588-48a2-8eee-b701ddd7ef9f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:29	75beed66-595f-4362-9bb6-f0584799625c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:47	c70a4ffd-4494-44c5-a64e-859958474927	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:55	d8503c5d-053d-4d60-916f-fca095663faa	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:48:59	e06635f7-36d5-429b-94d2-c61cc7515d60	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:54:50	ed314380-1f4c-4a9c-bcfc-7e2406118755	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	10:54:50	ba4d01de-7a19-43f3-b4ba-ad9c73808ecd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:28:00	d2f1ce86-2051-4364-b102-fc648fe7456e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:28:44	60c1006c-cafd-416f-9f1e-4916359066b8	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:28:49	8e859e1e-e03d-4bba-ad87-036f5c164508	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:28:50	01ed7fcb-86c9-4ccc-b3eb-efa917e1f491	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:28:56	60125725-35cb-46eb-90d3-f35e8cbfac66	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:01	431268d1-95f7-4dc3-a2ee-33d15d34631c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:02	ba29224d-3a81-493f-8f15-5909ed24d772	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:05	6c221b87-a833-48cf-b996-94802a6bf0f5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:07	d3e15327-fa72-438b-8160-421048ba8512	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:28	012275f0-92a8-4c53-af35-39591f343afd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:34	13dfb1f4-87f5-4f14-a8e4-54a712304e28	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:37	a80c35da-9d15-4b31-97ce-180cea3d7214	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:50	995bf587-04db-416a-a4f9-a3f91aaee010	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:50	c1d7e410-05ba-4b27-9b32-d69e74d54754	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:55	1a16e378-54f5-4cef-be34-f05b2cf4f4fe	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:29:58	7bfa4773-baf4-4596-90f8-5258a38f867e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:00	9993cf5b-e2f9-4458-9cd3-23718fbf5901	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:01	9b1476ab-83dd-41b0-a701-dc3276f64a79	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:08	9730f62f-e4d2-4ffe-8534-ce2c7af721b6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:37	158782cc-a410-4987-9de4-063e3999a585	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:40	369b58f3-5214-42c4-ab55-58b6e80cdd31	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:46	e475f622-51d0-4bf6-9dba-4f34e4c62ea7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:30:53	c0c2f9a3-6b60-4f8d-94f8-09d992d7dece	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:31:04	bb9dc3a0-d8af-4f13-93fb-c3223fc01567	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:31:18	baa15dc9-2dae-4135-8a55-deedc82f468e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:35:48	a70ccfb9-da1d-46d1-9824-294572a35310	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:35:56	dd644f5f-eed4-4b55-a28b-bd4c98826ec3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:35:58	26a0c2db-7e87-42b1-87c5-bd2e4e660977	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:36:07	b0fd3a84-9ae4-45a7-abd5-8d8d6760597c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:36:07	f092d5c4-4448-477f-9c98-45d79b9f0c36	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:36:15	64e080f7-300d-4c14-8cd6-17d2ae11afab	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:36:17	e2d5e03a-8077-4f67-a446-5a8f882e4e89	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:36:18	d69c27f0-d4bd-4387-87f5-b8dea64f8628	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:37:24	b79fb780-9e16-480e-9df9-e8f1d77f70eb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:37:36	57b4f05e-524d-46a2-8d8c-f22a34dede24	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:37:38	365f8661-dcc3-4b3f-bed5-3f35ec3f34bd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:37:41	9bced759-7736-4262-8f3b-f586cbeba3a5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:37:44	aa0fc468-50b3-4359-9249-59219cf2b7cb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:38:08	9d508ede-deec-4f8b-8461-21dd9183a57e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:38:16	ba000061-4376-4bb9-bd41-1fc2eacb156f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:38:54	7dffcb5e-a3e8-409e-89a3-bcbe898bc671	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:01	63216a0a-547d-44a6-b140-7e3bd2540aea	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:01	97616313-0339-4d4c-a551-b7d007225c31	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:03	c4bde9b6-b644-459b-8acc-41214f53436a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:27	3ac1a829-c5a1-4375-9d3e-d22fa051a88b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:28	77764598-d238-4b68-8814-291414233e89	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:39:30	0afde107-8a65-439e-8765-fd65359ec33e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:03	ca9a65c3-bf3d-4594-b59c-2620e70095a2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:05	3c7bcf3b-61d2-4518-a584-bd1d26ad95a0	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:08	27eb434c-4137-4003-8392-e829b8995dd6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:10	82a56d28-11eb-4800-afe0-93d946060a02	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:15	d5d2d137-bbd9-4dcb-863c-dec0b2627a51	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:40:30	fd23954a-0ee8-42b2-a2c8-bd0f0da9bfef	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:45:49	eca8d4b9-d1fb-4506-8da8-43181e7e2b44	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:05	175a65b4-f731-4281-8cfb-62cb7589a015	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:06	13462a85-a40d-49bf-8990-ce02aad988c3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:14	0ff1989a-6307-4037-9ed3-86ba29518350	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:20	3a17e985-85f7-4809-8a59-3ec1fa58a219	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:21	339b31fb-dec1-42bd-904b-c67866d82d69	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:25	79e94c52-c97e-42ee-a81f-4bb7649311e3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:53	11c6d7a7-78e1-417f-a5b4-2762f47c5e3a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:55	a35fbef6-2c23-4b1c-b021-910597bc93bb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:46:59	4e92472a-2298-41d4-bd9f-4dd892b47a49	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:02	be120e3c-16aa-4062-8559-c1219eab77df	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:04	8cd76fff-cdac-4546-944a-2b5d604e9008	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:05	d37c26c7-afca-493d-860a-7ad184ce09d4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:09	ec900014-ac8e-4474-bae4-92c8bd30344a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:20	61282ed4-e36d-445d-bbb0-6ce49cd6ab1f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:25	439f845d-2580-407c-9cc9-a329387b5675	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:26	8e1ccbc9-13e4-4f22-82ee-82e8474cd109	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:31	d39530bb-40ce-4ecc-b80b-73b7f6e6c70c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:35	bd6dd19a-7416-4242-8f33-ad7b8960f907	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:47:36	866a867b-2a7e-4056-a585-8734f87127bd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:58:17	c53e4a5f-0917-4d95-88ba-623082b6458f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:58:21	9668f526-432d-4787-9c93-0a14b731fa0b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:58:55	9e56723d-2687-422a-8734-59fcf8fa4671	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:58:56	998e4cb6-40a5-4eac-a94d-7bcb76f39059	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:00	ac35644e-1ae7-4c9f-85d1-209c4ac42dc5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:10	1a84cf99-1b75-4b5e-8c48-5a588dc6f097	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:11	86f59dd7-8e6e-4200-8e5a-6a806cfd82a3	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:13	4ac5dc7c-dbb3-4341-aea5-4b9b7b8d3fd6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:22	ee7ed1a6-cc04-4137-95fa-f94fdd13226e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:25	ce28f9b5-df70-47bb-955a-e4fb55205933	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:27	8977053c-251f-45cf-9d37-dd4d7b23026d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:32	497a60f1-b114-4642-b16a-3d2323960188	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:37	cc47c7ca-0adb-482a-9c1a-3bf8a9423d8a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:39	a2733c83-c562-4296-a30b-6df4baad82fb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:43	6c4bf810-c04f-44a1-9d60-b4844074857c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:56	53d9c054-6064-4d93-b77d-d346a0e93e9c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	12:59:58	67eee43f-f0ce-46a6-83cf-f91635736283	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:15	45012e6a-de19-4e1b-b01c-5ec29e40bb1e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:29	1334ded2-14e8-4248-b37d-e65de3b9e324	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:32	800bb345-1901-4377-8e13-6d93161391fa	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:40	288dd00c-36ac-45ae-88e9-d481a70bb208	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:43	f354d670-b916-4974-9055-432449b2affe	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:49	e39787d4-3e20-4184-aefb-cb42156ee05d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:52	ec59cbeb-ac38-4513-b174-bb6862391c47	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:00:58	6d3cd1e8-a74d-411e-a2eb-59d6efcb5a32	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:01:08	535ca078-1144-461c-8cf8-4db2a23b8099	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:01:21	982c6f73-a9ed-4791-9361-f5698cab57b7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:01:24	bb633f98-f804-4190-92b7-53591d751d45	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:01:30	8d4b9614-7503-4e7e-b531-a6eec0d559e5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:01:41	eeb826cf-67df-4bbc-9650-5dc1d48960ed	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:02:25	031dbc85-a9f4-4b7b-954e-4fb2a504cf90	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:02:28	906917cf-c36d-451b-89f2-79e113a9aac5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:02:32	937215aa-b5fe-4b46-b643-17e52cead0fe	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:02:46	9d327fc5-c1a4-424d-a2dc-73cedd05c3c8	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:02:51	373f81dc-028e-4c3a-bc92-1f0446ab251c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:03:40	90b2bc00-6878-45c9-883b-cc45271dfc09	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:03:40	b4abc297-9f28-4954-8c09-1e9b18b792c9	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:03:43	49922df1-584b-433b-805e-606796d6a999	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:03:43	75d8fd46-5076-4735-a66e-3b94fb1a398f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:03:44	1ec5040d-5196-4a1c-a3e5-cfd23374b713	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:15	9306ed26-c67b-4c9e-85a1-e41d414171c1	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:23	d80cdac4-d85f-4059-8155-a0ffcc1535b8	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:27	167d9561-0347-4014-89a3-133e53200f93	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:32	78f38335-637f-4060-9538-c4413a5ee990	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:35	d1f07d28-fba2-4cd1-a565-e875587cef4e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:37	32fb7207-6ed5-4b18-bf13-ea1abb7312d4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:38	74c99c81-6078-40e3-bb4c-30218d05c436	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:52	986b6f82-2e53-43f8-a9d9-f4cb75f802b4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:04:53	1dde1b8b-bf37-46a8-8aba-928553c9d560	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:05:24	85bfd77d-942a-4ce0-bbcf-5de5e742ad3b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:05:29	cafe9c07-c333-4adc-9e5b-15a46d52277f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:06:00	aadef8c2-e966-46ce-8c06-2576aa8521b2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:06:04	61e3e548-e490-4119-b9b0-61c5164f40cd	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:06:25	3a8d3a89-90e0-4410-b978-4d197e1eb873	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:06:57	5804344d-34dc-4072-8feb-b3323a9ae66f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:00	6345b64c-117c-455a-9b84-a1e203773a33	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:05	f87f8761-b9dc-4be1-9c32-60e39c60912b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:09	903a91db-b63d-426c-ab79-796d2465e2d5	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:11	5ef1f1b2-d6e1-4190-8fc6-bee67e6a8146	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:19	73b19f0f-088a-4650-a055-7ed2f687d0cf	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:23	a931dc79-fb88-44c0-90ec-d6bf849c4a08	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:07:53	6f201285-fa19-4b54-9241-3d38a5e00b3d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:00	d50c5656-879c-423f-a95e-03a5efe2e60e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:05	c7e67ada-3b96-441e-af69-11e9b08f2ad6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:16	f35b60cd-2f89-4793-9c66-7997056924c6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:51	62fef501-0383-4183-b437-4f9b1b77c2fb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:54	b9784781-ef7c-47a6-8b43-98896734bb7d	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:08:58	a9cc70eb-5028-49f4-9b65-f238695f2f36	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:18	e1c8c220-bd9e-4174-8ea5-a1ca366ab8e2	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:27	e3c85651-a8f6-4a3e-8984-6560d0276986	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:30	9d787564-12e0-403c-a7e1-605788aae709	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:33	ef635d61-ebc4-4939-a55d-23d2eacf9f4f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:35	1e778bff-d055-4705-ac03-6204e6681d35	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:37	ad6dbfce-804f-40c1-9f80-d550225d072b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:40	c1784ba8-ca87-4905-bbf1-fd6dfa369250	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:45	e47b0333-c7f0-449e-8a32-a1749e938b9a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:48	959ef666-7770-49bb-b823-101bd0180461	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:50	08c2be21-8d08-4860-a5ef-9f76e263915a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:52	5e2f56dd-fae1-4aa3-9c71-ec191d6bfa62	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:09:57	b35e78f7-ee8f-4c1f-8adc-19fa242f03b0	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:05	dfab7680-8f2c-4045-ad80-ba7dfe04193b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:15	25781713-ae03-41b3-b774-0dd3064742c7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:26	c053af06-b203-4db0-aabe-09872776fd8e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:28	ab971100-ade5-44a2-a00e-62293a5a057f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:29	aa028206-5df8-4b5d-b079-83ea431effa7	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:33	b458ae9e-eb5a-4830-8cb7-296d9ed13d34	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:40	ff49bc6a-e9a6-4f8a-be66-1301cde3a7d6	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:46	68695c42-0448-4d1a-bf30-73ea99b7c42c	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:10:49	24453438-836f-4ebe-88a5-a26493b7769a	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:11:59	b8a8567d-a3fa-4f2c-807a-26ab2a071b8e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:30:27	fc492365-ec3f-4e8a-82a0-168f80f07ba4	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:30:27	dd11e3b8-c91f-4b06-9b3e-8e9921006d2e	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:40:15	f8594ebc-29e3-4c43-997d-0412d4e26b37	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:49	a77d5be0-bf3f-4ae2-ac12-861cd0b93f9b	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:49	f5c948a0-33f3-4a94-9089-274707782796	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:50	9d8934d9-b627-42cf-9582-ab56d06d29bb	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:50	435c310c-9306-49d2-947b-9eda7e4a498f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:58	701cf8b4-4e9a-4d2b-8299-d9bddc4b442f	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:58	af9e4f3d-0b4b-4c13-b1e9-c86466022757	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:58	98d7bb48-4b65-4c0f-82d6-66f94c026b31	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241217	13:41:58	95c8cd35-df82-4874-b6ef-91d67c55ed74	GET	http://localhost:5173	/auth/users/profile/676022f5ca18ed86629bd6da : NotFoundError => Resource Not Found
+
+20241218	12:02:04	a14c37f1-496f-4b4f-8372-90d46fe09899	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : ValidationError => Validation Error
+
+20241218	12:02:22	45d646f4-a969-4b32-93e5-e94281fae09d	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:02:22	d8f4b48c-6988-46c7-98c7-5c6e7a288762	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:09	d320d76e-9fa4-46c2-99e2-529e9b6df830	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:09	6760ebfe-48d5-49ed-86ec-eddba2086a5a	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:37	b1efbec8-77e7-422c-ade3-5e131223e8bd	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:37	c07f6a8e-cf50-42c0-bc33-115068c0caf1	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:51	cfe7f354-5e7e-4c00-bb9c-c7c9a15ab619	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:03:51	4e1a96c2-0951-4103-a89d-7d7cd1e1f045	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:04:52	1ac55608-621b-45e0-bb7a-a46217d307f5	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:04:52	5914f966-b5a1-4400-a00c-5b9c292f1867	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:05:56	63b448da-1e2d-472c-a76e-0e17be77ceed	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:05:56	78b7d766-9687-4e5f-b84d-7372563b4ff2	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:06:36	c150ca79-9e00-4ba0-9ce3-e3afdf32ffae	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:06:36	214bb9d0-80e4-4c32-9f76-d5d46769daa3	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:06:46	707b3e8d-878f-473b-b285-3ef02302069f	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:06:46	b0092819-e825-4b76-bcd8-41f754587fe8	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:07:34	b68d8b34-4157-4f73-b265-d4a3cb44786a	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:07:34	814d99fb-dcd0-428c-b924-279ad3945fdd	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:08:36	4d0e78ad-5bc5-404a-9d5a-4fb862f5ea82	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:08:36	41f22c05-6976-42ef-818e-1868808a0850	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyMzMxNiwiZXhwIjoxNzM0NTIzOTE2fQ.zlssIr3hQMO6kXOaOLsZKyUNc1am5M09Ilx8ydBtREw&id=6760210cca18ed86629bd65b : NotFoundError => Resource Not Found
+
+20241218	12:54:59	c10a4b89-8725-4cc6-a980-b03b5c0b650f	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : ValidationError => Validation Error
+
+20241218	12:54:59	de56ee5c-71a1-49a6-bd55-85dd62ec5681	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : ValidationError => Validation Error
+
+20241218	12:58:56	b627fd2b-2819-4c78-9189-3160a4bd5065	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	12:59:38	abf6ac2f-512c-4557-8ec5-e7bc1dfe93a7	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:00:47	2ff12092-ed96-49cf-a4f6-043491b431ac	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:02:54	fe1f9b1b-8334-468a-bb43-094b9fbbbbea	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:03:15	f82019cf-d83b-4570-ac20-4fc16c3e2996	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:03:54	fba5f964-5dc4-4af0-b1e0-320d30e4f147	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:03:56	f342e4b5-0b9f-4565-98a8-1a9b833b9327	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:04:53	1e8afd27-9816-408b-a2f0-e1d10f4ad689	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : BadRequestError => fill in all fields
+
+20241218	13:05:30	b4502e45-c9e2-4f8e-a207-98336bd5d8d8	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : UnauthorizedError => Unauthorized Access
+
+20241218	13:05:36	6e1408b6-5c13-4153-af7e-6502eec5d0fb	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : UnauthorizedError => Unauthorized Access
+
+20241218	13:05:37	bd24bca6-a108-402f-8ea1-6ec6056b6852	POST	http://localhost:5173	/auth/users/change-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA&id=6760210cca18ed86629bd65b : UnauthorizedError => Unauthorized Access
+
+20241218	13:12:55	1ccc403c-803f-4cda-881d-b7bd30b788a2	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	13:13:01	efc3f8d7-c9fa-4061-9f9b-50fc0367891d	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	13:13:05	e0e65df9-f2c4-4c2e-b843-13ed6ce3b6de	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	13:13:06	d22670c3-5c85-472c-b9b7-b5b812646d2b	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	13:25:40	81b095e1-6d98-4463-8a7d-68891d120df3	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA : ValidationError => Validation Error
+
+20241218	13:25:40	761e4702-4a93-4675-898d-49417bd4fa89	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA : ValidationError => Validation Error
+
+20241218	13:26:09	f1e1e085-f804-43f0-9ad8-bf5b7882cd13	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA : ValidationError => Validation Error
+
+20241218	13:26:09	447d2d0c-1ee2-4146-a76b-36cd21905544	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyNTAxMSwiZXhwIjoxNzM0NjExNDExfQ.R8U6PSDatbm395-vGpveTgmYCpQn07AcrynyYfLKwHA : ValidationError => Validation Error
+
+20241218	13:41:14	a53b3c27-1136-45b2-aa0c-3515ddf91e29	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyOTI1NiwiZXhwIjoxNzM0NjE1NjU2fQ.pwlOT7tYcKITy2mHEqCRwCrJEVFAF6qURrZLE3ssfWw : UnauthorizedError => Unauthorized Access
+
+20241218	13:43:41	8b5f5bf8-76e3-43e7-927a-b848039f9c34	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyOTQwOSwiZXhwIjoxNzM0NjE1ODA5fQ.NxRxR2XWBkyokiPck6WRlSeoUvbv0HBg1tc2MLc2A2M : UnauthorizedError => Unauthorized Access
+
+20241218	13:44:20	a76fb813-7b19-4beb-b41b-c8c863f3b678	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyOTQwOSwiZXhwIjoxNzM0NjE1ODA5fQ.NxRxR2XWBkyokiPck6WRlSeoUvbv0HBg1tc2MLc2A2M : ValidationError => Validation Error
+
+20241218	13:44:20	65357d17-a704-49d5-a245-c5c5c73b781f	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUyOTQwOSwiZXhwIjoxNzM0NjE1ODA5fQ.NxRxR2XWBkyokiPck6WRlSeoUvbv0HBg1tc2MLc2A2M : ValidationError => Validation Error
+
+20241218	13:45:53	9222f6f8-d594-4905-bb82-1a7821db873d	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	13:58:28	96325e60-09da-42c2-83e8-2742b43d136b	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk : UnauthorizedError => Unauthorized Access
+
+20241218	13:59:33	5da5db7d-62f5-4738-a1a0-12a06895407c	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk : ValidationError => Validation Error
+
+20241218	13:59:34	3bdaf2e9-abc1-4df0-a234-2df33e1d5e27	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk : ValidationError => Validation Error
+
+20241218	14:00:01	f23da5cd-07f6-49ae-97d6-437eac34e5a2	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk : ValidationError => Validation Error
+
+20241218	14:00:02	921b7d88-1025-461e-b666-0fa145a83445	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk : ValidationError => Validation Error
+
+20241218	14:17:23	a1676c70-2167-47fb-b263-3bd13be0f70a	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OSwiZXhwIjoxNzM0NjE2Njk5fQ.wHh3Lp5BCgzJcuq2b4cjoD4Q1uIdUeETNo6vUzC26_8 : UnauthorizedError => Unauthorized Access
+
+20241218	14:17:23	57990191-23a4-4266-b9d8-7fdccc727cac	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OSwiZXhwIjoxNzM0NjE2Njk5fQ.wHh3Lp5BCgzJcuq2b4cjoD4Q1uIdUeETNo6vUzC26_8 : ValidationError => Validation Error
+
+20241218	14:19:09	c7fb8b4e-ecf2-4e96-84ab-cf46b53ed760	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+

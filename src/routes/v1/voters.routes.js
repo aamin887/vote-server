@@ -1,6 +1,8 @@
 const express = require("express");
-const router = express.Router();
 const votersController = require("../../controllers/voters.controller");
+const uploads = require("../../config/upload.config");
+
+const router = express.Router();
 
 router
   .route("/")
@@ -10,7 +12,7 @@ router
 router
   .route("/:id")
   .get(votersController.getVoter)
-  .put(votersController.updateVoter)
+  .put(uploads.single("image"), votersController.updateVoter)
   .delete(votersController.removeVoter);
 
 module.exports = router;
