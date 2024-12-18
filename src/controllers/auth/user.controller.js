@@ -156,7 +156,7 @@ const login = asyncHandler(async function (req, res) {
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     path: "/",
     priority: "high",
-    domain: ".vote-client.onrender.com",
+    // domain: ".vote-client.onrender.com",
   });
 
   res.status(200).json({

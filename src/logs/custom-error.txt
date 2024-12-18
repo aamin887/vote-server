@@ -4035,3 +4035,23 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241218	17:18:25	f925a0fc-56d9-4132-a6ca-5f581c8dc9ac	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
 
+20241218	17:23:26	e6e65bbf-1df1-495f-ad48-61912be1dc4b	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:23:32	d4babac2-1905-430b-bb8f-779b20f83f21	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:23:33	daff79d0-68d5-4f56-a7d6-250ad1d33be7	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:23:35	c5eaf676-d980-4878-b94b-4cae0409b4cd	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:23:36	617e05b9-b188-4d11-91dc-9300c0873d23	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:23:43	78039814-147a-48a4-b61f-1c315106c2a1	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:28:03	638b3b87-310d-45f8-af46-174318644ec2	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:28:09	c378edbc-882a-45c9-b7a6-8c6ba56653c7	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:28:14	ab16cfcd-efbd-4b6d-af98-b6a57b348db0	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:28:21	67e8efdf-27a3-481f-96d3-de3ec43cbf70	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
