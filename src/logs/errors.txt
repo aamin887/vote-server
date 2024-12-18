@@ -1008,3 +1008,7 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 20241218	14:02:30	a61af402-5271-404b-a8ee-51f549b50ba6	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk
 20241218	14:02:57	1543a1af-47d3-47c8-b0b9-cf405b957530	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk
 20241218	14:02:57	9e7e9521-d3e8-49da-85c8-1da96ae4de4c	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjAyMTBjY2ExOGVkODY2MjliZDY1YiIsImlhdCI6MTczNDUzMDI5OCwiZXhwIjoxNzM0NjE2Njk4fQ.dSd6fHXV7wKm_jCy7_jGqbovT8ZKwFdMzNaVNyiqbnk
+20241218	14:30:13	7a608953-ccd3-4f64-a5ed-4aaaca274bda	GET	http://localhost:5173	/api/v1/elections/6762d22d3910b7e512b0023a
+20241218	14:30:13	2657b6a6-eb8a-4745-8cc6-f9b45bfc2d4a	GET	http://localhost:5173	/api/v1/elections/6762d22d3910b7e512b0023a
+20241218	14:30:13	4ede6210-b98e-4f13-88f0-f9bd094e063a	GET	http://localhost:5173	/api/v1/elections
+20241218	14:30:13	a9250aff-3c55-41b3-a1f7-42a41713d50b	GET	http://localhost:5173	/api/v1/elections

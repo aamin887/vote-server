@@ -4021,3 +4021,17 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241218	14:19:09	c7fb8b4e-ecf2-4e96-84ab-cf46b53ed760	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
 
+20241218	14:23:21	3a0517de-62e3-4e16-9d16-9af613893602	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	14:23:25	c6bd4736-9506-4e31-b615-d61595441045	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	14:23:26	fbb0f685-e7d0-48a5-8d40-11fbe0b1d473	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	14:23:27	95048600-9796-4637-8d5a-350650fec738	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	14:23:30	1423ddd7-0a0c-4abd-b555-96ee4582d2e8	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => invalid email or password
+
+20241218	17:18:14	f909993c-91c0-43d8-90e9-8f5d0c10fe72	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241218	17:18:25	f925a0fc-56d9-4132-a6ca-5f581c8dc9ac	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+

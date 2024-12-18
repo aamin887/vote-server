@@ -76,7 +76,7 @@ const register = asyncHandler(async function (req, res) {
     lifetime: "10y",
   });
 
-  const link = `http://localhost:5173/verification?token=${token}`;
+  const link = `${process.env.CLIENT_URL}/verification?token=${token}`;
   // create a token to be verified by the user when the client
 
   await mailerInstance.sendHtmlMail({
@@ -156,7 +156,7 @@ const login = asyncHandler(async function (req, res) {
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     path: "/",
     priority: "high",
-    // domain: ".vote-client.onrender.com",
+    domain: ".vote-client.onrender.com",
   });
 
   res.status(200).json({
@@ -236,7 +236,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
     // const resetToken = await resetTokens.passwordResetToken(user._id);
     // const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${admin._id}`;
 
-    const link = `http://localhost:5173/new-password?token=${resetToken}&id=${user._id}`;
+    const link = `${process.env.CLIENT_URL}/new-password?token=${resetToken}&id=${user._id}`;
 
     await createResetToken({ id: user._id, token: resetToken });
 

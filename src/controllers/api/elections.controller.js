@@ -167,8 +167,6 @@ const registerVoters = asyncHandler(async function (req, res) {
       elections: { $in: election },
     });
 
-    console.log(checkElection, "Amin");
-
     if (checkElection) {
       throw new ConflictError();
     }
@@ -216,7 +214,7 @@ const registerVoters = asyncHandler(async function (req, res) {
     lifetime: "10y",
   });
 
-  const link = `http://localhost:5173/verification?token=${token}`;
+  const link = `${process.env.CLIENT_URL}/verification?token=${token}`;
   // create a token to be verified by the user when the client
 
   await mailerInstance.sendHtmlMail({
