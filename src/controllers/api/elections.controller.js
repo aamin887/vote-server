@@ -36,6 +36,8 @@ const {
   createToken,
 } = require("../../utils/auth.utils");
 
+const { gcsDelete, gcsUploader } = require("../../utils/gcsUpload");
+
 /**
  * @Desc    Create an election
  * @Route   POST /v1/elections
@@ -43,7 +45,7 @@ const {
  */
 const createElection = asyncHandler(async function (req, res) {
   const { name, description, startDate, endDate } = req.body;
-  const creator = req.user._id;
+  const creator = req?.user?._id;
 
   if (!name || !description || !startDate || !endDate) {
     res.status(400);
@@ -103,10 +105,35 @@ const getAllElections = asyncHandler(async function (req, res) {
  */
 const updateElections = asyncHandler(async function (req, res) {
   const creator = req.user._id.toString();
-  const formData = req.body;
+  let formData = { ...req.body };
   const id = req.params?.id;
+  const election = await getElectionById(id);
+  const imgfile = req?.file;
+
+  if (imgfile) {
+    if (election?.posterId && election?.posterUrl) {
+      //remove profile image from cloud
+      await gcsDelete(election?.posterId);
+    }
+
+    console.log(election, "asa");
+
+    // replace removed image width current image
+    const electionPoster = await gcsUploader(
+      imgfile.buffer,
+      imgfile.originalname,
+      election?.name
+    );
+
+    formData = {
+      ...formData,
+      posterUrl: electionPoster?.url,
+      posterId: electionPoster?.name,
+    };
+  }
 
   const updatedElection = await updateAnElection({ id, creator, formData });
+
   if (updatedElection) return res.status(200).json(updatedElection);
   throw new InternalServerError();
 });
@@ -121,6 +148,7 @@ const deleteElections = asyncHandler(async function (req, res) {
   const id = req.params?.id;
 
   if (await deleteAnElection({ id, creator })) return res.sendStatus(204);
+
   throw new InternalServerError();
 });
 
@@ -150,6 +178,8 @@ const registerVoters = asyncHandler(async function (req, res) {
   const admin = req?.user?._id;
   const { id: election } = req.params;
 
+  const imgfile = req?.file;
+
   if (!fullName || !email || !password || !confirmPassword) {
     throw new BadRequestError("fill all fields");
   }
@@ -177,6 +207,7 @@ const registerVoters = asyncHandler(async function (req, res) {
 
   // if new user
   let userName;
+  let profilePhoto;
   const generateUserName = new UsernameGenerator();
   userName = await generateUserName.generateUsername(email.trim());
 
@@ -191,6 +222,14 @@ const registerVoters = asyncHandler(async function (req, res) {
   }
   const hashedPassword = await encryptPassword(password);
 
+  if (imgfile) {
+    profilePhoto = await gcsUploader(
+      imgfile.buffer,
+      imgfile.originalname,
+      fullName
+    );
+  }
+
   const user = await createUser({
     fullName,
     email,
@@ -199,6 +238,8 @@ const registerVoters = asyncHandler(async function (req, res) {
     role: "VOTER",
     creator: req?.user?._id.toString(),
     elections: [election.toString()],
+    photoId: profilePhoto.name,
+    photoUrl: profilePhoto.url,
   });
 
   await Election.updateOne(

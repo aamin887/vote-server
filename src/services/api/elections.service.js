@@ -1,5 +1,6 @@
 const Election = require("../../model/election.model");
 const Position = require("../../model/position.model");
+const User = require("../../model/user.model");
 const {
   UnauthorizedError,
   NotFoundError,
@@ -103,7 +104,11 @@ const deleteAnElection = async function ({ id, creator }) {
       throw new UnauthorizedError();
     }
     await Election.findByIdAndDelete(id);
-    return await Position.deleteMany({ election: id });
+    await Position.deleteMany({ election: id });
+    return await User.updateMany(
+      { elections: id },
+      { $pull: { elections: id } }
+    );
   } catch (error) {
     throw new InternalServerError();
   }

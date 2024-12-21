@@ -4055,3 +4055,107 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241218	17:28:21	67e8efdf-27a3-481f-96d3-de3ec43cbf70	POST	https://vote-client.onrender.com	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
 
+20241219	21:50:37	c7d9b80d-8896-4c39-959a-dc82b7b1e3d5	GET	undefined	/api/v1/stats : UnauthorizedError => Unauthorized Access
+
+20241219	21:50:53	42c52e04-d5d5-4c57-895e-2ade7888c7b4	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241219	21:50:53	4ec9585d-7e81-4d92-b14d-af3f72beb40f	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241220	07:49:11	70e96c61-6f96-42eb-9424-94c740c25d27	GET	undefined	/api/v1/stats : UnauthorizedError => Unauthorized Access
+
+20241220	10:13:54	9a53acae-83a0-4003-a1ac-1d5c189e2514	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:13:54	d219d88e-a42d-4512-8704-6c6aa2915568	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:13:57	58d51880-76e5-4b2c-a25e-acdc566e37ca	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:13:57	81a90ef2-3c75-4707-9efc-1cc8fd065103	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:13:58	34e6fe50-e61c-4de2-9703-d00bd1ba2786	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:13:58	1ff7b6b7-ba89-42ff-9b35-1c4db4be31dd	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:00	c984ba84-b3e1-4ad0-99e3-fc6f46c7aafa	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:00	d2cfb288-3f75-46dd-9d7d-6d99a8380f2b	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:00	f8a84fef-c1af-4de3-bc75-e09377cc6b48	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:00	51920da4-0954-486d-aff8-bb61c36d9979	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:06	48b3b228-e02f-4419-9c2b-35d2f7b33003	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:06	b4460379-d72d-4f2f-93c6-f1520a827f7e	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:16	2729d840-62fb-4064-943e-1a87c8d79fcd	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:16	6048b585-1d44-4a7b-968f-9290cbc45a66	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:16	23a731b5-efe8-4fc2-8819-042a379d2865	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:16	d409d407-a1ed-488b-8265-ce7fa90280f0	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:29	bd329a89-2726-4367-9533-aa343b3555fd	POST	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:51	4c104615-ca6c-431e-a451-7a07d92facd5	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:51	c5e3d1d5-206e-4fd1-bde7-837e115bebed	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:52	4d2cda92-3668-434f-8bd2-694e001297a6	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:14:52	727ae6df-ff15-4ad2-b89e-e564548492a5	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:15:01	2b25b8bc-f94d-4b0a-9c44-2992c8a2f926	POST	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:15:13	1c31a5d0-a6a2-44d5-be26-7fba8791c9ec	POST	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:15:40	a6ec36ae-7f01-4d0b-ab22-4b5efe03b8e9	GET	undefined	/api/v1/stats : UnauthorizedError => Unauthorized Access
+
+20241220	10:16:25	3a974174-bea2-4280-a3f9-42fdb175e9d9	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:16:25	80d26764-bd33-4a63-aef0-1169475458ae	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:16:29	3975fdd6-52bf-46dd-8522-fd0743177ea7	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:16:29	6cbc69b8-3ff9-4bfd-ae2b-aa5038d1f0b2	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:16:39	df2a1eb2-971a-4e36-baf3-3152ac45cae5	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:16:39	019db153-a813-4c8c-a0b6-87ad519d04da	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:08	7be934dc-3d6d-4244-9e03-ecef19339b83	GET	http://localhost:5173	/auth/users/profile/676319d3fd1e5cfb13bf2cf4 : ForbiddenError => Forbidden
+
+20241220	10:35:08	9e0c5b83-28c6-4fde-b738-4ad9f831a081	GET	http://localhost:5173	/auth/users/profile/676319d3fd1e5cfb13bf2cf4 : ForbiddenError => Forbidden
+
+20241220	10:35:15	20875c80-714d-4fb8-b4c1-e8c4725bc5d9	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:15	aeac98f5-d719-483a-914d-dbe52737006c	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:16	b72a9b1d-63d1-47f9-8af5-2a536d659bd0	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:16	d609ec3f-bd95-40ea-acc7-643f5b2916f8	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:17	aecd6dfe-6be7-4c23-b970-8f3407b09dda	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:17	0fa206cc-715c-4c08-b47a-e3699498163d	GET	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:35:28	1f65a824-d642-4926-9462-11c3bf34b0b4	POST	http://localhost:5173	/api/v1/elections : ForbiddenError => Forbidden
+
+20241220	10:38:06	6a5e0598-8f1a-4708-b508-8e66e087257b	POST	http://localhost:5173	/api/v1/elections : ConflictError => election already exist with this name
+
+20241221	10:03:31	c8237c29-caed-481a-8a92-cb9fc29399df	DELETE	http://localhost:5173	/api/v1/elections/676692383918e85c144a5a96 : InternalServerError => An unexpected error occurred.
+
+20241221	10:09:01	1f44c197-a6ae-4b5f-9062-a0dda5ef4634	DELETE	http://localhost:5173	/api/v1/elections/676692d93918e85c144a5b2d : InternalServerError => An unexpected error occurred.
+
+20241221	10:10:27	054b36b0-c39c-4be3-b2d8-8e272dbdf689	DELETE	http://localhost:5173	/api/v1/elections/undefined : InternalServerError => An unexpected error occurred.
+
+20241221	10:10:45	4d0cdd8e-ca5c-434e-966c-9c01a8fbffa6	DELETE	http://localhost:5173	/api/v1/elections/6766941f3918e85c144a5b6e : InternalServerError => An unexpected error occurred.
+
+20241221	10:40:39	dd21c859-de92-47ae-a7ed-5bd180a56d82	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241221	10:40:39	76748492-6bdf-4d3a-ae46-1084a4c9ba07	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241221	10:40:39	0269ef53-50c5-47e6-8dcd-49e114dd34f0	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241221	10:40:39	d89a7c8b-fb2a-4e5a-ad36-ca0c08fdd1e8	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+

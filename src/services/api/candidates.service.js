@@ -49,7 +49,8 @@ const getCandidateById = async function (id) {
 
 // add a new candidate
 const addCandidate = async function ({ formData }) {
-  const { fullName, position, election, manifesto, imgfile } = formData;
+  const { fullName, position, election, manifesto, imgfile, creator } =
+    formData;
   await getElectionById(election);
   await getPositionById(position);
   const candidate = await getCandidateByNameAndPosition({
@@ -64,6 +65,7 @@ const addCandidate = async function ({ formData }) {
     manifesto,
     election,
     position,
+    creator,
   });
   if (newCandidate) {
     // should return photoURL and photoId

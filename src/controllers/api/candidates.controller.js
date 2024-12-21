@@ -21,18 +21,22 @@ const { gcsDelete, gcsUploader } = require("../../utils/gcsUpload");
  */
 const createCandidate = asyncHandler(async function (req, res) {
   const imgfile = req?.file;
+  const creator = req?.user?._id;
   let { fullName, election, position, manifesto } = req.body;
   if (!fullName || !election || !position || !manifesto) {
     throw new BadRequestError("fill all form fields");
   }
 
-  let formData = { ...req.body };
+  console.log("asas.___");
+
+  let formData = { ...req.body, creator };
   if (imgfile) {
     formData = { ...formData, imgfile };
   }
   const newCandidate = await addCandidate({
     formData,
   });
+  
   if (newCandidate) return res.status(201).json(newCandidate);
   throw new InternalServerError();
 });
