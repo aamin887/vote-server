@@ -31,6 +31,7 @@ const addVoter = asyncHandler(async function (req, res) {
 const getAllVoters = asyncHandler(async function (req, res) {
   res.send("get all candidates");
 });
+
 const getVoter = asyncHandler(async function (req, res) {
   res.send("get a candidate");
 });
@@ -66,7 +67,6 @@ const updateVoter = asyncHandler(async function (req, res) {
       photoId: profilePhoto?.name,
     };
   }
-
   const updatedVoter = await User.findByIdAndUpdate(id, formData, {
     new: true,
   });

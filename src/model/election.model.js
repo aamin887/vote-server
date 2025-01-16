@@ -28,6 +28,12 @@ const electionSchema = new mongoose.Schema({
       ref: "User",
     },
   ],
+  voted: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
   posterId: {
     type: String,
     default: "",

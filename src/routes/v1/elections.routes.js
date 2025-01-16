@@ -5,6 +5,7 @@ const uploads = require("../../config/upload.config");
 const paginatedRoute = require("../../utils/paginatedRoute.utils");
 const Election = require("../../model/election.model");
 
+// elections
 router
   .route("/")
   .post(electionsController.createElection)
@@ -21,5 +22,10 @@ router.route("/:id/voters").get(electionsController.getVoters);
 router
   .route("/:id/voters")
   .post(uploads.single("image"), electionsController.registerVoters);
+
+// results
+router.route("/:id/results").get((req, res) => {
+  res.send("Hi, result");
+});
 
 module.exports = router;

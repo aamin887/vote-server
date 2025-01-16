@@ -28,19 +28,18 @@ const createStatus = asyncHandler(async function (req, res) {
   const currentDate = new Date();
   const { message } = req.body;
 
-  try {
-    if (!message) {
-      throw new BadRequestError("enter a message!!");
-    }
-    const response = {
-      date: currentDate.toLocaleDateString().toString(),
-      message: `You ask the API to say: ${message}`,
-    };
-    res.status(201).json(response);
-  } catch (error) {
-    console.log(error);
-    throw new BadRequestError("API seems down");
+  if (!message) {
+    throw new BadRequestError("enter a message!!");
   }
+
+  const response = {
+    date: currentDate.toLocaleDateString().toString(),
+    message: `You ask the API to say: ${message}`,
+  };
+
+  res.status(201).json(response);
+
+  throw new BadRequestError("API seems down");
 });
 
 module.exports = {

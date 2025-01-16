@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Reminder</title>
+    <style>
+      * { box-sizing: border-box; } body { font-family: Arial, sans-serif;
+      background-color: #f4f4f4; margin: 0; padding: 0; } .container { width:
+      100%; max-width: 600px; margin: 1.5em auto; padding: 20px;
+      background-color: #ffffff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+      .header { text-align: center; padding: 10px 0; } .header h1 { margin: 0;
+      color: #333333; } .content { margin: 20px 0; } .content p { color:
+      #555555; line-height: 1.6; } .button { display: inline-block; padding:
+      12px 25px; color: #ffffff; background-color: #28a745; text-decoration:
+      none; font-size: 16px; margin: 1em 0; border-radius: 5px; } .footer {
+      text-align: center; margin-top: 20px; padding: 10px 0; border-top: 1px
+      solid #dddddd; color: #aaaaaa; } .logo { max-width: 100px; margin-bottom:
+      20px; } .footer img { width: 80%; object-fit: contain; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://storage.googleapis.com/aminmakes/logo.png"
+          alt="Company Logo"
+          class="logo"
+        />
+        <h1>Your Voting Session Starts Soon!</h1>
+      </div>
+      <div class="content">
+        <p>Hello {{name}},</p>
+        <p>This is a reminder that voting for the
+          {{electionName}}
+          will begin in one hour.</p>
+        <p>Ensure your voice is heard by participating in the election. Click
+          the button below to view details or access the voting page:</p>
+        <p>
+          <a href="{{votingLink}}" class="button">Go to Voting Page</a>
+        </p>
+        <p>Thank you for participating and contributing to the future of our
+          community.</p>
+      </div>
+      <div class="footer">
+        <p>Thank you, <br />Votes Team</p>
+        <p>
+          <img
+            src="https://storage.googleapis.com/aminmakes/footer.webp"
+            alt="Footer Image"
+            class="logo"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

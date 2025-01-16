@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Election Results Announcement</title>
+    <style>
+      * { box-sizing: border-box; } body { font-family: Arial, sans-serif;
+      background-color: #f4f4f4; margin: 0; padding: 0; } .container { width:
+      100%; max-width: 600px; margin: 1.5em auto; padding: 20px;
+      background-color: #ffffff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+      .header { text-align: center; padding: 10px 0; } .header h1 { margin: 0;
+      color: #333333; } .content { margin: 20px 0; } .content p { color:
+      #555555; line-height: 1.6; } .highlight { font-weight: bold; color:
+      #007bff; } .footer { text-align: center; margin-top: 20px; padding: 10px
+      0; border-top: 1px solid #dddddd; color: #aaaaaa; } .logo { max-width:
+      100px; margin-bottom: 20px; } .results-table { width: 100%;
+      border-collapse: collapse; margin: 20px 0; } .results-table th,
+      .results-table td { border: 1px solid #ddd; padding: 10px; text-align:
+      center; } .results-table th { background-color: #f2f2f2; } .graph {
+      text-align: center; margin: 30px 0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://storage.googleapis.com/aminmakes/logo.png"
+          alt="Company Logo"
+          class="logo"
+        />
+        <h1>Election Results</h1>
+      </div>
+      <div class="content">
+        <p>Hello {{name}},</p>
+        <p>The
+          {{electionName}}
+          has concluded, and we are pleased to share the results.</p>
+
+        <h3>Results Overview</h3>
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Candidate</th>
+              <th>Votes</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jane Doe</td>
+              <td>320</td>
+              <td>45%</td>
+            </tr>
+            <tr>
+              <td>John Smith</td>
+              <td>270</td>
+              <td>38%</td>
+            </tr>
+            <tr>
+              <td>Emily Johnson</td>
+              <td>120</td>
+              <td>17%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="graph">
+          <img
+            src="https://quickchart.io/chart?c={
+              type:'pie',
+              data:{labels:['Jane Doe','John Smith','Emily Johnson'],
+              datasets:[{data:[320,270,120]}]}
+              }"
+            alt="Results Graph"
+            width="100%"
+          />
+        </div>
+
+        <p class="highlight">Winner: Jane Doe</p>
+        <p>We thank all the candidates and voters for participating in shaping
+          the future of our community.</p>
+        <p>
+          <a href="{{resultsLink}}" class="button">View Full Results</a>
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>Thank you, <br />Votes Team</p>
+        <p>
+          <img
+            src="https://storage.googleapis.com/aminmakes/footer.webp"
+            alt="Footer Image"
+            class="logo"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

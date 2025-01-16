@@ -1,5 +1,6 @@
 const Election = require("../../model/election.model");
 const Position = require("../../model/position.model");
+const Candidate = require("../../model/candidates.model");
 const User = require("../../model/user.model");
 const {
   UnauthorizedError,
@@ -105,6 +106,7 @@ const deleteAnElection = async function ({ id, creator }) {
     }
     await Election.findByIdAndDelete(id);
     await Position.deleteMany({ election: id });
+    await Candidate.deleteMany({ election: id });
     return await User.updateMany(
       { elections: id },
       { $pull: { elections: id } }

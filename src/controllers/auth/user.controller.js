@@ -83,13 +83,7 @@ const register = asyncHandler(async function (req, res) {
     from: "alhassanamin96@gmail.com",
     to: email,
     subject: "Welcome to votes",
-    template: path.join(
-      __dirname,
-      "..",
-      "..",
-      "templates",
-      "welcomeTemplate.hbs"
-    ),
+    template: path.join(__dirname, "..", "..", "templates", "welcome.hbs"),
     replacements: {
       username: `${userName}`,
       confirmationLink: link,
@@ -146,7 +140,7 @@ const login = asyncHandler(async function (req, res) {
       email,
     },
     secret: process.env.ACCESS_TOKEN_SECRET,
-    lifetime: "30min",
+    lifetime: "30d",
   });
 
   res.cookie("refresh_token", refreshToken, {
@@ -244,13 +238,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
       from: "alhassanamin96@gmail.com",
       to: email,
       subject: "Password Change Request",
-      template: path.join(
-        __dirname,
-        "..",
-        "..",
-        "templates",
-        "passwordResetTemplate.hbs"
-      ),
+      template: path.join(__dirname, "..", "..", "templates", "password.hbs"),
       replacements: {
         name: `${user?.fullName}`,
         username: `${user?.userName}`,
@@ -387,7 +375,7 @@ const voters = asyncHandler(function (req, res) {
  * @Access  Public
  */
 const checkToken = asyncHandler(async function (req, res) {
-  const { token, id } = req.query;
+  const { token } = req.query;
 
   const decodedToken = verifyToken({
     token: token,

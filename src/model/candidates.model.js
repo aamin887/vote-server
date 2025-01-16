@@ -39,6 +39,12 @@ const candidateSchema = new mongoose.Schema({
     ref: "Position",
     required: true,
   },
+  voteCount: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  votes: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
 });
 
 module.exports = mongoose.model("Candidate", candidateSchema);

@@ -15,10 +15,9 @@ router.post("/change-password", userController.resetPassword);
 
 router.get("/profile/:userId", auth, userController.profile);
 router.put("/profile/:userId", auth, userController.updateProfile);
-// router.delete("/profile/:userId", auth, userController.updateProfile); => s
 
 // verify voter
-router.get("/voters", auth, uploads.single("image"), userController.voters);
+router.get("/voters", auth, userController.voters);
 router.post("/verify-voter/:userId", userController.verifyVoter);
 
 module.exports = router;

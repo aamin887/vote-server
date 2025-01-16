@@ -36,7 +36,7 @@ const createCandidate = asyncHandler(async function (req, res) {
   const newCandidate = await addCandidate({
     formData,
   });
-  
+
   if (newCandidate) return res.status(201).json(newCandidate);
   throw new InternalServerError();
 });

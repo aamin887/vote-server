@@ -191,6 +191,7 @@ const registerVoters = asyncHandler(async function (req, res) {
 
   // if user already exist user add elections
   let checkUser = await getUserByEmail(email);
+
   if (checkUser) {
     const checkElection = await User.findOne({
       _id: checkUser._id,
@@ -238,8 +239,8 @@ const registerVoters = asyncHandler(async function (req, res) {
     role: "VOTER",
     creator: req?.user?._id.toString(),
     elections: [election.toString()],
-    photoId: profilePhoto.name,
-    photoUrl: profilePhoto.url,
+    photoId: profilePhoto?.name,
+    photoUrl: profilePhoto?.url,
   });
 
   await Election.updateOne(
@@ -255,20 +256,13 @@ const registerVoters = asyncHandler(async function (req, res) {
     lifetime: "10y",
   });
 
-  const link = `${process.env.CLIENT_URL}/verification?token=${token}`;
+  const link = `${process.env.CLIENT_URL}/voters/verification?token=${token}`;
   // create a token to be verified by the user when the client
-
   await mailerInstance.sendHtmlMail({
     from: "alhassanamin96@gmail.com",
     to: email,
     subject: "Welcome to votes",
-    template: path.join(
-      __dirname,
-      "..",
-      "..",
-      "templates",
-      "welcomeTemplate.hbs"
-    ),
+    template: path.join(__dirname, "..", "..", "templates", "voter.hbs"),
     replacements: {
       name: `${fullName}`,
       username: `${fullName + "887"}`,

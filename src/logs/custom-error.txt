@@ -4159,3 +4159,149 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20241221	10:40:39	d89a7c8b-fb2a-4e5a-ad36-ca0c08fdd1e8	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
 
+20241221	16:45:56	9ccbef1b-28dd-4405-9554-c516dbbd6193	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241221	16:45:56	580aae08-a1e2-4cd8-a41e-199b6280fec6	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241224	23:57:17	591b9959-03b3-48c6-b136-8c5b92e3cb69	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241224	23:57:17	458c0ad4-1de6-4ee2-9c8e-eebeb2b538d6	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:04	ab132f02-ecf1-4966-b209-3adecb67f0d5	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:04	a0c4a096-89fd-4f34-a91b-641f5aaf3330	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:04	1612dbe5-18f5-4627-bae0-dc9376c0ecfc	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:04	91f79201-56f7-4ffb-9688-0f6e4e043333	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:07	e937b840-7233-49a8-b584-f3e85dc39624	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:07	07843177-2708-460d-9508-a21c7b79e4c1	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:08	44cf631f-e207-4fde-adb0-5134eccea945	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:08	44dc3956-5491-4afb-b8ac-dda7010c384b	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:10	7fb22d4c-743d-406e-847d-9f8ad3d0514a	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:29:10	5f7e1651-c1ad-448a-96ae-81bc12407109	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20241231	18:37:47	fba122c7-9535-47f8-b3bf-f1d83ef3b6b0	POST	http://localhost:5173	/auth/users/register : ConflictError => User already exist
+
+20241231	18:37:56	f3de4bb8-3475-4cbf-bbdf-7f1164d1f0d9	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20241231	18:40:56	024292d4-9074-4592-871f-a2f734559c39	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20250101	03:12:21	2c785618-009c-4a3e-b49c-738814f7b855	POST	undefined	/api/v1/candidates : NotFoundError => election not found
+
+20250101	03:13:32	3ae24910-d26a-43e2-88b3-186041e4beb9	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20250101	03:13:44	4712edaf-e4b2-4411-a910-19ca05324c97	POST	undefined	/api/v1/positions : ConflictError => Request conflict
+
+20250101	03:13:57	0752d4bf-b277-4a01-8957-25e4bc70e264	GET	undefined	/api/v1/candidates/675673db14120e3870dc6cfd : InternalServerError => An unexpected error occurred.
+
+20250101	03:15:25	cec15095-e41a-4309-bd0d-0f4f1deeb46d	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20250101	03:15:38	24f4e78b-cf15-4ece-a4e2-6962b1cee1f9	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20250101	03:15:55	6d8381d6-65fd-4a4c-be65-6821b0b6ca9b	GET	undefined	/api/v1/candidates/675673db14120e3870dc6cfd : InternalServerError => An unexpected error occurred.
+
+20250106	16:30:31	0de9725a-4307-4bfe-bf6c-4c8350346681	POST	undefined	/auth/users/login : BadRequestError => fill all fields
+
+20250106	16:30:33	17d43dcd-e706-4a1d-9a6c-8c2c6e0dc351	POST	undefined	/auth/users/login : BadRequestError => fill all fields
+
+20250106	16:35:28	ce03823c-7758-4791-844d-d88407bfdd07	PUT	undefined	/api/v1/elections/6774b2fdb8021fa8b9adc3b2 : ConflictError => Request conflict
+
+20250106	16:43:55	02d2f492-119a-4a8e-9ef6-c4859a6b1143	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20250106	16:44:11	20aef4c4-3095-41f4-ba1f-6d58a495b58a	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20250106	16:44:23	dbb8f4f2-f79c-4f1b-8119-f54adf80ce95	PUT	undefined	/api/v1/elections/67743b159b877b9a93d2ee48 : ConflictError => Request conflict
+
+20250106	16:51:20	9dc795f3-dced-4f76-939e-5107ce8359ff	POST	undefined	/api/v1/status : BadRequestError => API seems down
+
+20250106	16:51:27	64db6a21-fb24-4efa-a74c-b54cd3f232af	POST	undefined	/api/v1/status : BadRequestError => API seems down
+
+20250106	16:51:54	546728d0-5f56-4b62-8c1d-52a81bbd239e	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250106	16:51:56	0bd95e8d-77cd-435d-ba44-f3fa08838997	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250106	16:52:26	cc00236e-f928-4bbb-8683-33658fcf5a4e	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250106	16:52:27	d06de67f-2e2e-491d-9232-140dfe1bd6cc	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250106	16:53:01	d627af3e-ade4-477d-8e70-ba166b7e86af	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250106	16:53:02	82d6918c-57c5-4526-a1b7-d1239994953a	POST	undefined	/api/v1/status : BadRequestError => enter a message!!
+
+20250109	17:11:15	d4b0dcb0-bff1-4f9c-8499-699fb9eb50a9	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20250109	17:31:08	39f86fa5-c8d2-4437-86a8-eb8580219c95	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:09:52	e11bf91d-e2cc-439e-98f1-2a6870a1b821	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:10:20	9473b128-b0e7-44d5-9cea-34943f0ae753	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:10:29	ed5c9975-37bb-4a9c-8d78-380f68ddebcc	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:15:31	fd6a1863-5db7-44a3-8298-fde53cde4cb9	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:15:38	06e6728d-1b70-4e9d-b5f3-8256474e42d6	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:15:56	d7acd24f-c012-482a-80e0-d6ef328a66b4	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250109	18:18:25	df693f98-5e4c-47d8-9ddf-5b11b0fa9b78	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250109	18:18:37	b2f7c9ad-ad13-4e5e-aba8-fb43be808d1d	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250109	18:18:50	40f2e57c-9c66-4945-9598-7a4ace7973cb	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250109	18:19:05	786b6825-ac97-4ca4-9564-fe6976b04566	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250109	18:19:14	d911afc3-e3d5-4c7c-94d9-c2d5dc44c783	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250110	00:17:52	e3f719ea-b3e0-44f3-8265-8ed71be96ad7	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : UnauthorizedError => Unauthorized Access
+
+20250110	00:18:58	1208970d-d1a2-45e0-a017-020d76dc45c8	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250110	00:23:11	6043dbbf-97d1-45d5-8324-5eb065704bf1	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250110	00:28:20	7db16484-dfd4-4de7-a67f-551cfb2142f5	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Forbidden
+
+20250110	00:28:34	f230b1c4-8d1f-459e-8f03-8d16586e8cd4	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:31:30	bd7f74e3-270f-460d-9f2f-83c3cf0cdb5b	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:34:22	45c1da1a-a8f1-4cb2-a28d-7f41b72420d1	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:34:35	8909e4cd-e8c9-4a5b-beba-94204a1c671b	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:34:37	f7533118-fc56-455a-b191-7007c9388c50	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:34:44	4d5e5584-ff24-4710-89a5-65e4ab045bee	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:34:50	6f01513a-22dd-401c-85ec-b6e49c6e4412	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : UnauthorizedError => Unauthorized Access
+
+20250110	00:34:57	ac0305a7-b64e-405c-80d1-08a4b03303c9	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : UnauthorizedError => sds
+
+20250110	00:36:36	90fce47a-4857-4ecd-b8f6-1dfb2e66c97f	PUT	undefined	/api/v1/cast/67743b159b877b9a93d2ee48/6774b312b8021fa8b9adc3bd : ForbiddenError => Already voted
+
+20250110	00:37:16	208c5def-9246-4f4d-a243-d6cc79f66dc8	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b312b8021fa8b9adc3bd : UnauthorizedError => Unauthorized Access
+
+20250110	00:38:00	930c3b65-fcde-4185-836d-503a679b9638	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+
+20250110	00:38:02	4b4435e1-b3e3-427c-ae6f-368026020116	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+
+20250111	11:35:58	fdb83f5c-17c0-4abd-861e-0127de51fe70	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250111	11:35:58	f996c5da-3299-4326-9c8a-be310bd6bed0	GET	http://localhost:5173	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250116	03:12:05	df7cceef-a454-49be-9e22-213ee80691c4	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+
+20250116	03:12:18	90d639d5-20cf-4435-b899-4f9ff335a0d4	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+
+20250116	03:12:23	e84e002d-0a6a-41a1-9960-d128c914340d	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+
+20250116	03:12:38	9a4aca62-ae5c-47cf-80b1-ee9fd21e07bc	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
+

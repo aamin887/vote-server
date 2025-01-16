@@ -4,7 +4,6 @@ const asyncHandler = require("express-async-handler");
 function paginatedRoute(model) {
   return asyncHandler(async function (req, res, next) {
     const creator = req.user._id;
-    console.log(creator);
     const page = parseInt(req.query.page);
     const limit = parseInt(req.query.limit);
 

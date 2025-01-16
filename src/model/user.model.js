@@ -58,6 +58,21 @@ const userSchema = new mongoose.Schema(
         },
       },
     ],
+    voted: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Election",
+        validate: {
+          validator: function (value) {
+            if (this.role === "VOTER") {
+              return !!value;
+            }
+            return true; // No validation needed for other roles
+          },
+          message: "Election ID is required for the VOTER role",
+        },
+      },
+    ],
     role: {
       type: String,
       default: "ADMIN",

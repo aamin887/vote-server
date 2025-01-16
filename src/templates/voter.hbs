@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Have Been Added to an Election</title>
+    <style>
+      * { box-sizing: border-box; } body { font-family: Arial, sans-serif;
+      background-color: #f4f4f4; margin: 0; padding: 0; } .container { width:
+      100%; max-width: 600px; margin: 1.5em auto; padding: 20px;
+      background-color: #ffffff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+      .header { text-align: center; padding: 20px 0; } .header h1 { margin: 0;
+      color: #333333; } .content { margin: 20px 0; text-align: center; }
+      .content p { color: #555555; line-height: 1.6; } .button { display:
+      inline-block; padding: 12px 25px; background-color: #007bff; color:
+      #ffffff; text-decoration: none; border-radius: 5px; margin: 20px 0; }
+      .footer { text-align: center; margin-top: 20px; padding: 10px 0;
+      border-top: 1px solid #dddddd; color: #aaaaaa; } .logo { max-width: 120px;
+      margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://storage.googleapis.com/aminmakes/logo.png"
+          alt="Company Logo"
+          class="logo"
+        />
+        <h1>Election Notification</h1>
+      </div>
+      <div class="content">
+        <p>Hello {{name}},</p>
+        <p>We are pleased to inform you that you have been successfully added as
+          a voter for the upcoming election:
+          <strong>{{electionName}}</strong>.</p>
+        <p>The election is scheduled to begin on
+          <strong>{{startDate}}</strong>
+          and will end on
+          <strong>{{endDate}}</strong>.</p>
+        <p>You will receive a reminder when voting opens.</p>
+        <p>If you have any questions or need assistance, please feel free to
+          reach out to our support team.</p>
+        <a href="{{dashboardLink}}" class="button">Visit Voting Dashboard</a>
+        <p>Thank you for participating in shaping the future of our
+          organization!</p>
+      </div>
+      <div class="footer">
+        <p>Best regards, <br />Votes Team</p>
+        <p>
+          <img
+            src="https://storage.googleapis.com/aminmakes/footer.webp"
+            alt="Footer Image"
+            class="logo"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
