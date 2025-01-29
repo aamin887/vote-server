@@ -1,0 +1,11 @@
+[
+  {
+    "user": "Anonymous",
+    "resource": [
+      "/v1/stats",
+      "stats"
+    ],
+    "method": "GET",
+    "timestamp": "2025-01-29T09:40:11.310Z"
+  }
+]

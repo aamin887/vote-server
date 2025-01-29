@@ -91,6 +91,7 @@ const getElection = asyncHandler(async function (req, res) {
  * @Desc    Retrieve all elections
  * @Route   Get /v1/elections
  * @Access  PRIVATE
+ * @queries ?limit=2&page=1
  */
 const getAllElections = asyncHandler(async function (req, res) {
   const elections = res.paginatedResults;
@@ -150,22 +151,6 @@ const deleteElections = asyncHandler(async function (req, res) {
   if (await deleteAnElection({ id, creator })) return res.sendStatus(204);
 
   throw new InternalServerError();
-});
-
-/**
- * @Desc    Delete an election
- * @Route   DELETE /v1/elections
- * @Access  PRIVATE
- */
-const getVoters = asyncHandler(async function (req, res) {
-  const creator = req.user._id.toString();
-  const id = req.params?.id;
-  const findVoters = await User.find({
-    creator: creator,
-    elections: id,
-  }).select("-password");
-
-  res.status(200).json(findVoters);
 });
 
 /**
@@ -250,6 +235,7 @@ const registerVoters = asyncHandler(async function (req, res) {
     }
   );
 
+  //
   const token = createToken({
     payload: { user: user._id },
     secret: process.env.ACCESS_TOKEN_SECRET,
@@ -261,16 +247,33 @@ const registerVoters = asyncHandler(async function (req, res) {
   await mailerInstance.sendHtmlMail({
     from: "alhassanamin96@gmail.com",
     to: email,
-    subject: "Welcome to votes",
+    subject: `Electoral Registration for ${findElection?.name}`,
     template: path.join(__dirname, "..", "..", "templates", "voter.hbs"),
     replacements: {
       name: `${fullName}`,
-      username: `${fullName + "887"}`,
+      username: userName,
+      electionName: findElection?.name,
       confirmationLink: link,
     },
   });
 
   res.sendStatus(201);
+});
+
+/**
+ * @Desc    Delete an election
+ * @Route   DELETE /v1/elections
+ * @Access  PRIVATE
+ */
+const getVoters = asyncHandler(async function (req, res) {
+  const creator = req.user._id.toString();
+  const id = req.params?.id;
+  const findVoters = await User.find({
+    creator: creator,
+    elections: id,
+  }).select("-password");
+
+  res.status(200).json(findVoters);
 });
 
 module.exports = {
@@ -279,6 +282,6 @@ module.exports = {
   getAllElections,
   updateElections,
   deleteElections,
-  getVoters,
   registerVoters,
+  getVoters,
 };

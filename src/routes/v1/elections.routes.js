@@ -17,11 +17,13 @@ router
   .put(uploads.single("image"), electionsController.updateElections)
   .delete(electionsController.deleteElections);
 
-// voters
-router.route("/:id/voters").get(electionsController.getVoters);
+// register voter
 router
   .route("/:id/voters")
   .post(uploads.single("image"), electionsController.registerVoters);
+
+// voters
+router.route("/:id/voters").get(electionsController.getVoters);
 
 // results
 router.route("/:id/results").get((req, res) => {

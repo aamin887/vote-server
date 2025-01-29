@@ -56,7 +56,34 @@ const register = asyncHandler(async function (req, res) {
   }
 
   if (checkUser) {
-    throw new ConflictError("User already exist");
+    if (checkUser?.verification === false) {
+      const token = createToken({
+        payload: { user: checkUser._id },
+        secret: process.env.ACCESS_TOKEN_SECRET,
+        lifetime: "10y",
+      });
+
+      const link = `${process.env.CLIENT_URL}/verification?token=${token}`;
+      // create a token to be verified by the user when the client
+
+      await mailerInstance.sendHtmlMail({
+        from: "alhassanamin96@gmail.com",
+        to: email,
+        subject: "Welcome to votes",
+        template: path.join(__dirname, "..", "..", "templates", "welcome.hbs"),
+        replacements: {
+          username: `${checkUser?.userName}`,
+          confirmationLink: link,
+        },
+      });
+      throw new ConflictError(
+        "email already registered, check your inbox to verify."
+      );
+    }
+
+    throw new ConflictError(
+      "This username is already taken. Please choose a different one."
+    );
   }
 
   const passwordMatch = matchString(password, confirmPassword);
@@ -106,15 +133,14 @@ const login = asyncHandler(async function (req, res) {
   }
 
   const checkUser = await getUserByEmail(email);
-  console.log(checkUser);
   if (checkUser.verification === false) {
-    throw new UnauthorizedError(
+    throw new ForbiddenError(
       "Your account is not verified. Please verify your email."
     );
   }
 
   if (!checkUser) {
-    throw new ValidationError("User does not exist ");
+    throw new UnauthorizedError("User does not exist");
   }
 
   await getUserById(checkUser._id);
@@ -172,7 +198,6 @@ const refresh = asyncHandler(async function (req, res) {
 
   if (!cookies) return new ForbiddenError("not allowed");
   const refreshToken = req?.cookies?.refresh_token;
-
   if (refreshToken) {
     const decodedCookie = verifyToken({
       token: refreshToken,
@@ -212,26 +237,28 @@ const refresh = asyncHandler(async function (req, res) {
  */
 const passwordRequest = asyncHandler(async (req, res) => {
   const { email } = req.body;
-
-  console.log(email);
-
   if (!email) {
     throw new BadRequestError("enter your email");
   }
 
   const user = await getUserByEmail(email);
+
   if (user) {
+    const findToken = await Token.findOne({
+      user: user._id,
+    });
+
+    if (findToken) {
+      await Token.findByIdAndDelete(findToken._id);
+    }
+
     const resetToken = createToken({
       payload: { id: user._id },
       secret: process.env.PASSWORD_RESET_TOKEN_SECRET,
-      lifetime: "1d",
+      lifetime: "15m",
     });
 
-    // const resetToken = await resetTokens.passwordResetToken(user._id);
-    // const link = `https://vote-client.onrender.com/password-change/?token=${resetToken}&id=${admin._id}`;
-
     const link = `${process.env.CLIENT_URL}/new-password?token=${resetToken}&id=${user._id}`;
-
     await createResetToken({ id: user._id, token: resetToken });
 
     await mailerInstance.sendHtmlMail({
@@ -248,7 +275,7 @@ const passwordRequest = asyncHandler(async (req, res) => {
 
     res.sendStatus(201);
   } else {
-    throw new NotFoundError();
+    throw new UnauthorizedError();
   }
 });
 
@@ -268,14 +295,16 @@ const resetPassword = asyncHandler(async function (req, res) {
   if (matchString(newPassword, confirmNewPassword)) {
     const password = await encryptPassword(newPassword);
     await updateUserById(id, { password });
-    const storedToken = await Token.findOne({ user: id });
-
-    await Token.findByIdAndUpdate(storedToken._id, { activated: true });
     // send email to tell user about new password
-    res.sendStatus(204);
-  } else {
-    throw new ValidationError();
+    res.status(200).json({ token });
   }
+
+  const storedToken = await Token.findOneAndUpdate(
+    { user: id },
+    { activated: true }
+  );
+
+  console.log(await Token.findOne({ user: id }));
 });
 
 /**
@@ -386,7 +415,6 @@ const checkToken = asyncHandler(async function (req, res) {
   const findToken = await Token.findOne({
     user: decodedToken.id,
   });
-
   if (!findToken) throw new ValidationError();
   console.log(findToken);
 

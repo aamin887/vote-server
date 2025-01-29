@@ -4305,3 +4305,301 @@ DATE			TIME			LOG ID																METHOD	ORIGIN	URL
 
 20250116	03:12:38	9a4aca62-ae5c-47cf-80b1-ee9fd21e07bc	PUT	undefined	/api/v1/cast/6774b2fdb8021fa8b9adc3b2/6774b357b8021fa8b9adc3c7 : UnauthorizedError => Unauthorized Access
 
+20250116	16:34:47	634bb386-a55f-4059-b97f-4feaf56a132b	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20250120	10:34:36	709089f3-019c-4515-94e2-f7841103f600	POST	undefined	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20250120	10:37:01	0da11c66-ad35-4b31-a4bd-41c81db95a2e	GET	undefined	/api/v1/candidates/6774b357b8021fa8b9adc3c7 : InternalServerError => An unexpected error occurred.
+
+20250120	10:38:23	4a8260d8-82f0-4e6b-b19c-92cdc766d92e	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20250120	10:38:40	c74b4654-05bf-4827-bce9-0d7a3f872407	PUT	undefined	/api/v1/cast/6789acf2bb3c4fbc9964034b/678e2786bb3c4fbc99640449 : ForbiddenError => Already voted
+
+20250120	10:54:43	c7c917de-c8be-425b-a9f2-319b536044e1	POST	undefined	/api/v1/candidates : InternalServerError => An unexpected error occurred.
+
+20250120	10:55:21	2f3acec0-20f0-498b-b019-4d54cc07de61	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20250120	10:55:52	410bf086-030e-453e-bf62-27116ba5fc87	POST	undefined	/api/v1/candidates : InternalServerError => An unexpected error occurred.
+
+20250120	10:56:26	dc6dbd9e-1df1-4a7b-9a73-b17aba91e988	POST	undefined	/api/v1/candidates : InternalServerError => An unexpected error occurred.
+
+20250120	10:57:04	05cbfcbc-3793-4e39-a5af-e4afbdb9e7c5	POST	undefined	/api/v1/candidates : ConflictError => Request conflict
+
+20250120	12:36:10	d0842501-5e8a-43f4-b1d8-0c2fffc3eb8f	POST	undefined	/api/v1/elections : ConflictError => election already exist with this name
+
+20250121	02:57:29	c09f09f3-495a-4407-9684-e000323f5df2	POST	undefined	/auth/users/verify-voter/6789350e6ca8d8bf26aeaa77 : ForbiddenError => Forbidden
+
+20250121	03:33:03	dcbd705d-8036-4fd2-8da6-71d7084028b1	POST	undefined	/auth/users/register : ConflictError => User already exist
+
+20250121	03:33:54	6cca5688-22da-42d6-9edc-f3548500199d	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:54	eff4f25f-8464-4fad-b703-b919369dab38	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:57	55ee877d-563e-4237-8ed0-8e4267f79741	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:57	d02b387a-e2c6-4c8c-9e3d-07e60416693e	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:58	239a3309-30af-4304-8493-1fe14621fe70	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:58	d2fad86b-44f1-44d1-8257-745a5f8314ca	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:58	2334dbbe-d61f-4bde-963c-1d1e047a5e62	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:33:58	f6594295-3c58-484c-a18f-a2e4086188d2	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:05	b18ee679-a9c6-4cea-a0a0-0cf66ec91ea6	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:05	d6822d83-d116-4666-a550-46ddc9f0cefa	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:05	59def403-5352-429f-9ecb-3c628a3cea85	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:05	198e9f4a-d2af-4847-a83f-cfb59a84002b	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:16	a64b9c1a-5749-4b8b-9287-283c4f70f257	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:18	b72f990e-787e-479c-b758-d5ffe89e8f25	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:18	ff1385e9-bccc-4ff8-83e0-ff7659b46c46	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:18	c0b645e4-24bb-4e15-bde5-8fc324b77b72	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:18	d30aaaae-07a9-4ddd-a27b-96eca1d9a99a	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:20	607f507e-2465-43ae-a332-20ffc079cb6b	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	03:34:20	743cf5be-75d7-444c-b4b7-580258e0b2ee	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250121	04:00:07	a20fd348-a90e-4b30-b7f7-d0112ef9b371	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => Your account is not verified. Please verify your email.
+
+20250121	04:01:35	b06fc31c-a533-4243-9224-fb3329f26081	POST	http://localhost:5174	/auth/users/register : ConflictError => User already exist
+
+20250121	04:05:00	3427f025-b670-44c1-a4e4-6388269510ee	POST	http://localhost:5174	/auth/users/register : ConflictError => User already exist
+
+20250121	04:05:46	ef902801-eb44-49b7-b39e-b8b8a1392066	POST	http://localhost:5174	/auth/users/register : ConflictError => User already exist
+
+20250121	04:19:33	11fcf511-cc18-4665-9fb8-0d4f0e774cf1	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:19:34	82922b73-3db8-4c5d-9cd2-e6beef54591f	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:19:37	494f5a55-0d84-4595-a8be-a90b081cfb5e	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:19:41	3dbb9128-d41f-409b-b211-c9ee54b569cc	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:19:44	8f69e582-88fc-40d1-8568-504860d77536	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:19:45	d4c59ea4-b850-4d8f-b2a0-c6bfe3bf9252	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:20:53	121d9d49-4d6d-45a4-b966-92eeb50cd567	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:20:54	3854005f-d749-4d76-b3ac-affc05967b92	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:28:33	96424cc9-4e95-4460-99f8-024286f30d0d	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:28:35	12d61275-494b-4bd7-8d57-153fc9bd4d88	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:28:36	659ed73c-c1ca-48f3-ad4a-1d68aad165ec	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:28:37	376e3ab5-2cf9-4a7d-96cc-18037baddd61	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:28:38	4d21e010-f004-45da-8b00-1cfa551207e6	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:35:10	8cbda5b7-3951-4411-a0a9-a5897a85aefd	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:36:24	d4847126-b59a-4eb0-9b82-33a1bf38710c	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	04:36:33	228f02cd-dc9b-4833-936c-4ce104a6e96c	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	05:12:16	89288e5b-02e9-4f1a-aaa7-4a65c722218a	POST	undefined	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250121	05:49:04	29257e3a-d142-4341-9f43-595cd3d245de	POST	http://localhost:5174	/api/v1/elections/678f341e6cf175e1c4110c39/voters : NotFoundError => election not found
+
+20250121	05:50:10	0d382bfc-f9b3-4411-aafe-0c3fe916115d	POST	http://localhost:5174	/api/v1/elections/678f355c43b7da2f3f05d80b/voters : ConflictError => Request conflict
+
+20250121	05:50:23	cd131e18-dbde-41b5-b446-62fe91b6481b	POST	http://localhost:5174	/api/v1/elections/678f355c43b7da2f3f05d80b/voters : ConflictError => Request conflict
+
+20250122	11:08:44	85170dcd-6108-4e41-bd2c-1caa4d3ea843	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:44	938bcd35-6bd3-4666-a145-3f74556344a9	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:47	8d1129c0-fdad-4629-86d7-13eca8bbf58c	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:47	d2c73d90-3492-4a68-9f8f-bd2c173eefd1	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:48	8f75fddc-8a60-49eb-9e1d-a8c250a30087	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:48	8d610c68-e611-4313-ba42-b71560dfbec6	GET	http://localhost:5174	/auth/users/refresh : UnauthorizedError => Unauthorized Access
+
+20250122	11:08:50	bf027558-46cd-4b75-b423-62d2bb5a197c	POST	http://localhost:5174	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	11:00:21	ba280947-b2a6-43e7-a895-4a085740a0a1	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	11:47:29	060eb7df-0bf3-47bd-85df-b424bcc4748b	PUT	undefined	/api/v1/candidates/678e2786bb3c4fbc99640449 : NotFoundError => Resource Not Found
+
+20250127	11:48:42	9152a644-4a23-4acd-8559-2845062258d6	PUT	undefined	/api/v1/candidates/678e2786bb3c4fbc99640449 : NotFoundError => Resource Not Found
+
+20250127	12:12:40	9dcd8392-d2d3-4f69-978d-3d9f3bc3b044	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:12:53	8eb23c70-0cb9-4ec9-a920-9cd334a659a7	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:14:22	3d2a242d-fb39-496f-a485-1c1fa3227109	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:14:37	9dddc4fb-8700-4c96-8601-e9186ba9d609	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:14:55	60d4d85f-b803-47c1-b34a-b50c4b2a8bde	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:15:35	a6f5e5cf-0584-4ea1-842f-0e3d5ef99fc5	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:16:03	a6659808-4612-40b6-a526-ff960089d437	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:16:04	5cbcae5a-6599-4dd8-8263-1b518389349d	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:16:13	fe97b0e3-a5a2-4e2e-92e2-d6ad7d4499e5	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	12:16:14	19430b51-7287-4882-9fd1-1f67f4821fa8	GET	undefined	/api/v1/logs : NotFoundError => Page not found
+
+20250127	14:55:14	fac60f85-6349-4ab6-bfe1-a3409d909e60	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	15:05:00	69dc0352-c90f-415d-9bd2-870fbc6c7236	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	15:05:08	7f620624-817a-4f08-ae13-3df93bc65581	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	15:05:13	c954ef83-bc6d-4d56-85a7-dd920c4d598c	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	15:55:34	2aad5583-7085-4b87-a3cb-a8c072862fcd	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250127	16:41:18	c3b85b25-8613-421f-a8b8-ce62dd4a6f0c	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	10:27:44	4cc7774d-b894-404c-b075-f26060a4e4ff	POST	http://localhost:5173	/api/v1/elections/678f355c43b7da2f3f05d80b/voters : ConflictError => Request conflict
+
+20250128	10:28:07	ec55c1be-ae48-4e40-8f56-257eec4ec6e4	POST	http://localhost:5173	/api/v1/elections/678f355c43b7da2f3f05d80b/voters : ConflictError => Request conflict
+
+20250128	16:12:30	fe6af615-19e9-438d-9cbd-2fbd8b418ccf	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:13:22	d2988aaa-a9a0-4278-b0f1-00322e2f9588	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:16:12	8708a68f-8de3-44c9-a8a1-91f12e7e35f2	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:16:20	8e1fcd5a-e620-4964-9830-d0429a48c214	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:18:24	3d6654a1-95e3-423d-8259-21df8398a069	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:18:28	37f3bd02-adf3-4bb7-9bfd-fcc627377186	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:18:32	84bb23b1-0be4-4c0b-b081-dc070a0fd099	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:20:16	8186c46c-0c0e-43e6-93d9-ed1d60ef3f1e	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:22:54	0793fd49-8057-43a5-b79c-5404e9bb8cc3	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:22:58	5d33edc0-03da-47b1-a106-dca3d2fed8dc	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:23:42	47af939f-286f-42a1-9a07-6b9df6b49052	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:24:47	65e3e465-bf87-453b-84f3-db3812ed98ef	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:24:50	08595fc7-f182-4be3-aa7e-cca86bf7297c	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250128	16:26:26	0521d62b-0d54-4c09-a7fe-ecbd30956ba6	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:17:10	57b7a40b-400c-4c3e-b6af-6215f2f540aa	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:17:19	9c74ab9a-9689-4992-b8b2-85227c02d750	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:17:23	51206f60-be69-47ab-9bf8-d5516330a944	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:17:25	3b641720-1de7-46cb-81b2-c664c8e3af56	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:17:27	1a0a44c7-1600-4483-8806-ae6cfed11483	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:20:49	bbfca4b5-ced2-4d77-8b3a-aecb3f808d35	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:20:50	de1d32e5-734f-4d7c-91eb-a8a78ac3f077	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:20:50	64e1d15d-008f-4fc8-bec3-8e19299fbc48	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:20:50	18d30b5c-4a74-407a-b822-32f2fa3c849e	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:20:50	a0103c1d-951e-4940-b620-fd20653ba877	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	00:41:23	3069c8fa-39d3-473d-b576-bbc7b48f907d	POST	http://localhost:5173	/auth/users/register : ConflictError => This username is already taken. Please choose a different one.
+
+20250129	00:42:04	7ae1cc74-f1ea-44bc-9e8c-2dcaf51d51e6	POST	http://localhost:5173	/auth/users/register : ConflictError => This username is already taken. Please choose a different one.
+
+20250129	00:43:30	45995bfa-6d5c-4c58-a366-f4fdc340d474	POST	http://localhost:5173	/auth/users/register : ConflictError => This username is already taken. Please choose a different one.
+
+20250129	00:43:59	8cbd90ce-6406-4bd3-8cfc-3a19b7e3c8c8	POST	http://localhost:5173	/auth/users/register : ConflictError => email already registered, check your inbox to verify.
+
+20250129	00:53:14	d739c40a-49b4-4956-acc8-6209b5000834	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20250129	00:53:16	3aef2c85-369e-4dcd-a907-d648d1f40641	POST	http://localhost:5173	/auth/users/request-new-password : NotFoundError => Resource Not Found
+
+20250129	00:56:56	ac84f6ce-cf82-4a37-8a8b-0a7633d69842	POST	http://localhost:5173	/auth/users/request-new-password : UnauthorizedError => Unauthorized Access
+
+20250129	00:57:00	8e1f87cc-7240-4319-aae5-1beae52d9408	POST	http://localhost:5173	/auth/users/request-new-password : UnauthorizedError => Unauthorized Access
+
+20250129	00:59:30	5b8ff767-9eec-499d-84d3-0afeef4d2a4b	POST	http://localhost:5173	/auth/users/request-new-password : UnauthorizedError => Unauthorized Access
+
+20250129	01:00:23	1054f979-7def-49b2-8732-961c8029a9bb	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	01:01:20	775275de-9e6c-4c4d-9081-f979baa59790	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	01:02:50	b05e1a09-1f29-4b05-b4ae-a7f893d7ce35	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExMjUyMSwiZXhwIjoxNzM4MTk4OTIxfQ.nshJJKeFZNdC_Ha9VXeZMTwT_bSjf_7E0xCXQ0gHO3w : UnauthorizedError => Unauthorized Access
+
+20250129	01:17:51	9a417451-4ddf-494f-a260-a7ab6d596514	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExMzQ2MiwiZXhwIjoxNzM4MTk5ODYyfQ.y3qCxaGE5xt9WZrxp9rzGFbtpulXiaO8oDhmwbZxTe0 : UnauthorizedError => Unauthorized Access
+
+20250129	01:24:01	a65aea09-3e78-49d1-abd2-31740713bf9e	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExMzQ2MiwiZXhwIjoxNzM4MTk5ODYyfQ.y3qCxaGE5xt9WZrxp9rzGFbtpulXiaO8oDhmwbZxTe0 : UnauthorizedError => Unauthorized Access
+
+20250129	01:30:20	5dad6179-388d-419d-9b08-ac364c0392c1	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExMzg1MywiZXhwIjoxNzM4MjAwMjUzfQ.MDZ_E0-OA5lPj-EfIC5hwP1LvkrAJURbDN3x1fDSx4Q : UnauthorizedError => Unauthorized Access
+
+20250129	01:34:38	43c62cbd-c608-4e8f-b8ad-a13d2510f85d	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExMzg1MywiZXhwIjoxNzM4MjAwMjUzfQ.MDZ_E0-OA5lPj-EfIC5hwP1LvkrAJURbDN3x1fDSx4Q : UnauthorizedError => Unauthorized Access
+
+20250129	01:34:44	78818590-b261-47b8-8f3b-38777164d199	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	01:39:07	d524d4ad-cd43-4f8d-a03f-887c884ce237	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDcxNywiZXhwIjoxNzM4MjAxMTE3fQ.9TVVgYEd4Le9julwwd8Ec08Ufm28do_MHx3vZrloGlo : UnauthorizedError => Unauthorized Access
+
+20250129	01:40:07	af3b01d0-6348-453e-bd6f-62c3031ccd33	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:43:02	c1de2384-6ccf-40d9-a0c4-75f5920165b3	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:44:12	ee5ab91a-be4c-43aa-8ba6-24090a80aee4	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:47:02	288cdf01-a2db-42ea-975c-7104f93ee280	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:47:52	4b6e91cf-db4f-499a-8b54-144ed260edac	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:50:05	14b30bbb-942c-49cc-9f53-b06fa7a066ab	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	01:51:38	c3e9baab-269f-42eb-a778-2af8e27c2c52	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : UnauthorizedError => Unauthorized Access
+
+20250129	02:41:10	184936c3-89b3-4893-9c42-baa8da6aa3e1	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : ValidationError => Validation Error
+
+20250129	02:41:10	5bc113aa-c83e-46d1-a735-bccb2ae28167	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : ValidationError => Validation Error
+
+20250129	02:42:17	7f493631-4acc-44fc-892e-5142369e8638	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : ValidationError => Validation Error
+
+20250129	02:42:17	68267950-1ae4-4f54-bc8f-b46f84b68222	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExNDc4NywiZXhwIjoxNzM4MjAxMTg3fQ.SfKeOtIABBIPO1IMhaC_sZZT7U5M3ATXxs-wTuoH6uI : ValidationError => Validation Error
+
+20250129	02:54:49	e8016722-09d7-4b09-b9d6-2edf10f478d6	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : UnauthorizedError => Unauthorized Access
+
+20250129	02:54:49	d4d4a642-b7f7-4a61-88bf-0589f75a7e93	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	02:55:07	0929d563-0c96-44fe-b161-639766adaf58	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	02:55:07	ede35ac9-8a7b-413b-b4fc-4c48311986c6	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	03:00:14	78a3902c-d300-4110-8c63-9890b1d4b266	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : UnauthorizedError => Unauthorized Access
+
+20250129	03:00:14	a7515109-fe59-4614-af6a-2370a5e4f022	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	03:00:23	5c7862ca-8e69-4506-a986-fcdd5673c561	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+
+20250129	03:00:45	faebd395-94a0-44d6-bde6-2b3e8dc72834	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	03:00:45	728c55d3-7982-45d0-aa34-c44872598318	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	03:01:00	5240e8e2-846d-4df0-9c25-48447283b46d	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	03:01:00	f15ad407-f5ff-4265-acb2-8d713842e663	GET	http://localhost:5173	/auth/users/token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGYxYjc2NzhhMTczODkwYmIzMDNiMCIsImlhdCI6MTczODExODU2OSwiZXhwIjoxNzM4MjA0OTY5fQ.DiqDo97sa7FgPxkGvMl-AD-xSVutqbyzyjG6hqxjEEM : ValidationError => Validation Error
+
+20250129	09:39:37	7eef4388-9c13-4d7d-a5ca-8fa5f2a8945a	POST	http://localhost:5173	/auth/users/login : UnauthorizedError => invalid email or password
+

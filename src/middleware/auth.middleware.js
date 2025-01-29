@@ -23,7 +23,6 @@ const auth = asyncHandler(async (req, res, next) => {
     }
 
     const user = await User.findById(decoded.id).select("-password");
-    console.log(user);
 
     if (user.verification === true && user.role === "ADMIN") {
       req.user = user;

@@ -51,6 +51,7 @@ const getCandidateById = async function (id) {
 const addCandidate = async function ({ formData }) {
   const { fullName, position, election, manifesto, imgfile, creator } =
     formData;
+  let profilePhoto;
   await getElectionById(election);
   await getPositionById(position);
   const candidate = await getCandidateByNameAndPosition({
@@ -60,6 +61,7 @@ const addCandidate = async function ({ formData }) {
   if (candidate) {
     throw new ConflictError();
   }
+
   const newCandidate = await Candidate.create({
     fullName,
     manifesto,
@@ -67,12 +69,13 @@ const addCandidate = async function ({ formData }) {
     position,
     creator,
   });
+
+  if (imgfile) {
+    // should return photoURL and photoId, if profile image added.
+    profilePhoto = await gcsUploader(imgfile?.buffer, imgfile?.originalname);
+  }
+
   if (newCandidate) {
-    // should return photoURL and photoId
-    const profilePhoto = await gcsUploader(
-      imgfile.buffer,
-      imgfile.originalname
-    );
     // update
     await Position.updateOne(
       { _id: position },
@@ -81,13 +84,16 @@ const addCandidate = async function ({ formData }) {
       }
     );
     // update candidate data
-    return await updateCandidateById({
-      id: newCandidate._id,
-      formData: {
-        photoUrl: profilePhoto.url,
-        photoId: profilePhoto.name,
-      },
-    });
+    if (profilePhoto) {
+      return await updateCandidateById({
+        id: newCandidate._id,
+        formData: {
+          photoUrl: profilePhoto.url,
+          photoId: profilePhoto.name,
+        },
+      });
+    }
+    return newCandidate;
   } else {
     throw new InternalServerError();
   }

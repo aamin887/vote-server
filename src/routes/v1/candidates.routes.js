@@ -5,7 +5,7 @@ const candidatesController = require("../../controllers/api/candidates.controlle
 
 router
   .route("/")
-  .post(uploads.single("image"), candidatesController.createCandidate);
+  .post(uploads?.single("image"), candidatesController.createCandidate);
 
 //get candidates for an election
 router

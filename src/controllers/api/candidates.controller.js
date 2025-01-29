@@ -27,7 +27,6 @@ const createCandidate = asyncHandler(async function (req, res) {
     throw new BadRequestError("fill all form fields");
   }
 
-  console.log("asas.___");
 
   let formData = { ...req.body, creator };
   if (imgfile) {
